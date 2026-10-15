@@ -1,0 +1,29 @@
+# GABDIN TECH - Configuração Otimizada para Hostinger (LiteSpeed / Apache)
+
+# 1. Forçar HTTPS e domínio correto
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2. URLs amigáveis (permite acessar /odonto e /estetica sem digitar .html)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# 3. Compressão GZIP / Deflate para velocidade máxima (carregamento < 0.8s)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# 4. Cache de Navegador para arquivos estáticos
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 month"
+</IfModule>
+
+# 5. Página de erro 404 redireciona para a home
+ErrorDocument 404 /index.html
