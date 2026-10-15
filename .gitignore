@@ -1,0 +1,11 @@
+# Sistema e IDE
+.gemini/
+.system_generated/
+*.log
+.DS_Store
+Thumbs.db
+
+# Dependências (caso sejam usadas no futuro)
+node_modules/
+dist/
+.vscode/
