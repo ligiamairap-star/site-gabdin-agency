@@ -1,0 +1,12 @@
+{
+  "name": "gabdintech",
+  "version": "1.0.0",
+  "description": "GABDIN TECH - Site Brutalista de Alta Conversão",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "keywords": ["gabdin", "tech", "odonto", "estetica"],
+  "author": "GABDIN TECH",
+  "license": "ISC"
+}
