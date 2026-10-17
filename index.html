@@ -13,6 +13,9 @@
   <meta property="og:title" content="Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil | GABDIN TECH">
   <meta property="og:description" content="Sites de alto padrão, sistemas web sob medida e automações no WhatsApp para empresas de Guarulhos e de todo o Brasil. Fale no WhatsApp!">
   <meta name="theme-color" content="#0a2a5e">
+  <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+  <link rel="apple-touch-icon" href="img/logo.jpg">
+  <meta property="og:image" content="https://gabdintech.com.br/img/logo.jpg">
 
   <!-- Google Fonts: Anton & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +33,8 @@
               blue: '#0a2a5e',
               bluedark: '#061a3b',
               bluelight: '#123e85',
+              cyan: '#00D2FF',
+              cyandark: '#0099cc',
               green: '#25D366',
               greendark: '#1eb857',
               black: '#000000',
@@ -47,10 +52,12 @@
           },
           boxShadow: {
             'brutal-blue': '5px 5px 0px 0px #0a2a5e',
+            'brutal-cyan': '5px 5px 0px 0px #00D2FF',
             'brutal-green': '5px 5px 0px 0px #25D366',
             'brutal-black': '5px 5px 0px 0px #000000',
             'brutal-white': '5px 5px 0px 0px #FFFFFF',
             'brutal-lg': '8px 8px 0px 0px #0a2a5e',
+            'brutal-cyan-lg': '8px 8px 0px 0px #00D2FF',
             'brutal-green-lg': '8px 8px 0px 0px #25D366',
           }
         }
@@ -217,32 +224,35 @@
       
       <!-- LOGO -->
       <div class="flex items-center gap-3">
-        <a href="index.html" class="flex items-center gap-2 group" aria-label="GABDIN TECH Início">
-          <div class="bg-[#0a2a5e] text-white font-anton text-2xl sm:text-3xl px-3 py-1 border-4 border-black shadow-[4px_4px_0px_0px_#25D366] group-hover:rotate-1 transition-transform">
-            GABDIN TECH
+        <a href="index.html" class="flex items-center gap-3 group" aria-label="GABDIN TECH Início">
+          <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white border-2 border-black shadow-[3px_3px_0px_0px_#00D2FF] p-0.5 overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform shrink-0">
+            <img src="img/logo.jpg" alt="Logo Gabdin Tech" class="w-full h-full object-contain rounded-full">
+          </div>
+          <div class="bg-[#0a2a5e] text-white font-anton text-2xl sm:text-3xl px-3 py-1 border-3 border-black shadow-[4px_4px_0px_0px_#00D2FF] group-hover:rotate-1 transition-transform tracking-wider">
+            GABDIN <span class="text-[#00D2FF]">TECH</span>
           </div>
         </a>
-        <div class="hidden lg:block text-xs uppercase font-mono text-zinc-300 pl-3 border-l-2 border-zinc-700 leading-tight">
+        <div class="hidden lg:block text-xs uppercase font-mono text-zinc-300 pl-3 border-l-2 border-[#00D2FF]/40 leading-tight">
           SITES & SISTEMAS DE ALTA CONVERSÃO<br>
-          <span class="text-[#25D366] font-bold">GUARULHOS E TODO BRASIL</span>
+          <span class="text-[#00D2FF] font-bold">GUARULHOS E TODO BRASIL</span>
         </div>
       </div>
 
       <!-- LINKS DO MENU -->
       <nav class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-black uppercase">
-        <a href="#servicos" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+        <a href="#servicos" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
           SERVIÇOS
         </a>
-        <a href="#portfolio" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+        <a href="#portfolio" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
           PORTFÓLIO
         </a>
-        <a href="#metodo" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+        <a href="#metodo" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
           COMO FUNCIONA
         </a>
-        <a href="#preco" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+        <a href="#preco" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
           VALORES
         </a>
-        <a href="#faq" class="hidden sm:inline-block bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+        <a href="#faq" class="hidden sm:inline-block bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
           FAQ
         </a>
         
@@ -255,23 +265,23 @@
     </div>
   </header>
 
-  <!-- MARQUEE TICKER EM AZUL #0A2A5E COM ACENTOS EM VERDE -->
+  <!-- MARQUEE TICKER EM AZUL #0A2A5E COM ACENTOS EM CIANO -->
   <div class="bg-[#0a2a5e] border-b-4 border-black py-2.5 overflow-hidden select-none" aria-hidden="true">
     <div class="animate-marquee font-anton text-base sm:text-lg tracking-wider text-white">
-      <span class="mx-4 text-[#25D366]">★ CRIAMOS SITES E SISTEMAS QUE TRAZEM CLIENTES</span>
+      <span class="mx-4 text-[#00D2FF]">★ CRIAMOS SITES E SISTEMAS QUE TRAZEM CLIENTES</span>
       <span class="mx-4">★ GUARULHOS E TODO BRASIL</span>
-      <span class="mx-4 text-[#25D366]">★ CARREGAMENTO EM MENOS DE 1 SEGUNDO</span>
+      <span class="mx-4 text-[#00D2FF]">★ CARREGAMENTO EM MENOS DE 1 SEGUNDO</span>
       <span class="mx-4">★ LANDING PAGES DE ALTA CONVERSÃO</span>
-      <span class="mx-4 text-[#25D366]">★ SISTEMAS WEB E PAINÉIS SOB MEDIDA</span>
+      <span class="mx-4 text-[#00D2FF]">★ SISTEMAS WEB E PAINÉIS SOB MEDIDA</span>
       <span class="mx-4">★ BOT DE ATENDIMENTO NO WHATSAPP EM 2 MINUTOS</span>
-      <span class="mx-4 text-[#25D366]">★ OTIMIZAÇÃO PARA O TOPO DO GOOGLE (SEO LOCAL)</span>
+      <span class="mx-4 text-[#00D2FF]">★ OTIMIZAÇÃO PARA O TOPO DO GOOGLE (SEO LOCAL)</span>
       <span class="mx-4">★ SUPORTE DIRETO COM QUEM CODIFICA</span>
-      <span class="mx-4 text-[#25D366]">★ SEM CONTRATO DE FIDELIDADE AMARRADO</span>
-      <span class="mx-4 text-[#25D366]">★ CRIAMOS SITES E SISTEMAS QUE TRAZEM CLIENTES</span>
+      <span class="mx-4 text-[#00D2FF]">★ SEM CONTRATO DE FIDELIDADE AMARRADO</span>
+      <span class="mx-4 text-[#00D2FF]">★ CRIAMOS SITES E SISTEMAS QUE TRAZEM CLIENTES</span>
       <span class="mx-4">★ GUARULHOS E TODO BRASIL</span>
-      <span class="mx-4 text-[#25D366]">★ CARREGAMENTO EM MENOS DE 1 SEGUNDO</span>
+      <span class="mx-4 text-[#00D2FF]">★ CARREGAMENTO EM MENOS DE 1 SEGUNDO</span>
       <span class="mx-4">★ LANDING PAGES DE ALTA CONVERSÃO</span>
-      <span class="mx-4 text-[#25D366]">★ SISTEMAS WEB E PAINÉIS SOB MEDIDA</span>
+      <span class="mx-4 text-[#00D2FF]">★ SISTEMAS WEB E PAINÉIS SOB MEDIDA</span>
     </div>
   </div>
 
@@ -281,15 +291,15 @@
       <div class="max-w-6xl mx-auto">
 
         <!-- Badge de Destaque -->
-        <div class="inline-flex items-center gap-2 bg-[#0a2a5e] text-white border-4 border-black px-4 py-1.5 font-black uppercase text-xs sm:text-sm shadow-[5px_5px_0px_0px_#25D366] mb-6">
-          <span class="w-2.5 h-2.5 bg-[#25D366] rounded-full status-dot"></span>
+        <div class="inline-flex items-center gap-2 bg-[#0a2a5e] text-[#00D2FF] border-4 border-black px-4 py-1.5 font-black uppercase text-xs sm:text-sm shadow-[5px_5px_0px_0px_#00D2FF] mb-6">
+          <span class="w-2.5 h-2.5 bg-[#00D2FF] rounded-full status-dot"></span>
           <span>AGÊNCIA DE TECNOLOGIA, SITES & CONVERSÃO DIGITAL</span>
         </div>
 
         <!-- H1 PRINCIPAL EXATO PEDIDO PELO USUÁRIO -->
         <h1 class="font-anton text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[0.95] tracking-tight text-white mb-6">
           Criamos sites e sistemas que trazem clientes<br>
-          <span class="bg-[#0a2a5e] text-white px-3 sm:px-6 py-1 inline-block -rotate-1 border-4 border-[#25D366] shadow-[6px_6px_0px_0px_#25D366] mt-2">
+          <span class="bg-[#0a2a5e] text-white px-3 sm:px-6 py-1 inline-block -rotate-1 border-4 border-[#00D2FF] shadow-[6px_6px_0px_0px_#00D2FF] mt-2">
             Guarulhos e todo Brasil
           </span>
         </h1>
@@ -334,10 +344,10 @@
           <!-- CTA SECUNDÁRIO (VER SERVIÇOS E PORTFÓLIO) -->
           <a href="#portfolio" 
              id="cta-hero-portfolio" 
-             class="bg-[#0a2a5e] text-white border-4 border-black shadow-[5px_5px_0px_0px_#25D366] hover:shadow-[7px_7px_0px_0px_#FFFFFF] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all p-6 flex flex-col justify-between group text-left">
+             class="bg-[#0a2a5e] text-white border-4 border-black shadow-[5px_5px_0px_0px_#00D2FF] hover:shadow-[7px_7px_0px_0px_#FFFFFF] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all p-6 flex flex-col justify-between group text-left">
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="bg-[#25D366] text-black text-xs font-black px-2 py-1 uppercase tracking-widest">CASOS REAIS & EXEMPLOS</span>
-              <span class="text-2xl group-hover:translate-x-1 transition-transform text-[#25D366]">↓</span>
+              <span class="bg-[#00D2FF] text-black text-xs font-black px-2 py-1 uppercase tracking-widest">CASOS REAIS & EXEMPLOS</span>
+              <span class="text-2xl group-hover:translate-x-1 transition-transform text-[#00D2FF]">↓</span>
             </div>
             <div class="font-anton text-2xl sm:text-3xl uppercase leading-tight text-white">
               VER NOSSO PORTFÓLIO<br>
@@ -352,19 +362,19 @@
         <!-- FITA DE CREDIBILIDADE RÁPIDA -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-mono text-zinc-300 pt-2 border-t-2 border-zinc-800">
           <div class="flex items-center gap-2">
-            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span class="text-[#00D2FF] font-black text-lg">✓</span>
             <span>Carregamento em &lt; 1 segundo</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span class="text-[#00D2FF] font-black text-lg">✓</span>
             <span>100% Responsivo no Celular</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span class="text-[#00D2FF] font-black text-lg">✓</span>
             <span>SEO Técnico para o Google</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span class="text-[#00D2FF] font-black text-lg">✓</span>
             <span>Sem fidelidade obrigatória</span>
           </div>
         </div>
@@ -470,15 +480,15 @@
         <!-- Cabeçalho da Seção de Serviços -->
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
-            <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#25D366] mb-3">
+            <div class="inline-block bg-[#0a2a5e] text-[#00D2FF] border-2 border-[#00D2FF] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#00D2FF] mb-3">
               SOLUÇÕES DIGITAIS DE ALTO IMPACTO
             </div>
             <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
-              NOSSOS <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">SERVIÇOS</span>
+              NOSSOS <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#00D2FF]">SERVIÇOS</span>
             </h2>
           </div>
           <p class="text-zinc-300 font-mono text-xs sm:text-sm max-w-md">
-            Do site institucional à plataforma web sob medida: tudo desenvolvido com foco exclusivo em <span class="text-[#25D366] font-bold">velocidade, usabilidade e atração de novos clientes</span>.
+            Do site institucional à plataforma web sob medida: tudo desenvolvido com foco exclusivo em <span class="text-[#00D2FF] font-bold">velocidade, usabilidade e atração de novos clientes</span>.
           </p>
         </div>
 
@@ -486,9 +496,9 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
           <!-- SERVIÇO 1: SITES INSTITUCIONAIS -->
-          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
                 🌐
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
@@ -498,10 +508,10 @@
                 Presença digital com credibilidade imediata. Apresente seus serviços, história, diferenciais e equipe com layout moderno e exclusivo, transmitindo autoridade para fechar contratos de alto valor.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> 100% responsivo para celulares e computadores</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Otimizado para SEO e Google</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Certificado SSL e segurança ponta a ponta</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> E-mails corporativos personalizados</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> 100% responsivo para celulares e computadores</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Otimizado para SEO e Google</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Certificado SSL e segurança ponta a ponta</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> E-mails corporativos personalizados</li>
               </ul>
             </div>
             <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Cria%C3%A7%C3%A3o%20de%20Site%20Institucional." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
@@ -510,13 +520,13 @@
           </div>
 
           <!-- SERVIÇO 2: LANDING PAGES DE ALTA CONVERSÃO -->
-          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 shadow-[6px_6px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 shadow-[6px_6px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-4">
-                <div class="w-12 h-12 bg-[#25D366] border-2 border-black flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_#000]">
+                <div class="w-12 h-12 bg-[#00D2FF] border-2 border-black flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_#000]">
                   🎯
                 </div>
-                <span class="bg-[#25D366] text-black text-[10px] font-black px-2 py-0.5 uppercase tracking-wider">MAIS VENDIDO</span>
+                <span class="bg-[#00D2FF] text-black text-[10px] font-black px-2 py-0.5 uppercase tracking-wider">MAIS VENDIDO</span>
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
                 LANDING PAGES DE ALTA CONVERSÃO
@@ -525,10 +535,10 @@
                 Páginas cirúrgicas desenhadas especificamente para campanhas no Google Ads, Instagram e Facebook. Copywriting persuasivo focado em fazer o visitante clicar no botão de compra ou WhatsApp.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Carregamento instantâneo (&lt; 0.8s)</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Rastreamento do Meta Pixel, GA4 e Google Ads</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Gatilhos mentais e chamadas diretas de ação</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Pronta em até 5 dias úteis</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Carregamento instantâneo (&lt; 0.8s)</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Rastreamento do Meta Pixel, GA4 e Google Ads</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Gatilhos mentais e chamadas diretas de ação</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Pronta em até 5 dias úteis</li>
               </ul>
             </div>
             <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20uma%20Landing%20Page%20de%20Alta%20Convers%C3%A3o%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
@@ -537,9 +547,9 @@
           </div>
 
           <!-- SERVIÇO 3: SISTEMAS WEB SOB MEDIDA -->
-          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
                 ⚙️
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
@@ -549,10 +559,10 @@
                 Automatize sua empresa e elimine planilhas manuais. Desenvolvemos sistemas web na nuvem, painéis administrativos, portais de clientes, controles de estoque, emissão de orçamentos e dashboards.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Painel seguro com login e níveis de acesso</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Banco de dados rápido e escalável em nuvem</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Relatórios exportáveis em PDF e Excel</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Funciona em qualquer celular, tablet ou PC</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Painel seguro com login e níveis de acesso</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Banco de dados rápido e escalável em nuvem</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Relatórios exportáveis em PDF e Excel</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Funciona em qualquer celular, tablet ou PC</li>
               </ul>
             </div>
             <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20um%20Sistema%20Web%20Sob%20Medida%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
@@ -585,9 +595,9 @@
           </div>
 
           <!-- SERVIÇO 5: SEO LOCAL & GOOGLE MEU NEGÓCIO -->
-          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
                 📍
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
@@ -597,10 +607,10 @@
                 Colocamos sua empresa nas primeiras posições de busca orgânica em Guarulhos, São Paulo e em todo o Brasil. Apareça no Google Maps exatamente quando alguém pesquisar pelo que você vende.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Otimização técnica de palavras-chave locais</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Configuração profissional do Google Perfil de Empresa</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Estruturação de dados Schema.org</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Tráfego orgânico sem pagar por clique</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Otimização técnica de palavras-chave locais</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Configuração profissional do Google Perfil de Empresa</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Estruturação de dados Schema.org</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Tráfego orgânico sem pagar por clique</li>
               </ul>
             </div>
             <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20otimizar%20o%20SEO%20Local%20e%20Google%20Meu%20Neg%C3%B3cio%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
@@ -609,9 +619,9 @@
           </div>
 
           <!-- SERVIÇO 6: INFOPRODUTOS & LANÇAMENTOS DIGITAIS -->
-          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
                 🚀
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
@@ -621,10 +631,10 @@
                 Páginas de vendas de alta conversão para cursos, mentorias, ebooks e produtos digitais. Carregamento ultra-rápido, design persuasivo e integração completa com plataformas de checkout e automação de entrega.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Páginas de vendas persuasivas com carregamento instantâneo</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Integração com Hotmart, Kiwify, Eduzz, Green e Monetizze</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Checkout próprio via Pix e cartão de crédito sem taxas extras</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Rastreamento avançado com Pixel Meta, Google Ads e UTMs</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Páginas de vendas persuasivas com carregamento instantâneo</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Integração com Hotmart, Kiwify, Eduzz, Green e Monetizze</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Checkout próprio via Pix e cartão de crédito sem taxas extras</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Rastreamento avançado com Pixel Meta, Google Ads e UTMs</li>
               </ul>
             </div>
             <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20p%C3%A1gina%20ou%20sistema%20de%20Infoproduto." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
@@ -635,9 +645,9 @@
         </div>
 
         <!-- Banner de Chamada em Serviços -->
-        <div class="mt-12 bg-[#0a2a5e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#25D366] flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="mt-12 bg-[#0a2a5e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#00D2FF] flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <div class="text-xs font-mono font-bold text-[#25D366] uppercase tracking-wider mb-1">PROJETOS PERSONALIZADOS</div>
+            <div class="text-xs font-mono font-bold text-[#00D2FF] uppercase tracking-wider mb-1">PROJETOS PERSONALIZADOS</div>
             <h3 class="font-anton text-2xl sm:text-3xl text-white uppercase">PRECISA DE ALGO ESPECÍFICO PARA A SUA OPERAÇÃO?</h3>
             <p class="text-zinc-200 text-sm mt-1">Converse diretamente com o desenvolvedor responsável e receba uma solução sob medida.</p>
           </div>
@@ -658,11 +668,11 @@
         <!-- Cabeçalho Portfólio -->
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
-            <div class="inline-block bg-[#25D366] text-black border-2 border-black font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#0a2a5e] mb-3">
+            <div class="inline-block bg-[#00D2FF] text-black border-2 border-black font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#0a2a5e] mb-3">
               RESULTADOS COMPROVADOS NO MERCADO
             </div>
             <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
-              PORTFÓLIO & <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">CASOS DE SUCESSO</span>
+              PORTFÓLIO & <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#00D2FF]">CASOS DE SUCESSO</span>
             </h2>
           </div>
           <p class="text-zinc-400 font-mono text-xs sm:text-sm max-w-md">
@@ -774,10 +784,10 @@
           </div>
 
           <!-- PROJETO 2: PLATAFORMA CLÍNICAS (ODONTO & ESTÉTICA) -->
-          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#25D366] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#00D2FF] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
             <div class="lg:col-span-8">
               <div class="flex flex-wrap items-center gap-2 mb-3">
-                <span class="bg-[#25D366] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">SAÚDE & CLÍNICAS</span>
+                <span class="bg-[#00D2FF] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">SAÚDE & CLÍNICAS</span>
                 <span class="bg-[#0a2a5e] text-white font-mono font-bold text-xs px-2 py-0.5 uppercase border border-white">LANDING PAGE + BOT</span>
                 <span class="text-zinc-400 text-xs font-mono">Guarulhos & Grande SP</span>
               </div>
@@ -791,7 +801,7 @@
               <!-- Métricas Reais do Projeto -->
               <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
                 <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">+340%</div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">+340%</div>
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Consultas Agendadas</div>
                 </div>
                 <div>
@@ -799,17 +809,17 @@
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo Médio Resposta</div>
                 </div>
                 <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">0.7s</div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">0.7s</div>
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo Carregamento</div>
                 </div>
               </div>
 
               <!-- Links para Modelos ao Vivo -->
               <div class="flex flex-wrap items-center gap-3">
-                <a href="odonto.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#25D366] transition-colors shadow-[2px_2px_0px_0px_#000]">
+                <a href="odonto.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#00D2FF] transition-colors shadow-[2px_2px_0px_0px_#00D2FF]">
                   VER MODELO ODONTO ➔
                 </a>
-                <a href="estetica.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#25D366] transition-colors shadow-[2px_2px_0px_0px_#000]">
+                <a href="estetica.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#00D2FF] transition-colors shadow-[2px_2px_0px_0px_#00D2FF]">
                   VER MODELO ESTÉTICA ➔
                 </a>
               </div>
@@ -817,7 +827,7 @@
 
             <!-- Preview Card Lateral -->
             <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
-              <div class="text-xs font-mono text-[#25D366] font-bold uppercase mb-2">● TECNOLOGIAS APLICADAS:</div>
+              <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">● TECNOLOGIAS APLICADAS:</div>
               <div class="flex flex-wrap gap-1.5 mb-4 text-[11px] font-mono text-zinc-300">
                 <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">HTML5 Semântico</span>
                 <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">Tailwind CSS</span>
@@ -828,7 +838,7 @@
               <p class="text-xs text-zinc-400 leading-relaxed">
                 "Saímos de 3 consultas por semana para agenda lotada de implantes e botox todos os dias. O retorno no primeiro mês foi imediato."
               </p>
-              <div class="mt-3 pt-3 border-t border-zinc-800 text-[11px] font-mono text-[#25D366]">
+              <div class="mt-3 pt-3 border-t border-zinc-800 text-[11px] font-mono text-[#00D2FF]">
                 Dr. R. Mendes • Guarulhos - SP
               </div>
             </div>
@@ -839,7 +849,7 @@
             <div class="lg:col-span-8">
               <div class="flex flex-wrap items-center gap-2 mb-3">
                 <span class="bg-[#0a2a5e] text-white font-mono font-black text-xs px-2 py-0.5 uppercase border border-white">INDÚSTRIA & B2B</span>
-                <span class="bg-zinc-800 text-[#25D366] font-mono font-bold text-xs px-2 py-0.5 uppercase border border-zinc-700">SITE CORPORATIVO + SEO LOCAL</span>
+                <span class="bg-zinc-800 text-[#00D2FF] font-mono font-bold text-xs px-2 py-0.5 uppercase border border-zinc-700">SITE CORPORATIVO + SEO LOCAL</span>
                 <span class="text-zinc-400 text-xs font-mono">Polo Industrial Guarulhos</span>
               </div>
               <h3 class="font-anton text-2xl sm:text-4xl uppercase text-white mb-3">
@@ -852,7 +862,7 @@
               <!-- Métricas Reais do Projeto -->
               <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
                 <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">1º Lugar</div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">1º Lugar</div>
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">18 Termos no Google</div>
                 </div>
                 <div>
@@ -860,7 +870,7 @@
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Pedidos de Cotação</div>
                 </div>
                 <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">0.6s</div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">0.6s</div>
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo de Abertura</div>
                 </div>
               </div>
@@ -872,7 +882,7 @@
 
             <!-- Preview Card Lateral -->
             <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
-              <div class="text-xs font-mono text-[#25D366] font-bold uppercase mb-2">● RESULTADO CHAVE:</div>
+              <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">● RESULTADO CHAVE:</div>
               <p class="text-xs text-zinc-300 leading-relaxed mb-3">
                 "Recebemos orçamentos de grandes empresas de Guarulhos e Campinas todas as semanas sem gastar um centavo a mais em anúncios, apenas com a busca orgânica do site novo."
               </p>
@@ -886,7 +896,7 @@
           <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_#0a2a5e] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
             <div class="lg:col-span-8">
               <div class="flex flex-wrap items-center gap-2 mb-3">
-                <span class="bg-[#25D366] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">INFOPRODUTOS & CURSOS</span>
+                <span class="bg-[#00D2FF] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">INFOPRODUTOS & CURSOS</span>
                 <span class="bg-zinc-800 text-white font-mono font-bold text-xs px-2 py-0.5 uppercase border border-zinc-700">PÁGINA DE VENDAS + CHECKOUT</span>
                 <span class="text-zinc-400 text-xs font-mono">Lançamentos Digitais</span>
               </div>
@@ -900,7 +910,7 @@
               <!-- Métricas Reais do Projeto -->
               <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
                 <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">0.6s</div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">0.6s</div>
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo de Abertura</div>
                 </div>
                 <div>
@@ -908,7 +918,7 @@
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Retenção no Pitch</div>
                 </div>
                 <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">100%</div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">100%</div>
                   <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Rastreamento de Pixels</div>
                 </div>
               </div>
@@ -920,7 +930,7 @@
 
             <!-- Preview Card Lateral -->
             <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
-              <div class="text-xs font-mono text-[#25D366] font-bold uppercase mb-2">● DIFERENCIAL TÉCNICO:</div>
+              <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">● DIFERENCIAL TÉCNICO:</div>
               <p class="text-xs text-zinc-300 leading-relaxed mb-3">
                 Zero plugins pesados e sem a lentidão do WordPress. A página aguenta picos de milhares de cliques simultâneos de campanhas no Meta Ads e Google Ads sem cair na abertura de carrinho.
               </p>
@@ -941,11 +951,11 @@
 
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
-            <div class="inline-block bg-[#0a2a5e] text-white font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3 shadow-[3px_3px_0px_0px_#25D366]">
+            <div class="inline-block bg-[#0a2a5e] text-[#00D2FF] font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-[#00D2FF] mb-3 shadow-[3px_3px_0px_0px_#00D2FF]">
               DESENVOLVIMENTO ÁGIL & TRANSPARENTE
             </div>
             <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
-              COMO CRIAMOS SUA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">MÁQUINA DE VENDAS</span>
+              COMO CRIAMOS SUA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#00D2FF]">MÁQUINA DE VENDAS</span>
             </h2>
           </div>
           <p class="text-zinc-400 font-mono text-xs sm:text-sm max-w-md">
@@ -958,7 +968,7 @@
           <!-- PASSO 1 -->
           <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#0a2a5e] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
-              <span class="font-anton text-6xl sm:text-7xl text-[#25D366]">01</span>
+              <span class="font-anton text-6xl sm:text-7xl text-[#00D2FF]">01</span>
               <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 1</div>
             </div>
             <div class="md:col-span-7">
@@ -970,7 +980,7 @@
               </p>
             </div>
             <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
-              <div class="text-[#25D366] font-bold mb-1">ENTREGÁVEL:</div>
+              <div class="text-[#00D2FF] font-bold mb-1">ENTREGÁVEL:</div>
               <div class="text-zinc-300">↳ Estrutura de páginas & seções</div>
               <div class="text-zinc-300">↳ Gatilhos de conversão mapeados</div>
               <div class="text-zinc-300">↳ Palavras-chave de SEO local</div>
@@ -978,7 +988,7 @@
           </div>
 
           <!-- PASSO 2 -->
-          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#25D366] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#00D2FF] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
               <span class="font-anton text-6xl sm:text-7xl text-white">02</span>
               <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 2</div>
@@ -992,7 +1002,7 @@
               </p>
             </div>
             <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
-              <div class="text-[#25D366] font-bold mb-1">PADRÃO GABDIN:</div>
+              <div class="text-[#00D2FF] font-bold mb-1">PADRÃO GABDIN:</div>
               <div class="text-zinc-300">↳ 100% responsivo para mobile</div>
               <div class="text-zinc-300">↳ Pontuação 90+ no Google PageSpeed</div>
               <div class="text-zinc-300">↳ Identidade visual impactante</div>
@@ -1002,7 +1012,7 @@
           <!-- PASSO 3 -->
           <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#0a2a5e] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
-              <span class="font-anton text-6xl sm:text-7xl text-[#25D366]">03</span>
+              <span class="font-anton text-6xl sm:text-7xl text-[#00D2FF]">03</span>
               <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 3</div>
             </div>
             <div class="md:col-span-7">
@@ -1014,7 +1024,7 @@
               </p>
             </div>
             <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
-              <div class="text-[#25D366] font-bold mb-1">CONEXÃO DIRETA:</div>
+              <div class="text-[#00D2FF] font-bold mb-1">CONEXÃO DIRETA:</div>
               <div class="text-zinc-300">↳ Botão flutuante inteligente</div>
               <div class="text-zinc-300">↳ Rastreamento de conversões</div>
               <div class="text-zinc-300">↳ Sem perda de lead na espera</div>
@@ -1022,7 +1032,7 @@
           </div>
 
           <!-- PASSO 4 -->
-          <div class="bg-[#07172e] border-4 border-white p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFFFFF] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="bg-[#07172e] border-4 border-white p-6 sm:p-8 shadow-[6px_6px_0px_0px_#00D2FF] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
               <span class="font-anton text-6xl sm:text-7xl text-white">04</span>
               <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 4</div>
@@ -1036,7 +1046,7 @@
               </p>
             </div>
             <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
-              <div class="text-[#25D366] font-bold mb-1">TRANQUILIDADE:</div>
+              <div class="text-[#00D2FF] font-bold mb-1">TRANQUILIDADE:</div>
               <div class="text-zinc-300">↳ Hospedagem rápida e estável</div>
               <div class="text-zinc-300">↳ Suporte com o próprio dev</div>
               <div class="text-zinc-300">↳ Sem burocracia de agência</div>
@@ -1052,7 +1062,7 @@
     <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
       <div class="max-w-6xl mx-auto">
         <h2 class="font-anton text-3xl sm:text-5xl uppercase text-center text-white mb-10">
-          COMPARAÇÃO: <span class="bg-red-600 text-white px-2">AGÊNCIA COMUM</span> VS <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">GABDIN TECH</span>
+          COMPARAÇÃO: <span class="bg-red-600 text-white px-2">AGÊNCIA COMUM</span> VS <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#00D2FF]">GABDIN TECH</span>
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1087,29 +1097,29 @@
           </div>
 
           <!-- GABDIN TECH -->
-          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#25D366]">
-            <div class="font-anton text-2xl text-[#25D366] uppercase mb-4 flex items-center gap-2">
+          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#00D2FF]">
+            <div class="font-anton text-2xl text-[#00D2FF] uppercase mb-4 flex items-center gap-2">
               <span>✓</span> GABDIN TECH
             </div>
             <ul class="space-y-3 text-sm text-zinc-200 font-medium">
               <li class="flex items-start gap-2">
-                <span class="text-[#25D366] font-black">✓</span>
+                <span class="text-[#00D2FF] font-black">✓</span>
                 <span><strong class="text-white">Entrega rápida:</strong> primeiros projetos no ar a partir de 5 dias úteis.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#25D366] font-black">✓</span>
+                <span class="text-[#00D2FF] font-black">✓</span>
                 <span><strong class="text-white">Código limpo e próprio:</strong> carregamento em menos de 1s no 4G brasileiro.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#25D366] font-black">✓</span>
+                <span class="text-[#00D2FF] font-black">✓</span>
                 <span><strong class="text-white">Sem fidelidade forçada:</strong> você continua conosco porque tem resultado financeiro.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#25D366] font-black">✓</span>
+                <span class="text-[#00D2FF] font-black">✓</span>
                 <span><strong class="text-white">Foco exclusivo em vendas:</strong> botão de WhatsApp estratégico e SEO para Google.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#25D366] font-black">✓</span>
+                <span class="text-[#00D2FF] font-black">✓</span>
                 <span><strong class="text-white">Atendimento direto:</strong> fale diretamente com o programador responsável.</span>
               </li>
             </ul>
@@ -1126,14 +1136,14 @@
       <div class="max-w-6xl mx-auto">
 
         <div class="text-center mb-12">
-          <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#25D366] mb-3">
+          <div class="inline-block bg-[#0a2a5e] text-[#00D2FF] border-2 border-[#00D2FF] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#00D2FF] mb-3">
             INVESTIMENTO TRANSPARENTE E ACESSÍVEL
           </div>
           <h2 class="font-anton text-4xl sm:text-6xl uppercase text-white leading-tight">
-            ESCOLHA O PACOTE IDEAL PARA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">SUA EMPRESA</span>
+            ESCOLHA O PACOTE IDEAL PARA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#00D2FF]">SUA EMPRESA</span>
           </h2>
           <p class="text-zinc-400 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
-            Sem pegadinhas, sem contratos de fidelidade amarrados. Pagamento facilitado via Pix, boleto ou cartão em até 12x.
+            Propostas personalizadas e alinhadas ao momento da sua empresa. Sem taxas ocultas, sem contratos de fidelidade forçada.
           </p>
         </div>
 
@@ -1149,56 +1159,62 @@
               </p>
               
               <div class="border-y-2 border-zinc-800 py-4 mb-4">
-                <div class="text-xs font-mono text-zinc-400">A partir de</div>
-                <div class="font-anton text-4xl text-[#25D366]">R$ 890</div>
-                <div class="text-xs font-mono text-zinc-400">Pagamento único ou até 12x</div>
+                <div class="text-xs font-mono text-zinc-400">Investimento Estimado</div>
+                <div class="font-anton text-3xl sm:text-4xl text-white">SOB CONSULTA</div>
+                <div class="text-xs font-mono text-[#00D2FF]">Diagnóstico ágil por segmento</div>
               </div>
 
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> 1 Página única de alta conversão</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Botão flutuante de WhatsApp incluso</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Rastreamento Meta Pixel & Google Ads</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Entrega rápida em até 5 dias úteis</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Domínio e SSL configurados</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> 1 Página única de alta conversão</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Botão flutuante de WhatsApp incluso</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Rastreamento Meta Pixel & Google Ads</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Entrega rápida em até 5 dias úteis</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Domínio e SSL configurados</li>
               </ul>
             </div>
 
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Quero%20contratar%20a%20Landing%20Page%20Express%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-3.5 text-center text-xs sm:text-sm font-black uppercase">
-              CONTRATAR LANDING PAGE ➔
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1%2C%20vi%20o%20plano%20de%20Landing%20Page%20no%20site%20da%20GABDIN%20TECH%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20o%20meu%20segmento." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full py-4 px-4 bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold uppercase text-xs sm:text-sm tracking-wide rounded-xl border-2 border-black shadow-[0_0_15px_rgba(37,211,102,0.35)] hover:shadow-[0_0_30px_rgba(37,211,102,0.85)] hover:-translate-y-1 transition-all duration-300 block text-center">
+              SOLICITAR ORÇAMENTO DE LANDING PAGE →
             </a>
           </div>
 
-          <!-- PLANO 2: SITE INSTITUCIONAL COMPLETO (DESTAQUE) -->
-          <div class="bg-[#091830] border-4 border-[#25D366] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#25D366] flex flex-col justify-between relative">
-            <div class="absolute -top-4 right-4 bg-[#25D366] text-black font-anton text-xs px-3 py-1 border-2 border-black uppercase tracking-wider">
+          <!-- PLANO 2: PORTAL COMPLETO (DESTAQUE) -->
+          <div class="bg-[#091830] border-4 border-[#00D2FF] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#00D2FF] flex flex-col justify-between relative">
+            <div class="absolute -top-4 right-4 bg-[#00D2FF] text-black font-anton text-xs px-3 py-1 border-2 border-black uppercase tracking-wider shadow-[2px_2px_0px_0px_#000]">
               ★ MAIS ESCOLHIDO
             </div>
 
             <div>
-              <div class="text-xs font-mono text-[#25D366] font-bold uppercase tracking-widest mb-1">PRESENÇA COMPLETA & AUTORIDADE</div>
-              <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">SITE INSTITUCIONAL PRO</h3>
+              <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase tracking-widest mb-1">PRESENÇA COMPLETA & AUTORIDADE</div>
+              <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">PORTAL INSTITUCIONAL COMPLETO</h3>
               <p class="text-zinc-300 text-xs sm:text-sm mb-4">
-                A presença digital definitiva para sua empresa dominar o mercado em Guarulhos, São Paulo e no Brasil.
+                A presença digital definitiva com SEO avançado para sua empresa dominar o mercado em Guarulhos, São Paulo e no Brasil.
               </p>
               
               <div class="border-y-2 border-zinc-700 py-4 mb-4">
-                <div class="text-xs font-mono text-zinc-400">A partir de</div>
-                <div class="font-anton text-4xl text-[#25D366]">R$ 1.690</div>
-                <div class="text-xs font-mono text-zinc-400">Parcelamento facilitado em até 12x</div>
+                <div class="text-xs font-mono text-zinc-400">Estrutura Completa & SEO</div>
+                <div class="font-anton text-3xl sm:text-4xl text-[#00D2FF]">SOB CONSULTA</div>
+                <div class="text-xs font-mono text-[#25D366]">Proposta personalizada com suporte</div>
               </div>
 
               <ul class="space-y-2 text-xs font-mono text-zinc-200 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Site multipáginas (Início, Sobre, Serviços, Contato)</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Otimização de SEO Local para o Google</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Google Meu Negócio configurado</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Integração inteligente com WhatsApp</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> E-mails profissionais (@suaempresa.com.br)</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Suporte e manutenção prioritária</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Site multipáginas (Início, Sobre, Serviços, Contato)</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Otimização de SEO Local para o Google</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Google Meu Negócio configurado</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Integração inteligente com WhatsApp</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> E-mails profissionais (@suaempresa.com.br)</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Suporte e manutenção prioritária</li>
               </ul>
             </div>
 
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Quero%20contratar%20o%20Site%20Institucional%20Pro%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-4 text-center text-sm font-black uppercase">
-              QUERO MEU SITE PRO ➔
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Portal%20Institucional%20Completo%20com%20SEO.%20Gostaria%20de%20entender%20como%20funciona%20o%20escopo%20de%20entrega%20para%20a%20minha%20empresa." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full py-4 px-4 bg-[#25D366] hover:bg-[#20ba5a] text-black font-extrabold uppercase text-xs sm:text-sm tracking-wide rounded-xl border-2 border-black shadow-[0_0_20px_rgba(37,211,102,0.45)] hover:shadow-[0_0_40px_rgba(37,211,102,0.95),0_0_20px_rgba(0,210,255,0.7)] hover:-translate-y-1 hover:scale-[1.01] transition-all duration-300 block text-center">
+              MONTAR PORTAL INSTITUCIONAL →
             </a>
           </div>
 
@@ -1212,22 +1228,25 @@
               </p>
               
               <div class="border-y-2 border-zinc-800 py-4 mb-4">
-                <div class="text-xs font-mono text-zinc-400">Sob Diagnóstico Técnico</div>
+                <div class="text-xs font-mono text-zinc-400">Engenharia de Software Dedicada</div>
                 <div class="font-anton text-3xl sm:text-4xl text-white">SOB MEDIDA</div>
-                <div class="text-xs font-mono text-zinc-400">Proposta conforme escopo</div>
+                <div class="text-xs font-mono text-[#00D2FF]">Reunião técnica de viabilidade</div>
               </div>
 
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Banco de dados seguro e escalável</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Painel de controle com permissões por usuário</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Integração com APIs externas (WhatsApp, Pagamentos)</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Relatórios e métricas de desempenho</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Código fonte exclusivo para sua empresa</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Banco de dados seguro e escalável</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Painel de controle com permissões por usuário</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Integração com APIs externas (WhatsApp, Pagamentos)</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Relatórios e métricas de desempenho</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Código fonte exclusivo para sua empresa</li>
               </ul>
             </div>
 
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20reuni%C3%A3o%20para%20or%C3%A7ar%20um%20Sistema%20Web%20Sob%20Medida." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-3.5 text-center text-xs sm:text-sm font-black uppercase">
-              ORÇAR SISTEMA WEB ➔
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20escopo%20de%20Sistemas%20Sob%20Medida%20no%20site%20da%20GABDIN%20TECH%20e%20gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20t%C3%A9cnica%20para%20avaliar%20um%20projeto%20personalizado." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full py-4 px-4 bg-[#00D2FF] hover:bg-[#00b8e6] text-black font-extrabold uppercase text-xs sm:text-sm tracking-wide rounded-xl border-2 border-black shadow-[0_0_15px_rgba(0,210,255,0.35)] hover:shadow-[0_0_30px_rgba(0,210,255,0.85)] hover:-translate-y-1 transition-all duration-300 block text-center">
+              CONSULTAR ENGENHARIA DE SOFTWARE →
             </a>
           </div>
 
@@ -1240,41 +1259,41 @@
     <section id="depoimentos" class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
-          <div class="inline-block bg-[#0a2a5e] text-white font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-2 shadow-[2px_2px_0px_0px_#25D366]">
+          <div class="inline-block bg-[#0a2a5e] text-[#00D2FF] font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-[#00D2FF] mb-2 shadow-[2px_2px_0px_0px_#00D2FF]">
             DEPOIMENTOS REAIS
           </div>
           <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white">
-            QUEM CONFIA NA <span class="text-[#25D366]">GABDIN TECH</span>
+            QUEM CONFIA NA <span class="text-[#00D2FF]">GABDIN TECH</span>
           </h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           <div class="bg-[#07172e] border-3 border-black p-6 shadow-[5px_5px_0px_0px_#0a2a5e]">
-            <div class="text-[#25D366] text-lg mb-2">★★★★★</div>
+            <div class="text-[#00D2FF] text-lg mb-2">★★★★★</div>
             <p class="text-zinc-300 text-sm italic mb-4">
               "Nosso site antigo demorava uma eternidade para abrir. A equipe da Gabdin refez tudo em tempo recorde e o número de mensagens no WhatsApp triplicou nas primeiras duas semanas."
             </p>
             <div class="font-bold text-white text-sm">Marcelo Alencar</div>
-            <div class="text-xs font-mono text-[#25D366]">Diretor Comercial • Guarulhos / SP</div>
+            <div class="text-xs font-mono text-[#00D2FF]">Diretor Comercial • Guarulhos / SP</div>
           </div>
 
-          <div class="bg-[#07172e] border-3 border-[#25D366] p-6 shadow-[5px_5px_0px_0px_#25D366]">
-            <div class="text-[#25D366] text-lg mb-2">★★★★★</div>
+          <div class="bg-[#07172e] border-3 border-[#00D2FF] p-6 shadow-[5px_5px_0px_0px_#00D2FF]">
+            <div class="text-[#00D2FF] text-lg mb-2">★★★★★</div>
             <p class="text-zinc-300 text-sm italic mb-4">
               "Eles não são apenas designers que deixam a tela bonita. Eles entendem de vendas e código. O sistema que criaram para nossa clínica roda sem travar e atende pacientes no automático."
             </p>
             <div class="font-bold text-white text-sm">Dra. Camila Toledo</div>
-            <div class="text-xs font-mono text-[#25D366]">Proprietária de Clínica Médica • São Paulo</div>
+            <div class="text-xs font-mono text-[#00D2FF]">Proprietária de Clínica Médica • São Paulo</div>
           </div>
 
           <div class="bg-[#07172e] border-3 border-black p-6 shadow-[5px_5px_0px_0px_#0a2a5e]">
-            <div class="text-[#25D366] text-lg mb-2">★★★★★</div>
+            <div class="text-[#00D2FF] text-lg mb-2">★★★★★</div>
             <p class="text-zinc-300 text-sm italic mb-4">
               "Atendimento transparente e direto ao ponto. Entregaram a landing page exatamente como prometido, com velocidade de carregamento absurda e integração perfeita com o WhatsApp."
             </p>
             <div class="font-bold text-white text-sm">Eduardo Santos</div>
-            <div class="text-xs font-mono text-[#25D366]">Gestor de Serviços B2B • Campinas / SP</div>
+            <div class="text-xs font-mono text-[#00D2FF]">Gestor de Serviços B2B • Campinas / SP</div>
           </div>
 
         </div>
@@ -1285,11 +1304,11 @@
     <section id="faq" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#040d1a]">
       <div class="max-w-4xl mx-auto">
         <div class="mb-10 text-center">
-          <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#25D366] mb-3">
+          <div class="inline-block bg-[#0a2a5e] text-[#00D2FF] border-2 border-[#00D2FF] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#00D2FF] mb-3">
             TIRE TODAS AS SUAS DÚVIDAS
           </div>
           <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white">
-            PERGUNTAS <span class="text-[#25D366]">FREQUENTES</span>
+            PERGUNTAS <span class="text-[#00D2FF]">FREQUENTES</span>
           </h2>
         </div>
 
@@ -1297,7 +1316,7 @@
 
           <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
             <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
-              <span class="text-[#25D366]">➔</span> A GABDIN TECH ATENDE APENAS GUARULHOS OU TODO O BRASIL?
+              <span class="text-[#00D2FF]">➔</span> A GABDIN TECH ATENDE APENAS GUARULHOS OU TODO O BRASIL?
             </h3>
             <p class="text-zinc-300 text-sm leading-relaxed">
               Atendemos presencialmente em Guarulhos e na Grande São Paulo e de forma 100% online em todas as regiões do Brasil. Nossos processos de briefing, alinhamento, desenvolvimento e suporte funcionam de forma ágil através de WhatsApp, videoconferência e e-mail.
@@ -1306,7 +1325,7 @@
 
           <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
             <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
-              <span class="text-[#25D366]">➔</span> QUANTO TEMPO DEMORA PARA O MEU SITE OU SISTEMA FICAR PRONTO?
+              <span class="text-[#00D2FF]">➔</span> QUANTO TEMPO DEMORA PARA O MEU SITE OU SISTEMA FICAR PRONTO?
             </h3>
             <p class="text-zinc-300 text-sm leading-relaxed">
               Landing pages de alta conversão costumam ser entregues e publicadas entre <strong>3 a 5 dias úteis</strong>. Sites institucionais completos levam em média de <strong>7 a 15 dias úteis</strong>. Sistemas web sob medida dependem do escopo das funcionalidades, com prazos alinhados previamente na proposta técnica.
@@ -1315,7 +1334,7 @@
 
           <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
             <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
-              <span class="text-[#25D366]">➔</span> O SITE FUNCIONA BEM EM CELULARES E SMARTPHONES?
+              <span class="text-[#00D2FF]">➔</span> O SITE FUNCIONA BEM EM CELULARES E SMARTPHONES?
             </h3>
             <p class="text-zinc-300 text-sm leading-relaxed">
               <strong>Sim, 100%.</strong> Adotamos o conceito <em>Mobile First</em>. Sabemos que mais de 80% do tráfego brasileiro vem de smartphones. Testamos minuciosamente o layout em diversos tamanhos de tela para garantir carregamento instantâneo, botões fáceis de tocar e leitura confortável.
@@ -1324,7 +1343,7 @@
 
           <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
             <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
-              <span class="text-[#25D366]">➔</span> COMO FUNCIONA O PAGAMENTO?
+              <span class="text-[#00D2FF]">➔</span> COMO FUNCIONA O PAGAMENTO?
             </h3>
             <p class="text-zinc-300 text-sm leading-relaxed">
               Facilitamos com pagamento via <strong>Pix</strong> (com desconto à vista), boleto bancário ou cartão de crédito em até 12x. Trabalhamos com entrada e saldo na entrega para que você acompanhe cada etapa do projeto com total segurança.
@@ -1333,7 +1352,7 @@
 
           <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
             <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
-              <span class="text-[#25D366]">➔</span> TEREI SUPORTE APÓS A ENTREGA DO SITE?
+              <span class="text-[#00D2FF]">➔</span> TEREI SUPORTE APÓS A ENTREGA DO SITE?
             </h3>
             <p class="text-zinc-300 text-sm leading-relaxed">
               Sim! Todos os nossos projetos incluem garantia técnica e suporte direto via WhatsApp com quem desenvolveu o código. Você não fica na mão com chatbots genéricos de suporte.
@@ -1342,7 +1361,7 @@
 
           <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
             <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
-              <span class="text-[#25D366]">➔</span> EU PRECISO PAGAR MENSALIDADE OBRIGATÓRIA?
+              <span class="text-[#00D2FF]">➔</span> EU PRECISO PAGAR MENSALIDADE OBRIGATÓRIA?
             </h3>
             <p class="text-zinc-300 text-sm leading-relaxed">
               Não existe fidelidade forçada. Você paga pelo desenvolvimento do seu site ou sistema e ele é 100% seu. Se desejar que a Gabdin Tech cuide da hospedagem de alta velocidade, segurança e manutenções mensais, temos planos opcionais a partir de valores simbólicos mensais.
@@ -1370,15 +1389,20 @@
         
         <!-- Coluna 1: Marca e Posicionamento -->
         <div class="md:col-span-2">
-          <div class="inline-block bg-[#0a2a5e] text-white font-anton text-3xl px-3 py-1 border-3 border-[#25D366] shadow-[3px_3px_0px_0px_#25D366] uppercase mb-3">
-            GABDIN TECH
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-12 h-12 rounded-full bg-white border-2 border-black shadow-[3px_3px_0px_0px_#00D2FF] p-0.5 overflow-hidden flex items-center justify-center shrink-0">
+              <img src="img/logo.jpg" alt="Logo Gabdin Tech" class="w-full h-full object-contain rounded-full">
+            </div>
+            <div class="inline-block bg-[#0a2a5e] text-white font-anton text-2xl sm:text-3xl px-3 py-1 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] uppercase tracking-wider">
+              GABDIN <span class="text-[#00D2FF]">TECH</span>
+            </div>
           </div>
           <p class="text-sm text-zinc-300 max-w-md font-medium leading-relaxed">
             Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil. Tecnologia moderna, páginas que carregam em menos de 1 segundo e automações no WhatsApp para alavancar suas vendas.
           </p>
           <div class="mt-4 text-xs font-mono text-zinc-400 space-y-1">
             <div>Domínio Oficial: <span class="text-white font-bold">gabdintech.com.br</span></div>
-            <div>Sede: <span class="text-[#25D366] font-bold">Guarulhos - São Paulo</span> • Atendimento em todo o Brasil</div>
+            <div>Sede: <span class="text-[#00D2FF] font-bold">Guarulhos - São Paulo</span> • Atendimento em todo o Brasil</div>
           </div>
         </div>
 
@@ -1386,13 +1410,13 @@
         <div>
           <div class="font-anton text-lg text-white uppercase mb-3">NAVEGAÇÃO</div>
           <ul class="space-y-2 text-sm font-bold">
-            <li><a href="#servicos" class="hover:text-[#25D366] transition-colors">➔ Nossos Serviços</a></li>
-            <li><a href="#portfolio" class="hover:text-[#25D366] transition-colors">➔ Portfólio & Casos</a></li>
-            <li><a href="#metodo" class="hover:text-[#25D366] transition-colors">➔ Como Funciona</a></li>
-            <li><a href="#preco" class="hover:text-[#25D366] transition-colors">➔ Planos & Valores</a></li>
-            <li><a href="#faq" class="hover:text-[#25D366] transition-colors">➔ Perguntas Frequentes</a></li>
-            <li><a href="odonto.html" class="hover:text-[#25D366] transition-colors">➔ Modelo Odontologia</a></li>
-            <li><a href="estetica.html" class="hover:text-[#25D366] transition-colors">➔ Modelo Estética</a></li>
+            <li><a href="#servicos" class="hover:text-[#00D2FF] transition-colors">➔ Nossos Serviços</a></li>
+            <li><a href="#portfolio" class="hover:text-[#00D2FF] transition-colors">➔ Portfólio & Casos</a></li>
+            <li><a href="#metodo" class="hover:text-[#00D2FF] transition-colors">➔ Como Funciona</a></li>
+            <li><a href="#preco" class="hover:text-[#00D2FF] transition-colors">➔ Planos & Valores</a></li>
+            <li><a href="#faq" class="hover:text-[#00D2FF] transition-colors">➔ Perguntas Frequentes</a></li>
+            <li><a href="odonto.html" class="hover:text-[#00D2FF] transition-colors">➔ Modelo Odontologia</a></li>
+            <li><a href="estetica.html" class="hover:text-[#00D2FF] transition-colors">➔ Modelo Estética</a></li>
           </ul>
         </div>
 
