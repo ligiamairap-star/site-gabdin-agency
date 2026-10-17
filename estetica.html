@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pipeline Estética | 23 Clientes Pagantes Todo Mês - GABDIN TECH</title>
-  <meta name="description" content="Sistema brutalista de captação de Botox, Preenchimento e Harmonização para clínicas de estética em Itaquá, Guarulhos, Arujá e Poá. Resposta em 2 minutos.">
+  <title>Estrutura de Captação e Atendimento para Clínicas de Estética | GABDIN TECH</title>
+  <meta name="description" content="Páginas modernas de alta velocidade, triagem rápida no WhatsApp e presença digital para clínicas de estética em Guarulhos e em todo o Brasil. Sem promessas irreais: foco em tecnologia, agilidade e autoridade.">
   <link rel="canonical" href="https://gabdintech.com.br/estetica.html">
   
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gabdintech.com.br/estetica.html">
-  <meta property="og:title" content="23 CLIENTES PAGANTES TODO MÊS | GABDIN TECH">
-  <meta property="og:description" content="Chega de curiosa no direct do Instagram. Sistema de captação e triagem em 2 minutos para Botox, Preenchimento e Harmonização.">
-  <meta name="theme-color" content="#FFEB00">
+  <meta property="og:title" content="Estrutura de Captação para Clínicas de Estética | GABDIN TECH">
+  <meta property="og:description" content="Páginas rápidas e atendimento em até 2 minutos no WhatsApp para clínicas de estética em Guarulhos e todo o Brasil. Fale no WhatsApp!">
+  <meta name="theme-color" content="#0a2a5e">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +26,14 @@
         extend: {
           colors: {
             gabdin: {
+              blue: '#0a2a5e',
+              bluedark: '#061a3b',
+              green: '#25D366',
               black: '#000000',
-              yellow: '#FFEB00',
+              dark: '#040d1a',
               white: '#FFFFFF',
               gray: '#141414',
-              graylight: '#222222',
+              graylight: '#1e293b',
             }
           },
           fontFamily: {
@@ -38,11 +41,12 @@
             sans: ['Inter', 'Arial', 'sans-serif']
           },
           boxShadow: {
+            'brutal-blue': '5px 5px 0px 0px #0a2a5e',
+            'brutal-green': '5px 5px 0px 0px #25D366',
             'brutal-black': '5px 5px 0px 0px #000000',
-            'brutal-yellow': '5px 5px 0px 0px #FFEB00',
             'brutal-white': '5px 5px 0px 0px #FFFFFF',
             'brutal-sm': '3px 3px 0px 0px #000000',
-            'brutal-lg': '8px 8px 0px 0px #FFEB00',
+            'brutal-lg': '8px 8px 0px 0px #0a2a5e',
           }
         }
       }
@@ -51,7 +55,7 @@
 
   <style>
     body {
-      background-color: #000000;
+      background-color: #040d1a;
       color: #FFFFFF;
       font-family: 'Inter', Arial, sans-serif;
       overflow-x: hidden;
@@ -60,20 +64,26 @@
       font-family: 'Anton', 'Arial Black', sans-serif;
       letter-spacing: 0.02em;
     }
-    .brutal-btn-yellow {
-      background-color: #FFEB00;
+    .brutal-btn-green {
+      background-color: #25D366;
       color: #000000;
-      border: 4px solid #000000;
-      box-shadow: 5px 5px 0px 0px #000000;
+      border: 3px solid #000000;
+      box-shadow: 5px 5px 0px 0px #0a2a5e;
+      font-weight: 800;
       transition: all 0.15s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
-    .brutal-btn-yellow:hover {
+    .brutal-btn-green:hover {
+      background-color: #20ba5a;
       transform: translate(-2px, -2px);
-      box-shadow: 7px 7px 0px 0px #000000;
+      box-shadow: 7px 7px 0px 0px #FFFFFF;
     }
-    .brutal-btn-yellow:active {
+    .brutal-btn-green:active {
       transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px 0px #000000;
+      box-shadow: 2px 2px 0px 0px #0a2a5e;
     }
     @keyframes marquee {
       0% { transform: translateX(0%); }
@@ -82,56 +92,64 @@
     .animate-marquee {
       display: inline-flex;
       white-space: nowrap;
-      animation: marquee 22s linear infinite;
+      animation: marquee 24s linear infinite;
     }
     @keyframes blink {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.3; transform: scale(0.85); }
+      50% { opacity: 0.35; transform: scale(0.85); }
     }
     .status-dot {
       animation: blink 1.2s infinite ease-in-out;
     }
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .floating-whatsapp-pulse {
+      animation: pulse-ring 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+    }
   </style>
 </head>
-<body class="bg-black text-white selection:bg-[#FFEB00] selection:text-black antialiased">
+<body class="bg-[#040d1a] text-white selection:bg-[#25D366] selection:text-black antialiased">
 
-  <!-- TOP BAR BRUTALISTA DE URGÊNCIA -->
-  <aside aria-label="Aviso de Vagas Estética" class="bg-[#FFEB00] text-black border-b-4 border-black font-extrabold text-xs sm:text-sm py-2 px-3 sticky top-0 z-50 shadow-md">
+  <!-- TOP BAR DE URGÊNCIA -->
+  <aside aria-label="Aviso Especialidade Estética" class="bg-[#0a2a5e] text-white border-b-4 border-black font-extrabold text-xs sm:text-sm py-2 px-3 sticky top-0 z-50 shadow-md">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
       <div class="flex items-center gap-2">
-        <span class="inline-block w-3 h-3 bg-red-600 rounded-full status-dot border-2 border-black"></span>
-        <span class="uppercase tracking-wider">● PIPELINE ESTÉTICA: 2 VAGAS POR REGIÃO (ITAQUÁ, GUARULHOS, ARUJÁ, POÁ)</span>
+        <span class="inline-block w-3 h-3 bg-[#25D366] rounded-full status-dot border-2 border-black"></span>
+        <span class="uppercase tracking-wider">● SOLUÇÃO PARA ESTÉTICA: ESTRUTURA DIGITAL & ATENDIMENTO ÁGIL NO WHATSAPP</span>
       </div>
       <div class="flex items-center gap-3">
-        <a href="index.html" class="underline uppercase hover:bg-black hover:text-[#FFEB00] px-1 transition-colors">PÁGINA PRINCIPAL</a>
-        <a href="odonto.html" class="underline uppercase hover:bg-black hover:text-[#FFEB00] px-1 transition-colors">VER ODONTO</a>
+        <a href="index.html" class="underline uppercase hover:text-[#25D366] px-1 transition-colors">← VOLTAR GABDIN TECH</a>
+        <a href="odonto.html" class="underline uppercase hover:text-[#25D366] px-1 transition-colors">VER ODONTO</a>
       </div>
     </div>
   </aside>
 
   <!-- HEADER -->
-  <header class="border-b-4 border-white bg-black py-4 px-4 sm:px-8">
+  <header class="border-b-4 border-white bg-[#040d1a] py-4 px-4 sm:px-8">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
         <a href="index.html" class="flex items-center gap-2">
-          <div class="bg-white text-black font-anton text-2xl sm:text-3xl px-3 py-1 border-4 border-black shadow-[4px_4px_0px_0px_#FFEB00]">
+          <div class="bg-[#0a2a5e] text-white font-anton text-2xl sm:text-3xl px-3 py-1 border-4 border-black shadow-[4px_4px_0px_0px_#25D366]">
             GABDIN TECH
           </div>
         </a>
-        <div class="bg-[#FFEB00] text-black font-anton text-sm sm:text-base px-2.5 py-1 border-2 border-black uppercase">
-          ESPECIALIDADE: CLÍNICAS DE ESTÉTICA
+        <div class="bg-[#25D366] text-black font-anton text-sm sm:text-base px-2.5 py-1 border-2 border-black uppercase">
+          SOLUÇÃO PARA CLÍNICAS DE ESTÉTICA
         </div>
       </div>
 
       <nav class="flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm font-black uppercase">
-        <a href="index.html" class="bg-zinc-900 text-white px-3 py-2 border-2 border-zinc-700 hover:border-[#FFEB00] transition-colors">
-          ← VOLTAR AGÊNCIA
+        <a href="index.html" class="bg-white text-black px-3 py-2 border-2 border-black hover:bg-[#25D366] transition-colors shadow-[2px_2px_0px_0px_#000]">
+          ← SITES & SISTEMAS
         </a>
-        <a href="odonto.html" class="bg-zinc-900 text-white px-3 py-2 border-2 border-zinc-700 hover:border-[#FFEB00] transition-colors">
-          PIPELINE ODONTO
+        <a href="odonto.html" class="bg-zinc-800 text-white px-3 py-2 border-2 border-zinc-700 hover:border-[#25D366] transition-colors">
+          SOLUÇÃO ODONTO
         </a>
-        <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20Estetica%20-%2023%20Clientes" target="_blank" rel="noopener noreferrer" class="brutal-btn-yellow px-4 py-2 flex items-center gap-1">
-          <span>QUERO 23 CLIENTES</span>
+        <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20estrutura%20digital%20para%20minha%20cl%C3%ADnica%20de%20est%C3%A9tica." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-4 py-2 flex items-center gap-1">
+          <span>ORÇAR ESTRUTURA</span>
           <span>↗</span>
         </a>
       </nav>
@@ -139,127 +157,132 @@
   </header>
 
   <!-- TICKER ESPECÍFICO ESTÉTICA -->
-  <div class="bg-black border-b-4 border-[#FFEB00] py-2 overflow-hidden select-none" aria-hidden="true">
-    <div class="animate-marquee font-anton text-base sm:text-lg tracking-wider text-[#FFEB00]">
-      <span class="mx-4">💉 23 CLIENTES PAGANTES/MÊS</span>
-      <span class="mx-4">★ RESPOSTA DE AVALIAÇÃO EM 2 MINUTOS</span>
-      <span class="mx-4">★ TOXINA BOTULÍNICA (BOTOX)</span>
+  <div class="bg-[#0a2a5e] border-b-4 border-black py-2.5 overflow-hidden select-none" aria-hidden="true">
+    <div class="animate-marquee font-anton text-base sm:text-lg tracking-wider text-white">
+      <span class="mx-4 text-[#25D366]">💉 ESTRUTURA PROFISSIONAL PARA ESTÉTICA</span>
+      <span class="mx-4">★ RESPOSTA RÁPIDA NO WHATSAPP</span>
+      <span class="mx-4 text-[#25D366]">★ TOXINA BOTULÍNICA (BOTOX)</span>
       <span class="mx-4">★ PREENCHIMENTO & HARMONIZAÇÃO</span>
-      <span class="mx-4">★ BIOESTIMULADORES DE COLÁGENO</span>
-      <span class="mx-4">★ CHEGA DE 'VOU VER COM MEU MARIDO'</span>
-      <span class="mx-4">★ ANTI NO-SHOW</span>
-      <span class="mx-4">★ ITAQUÁ • GUARULHOS • ARUJÁ • POÁ</span>
-      <span class="mx-4">💉 23 CLIENTES PAGANTES/MÊS</span>
-      <span class="mx-4">★ RESPOSTA DE AVALIAÇÃO EM 2 MINUTOS</span>
-      <span class="mx-4">★ TOXINA BOTULÍNICA (BOTOX)</span>
-      <span class="mx-4">★ PREENCHIMENTO & HARMONIZAÇÃO</span>
-      <span class="mx-4">★ BIOESTIMULADORES DE COLÁGENO</span>
+      <span class="mx-4 text-[#25D366]">★ BIOESTIMULADORES DE COLÁGENO</span>
+      <span class="mx-4">★ REDUÇÃO DE NO-SHOW COM LEMBRETES</span>
+      <span class="mx-4 text-[#25D366]">★ GUARULHOS E TODO BRASIL</span>
+      <span class="mx-4">💉 ESTRUTURA PROFISSIONAL PARA ESTÉTICA</span>
+      <span class="mx-4 text-[#25D366]">★ RESPOSTA RÁPIDA NO WHATSAPP</span>
     </div>
   </div>
 
   <main>
     <!-- HERO SECTION ESTÉTICA -->
-    <section class="relative px-4 sm:px-8 pt-12 pb-16 border-b-4 border-white bg-gradient-to-b from-black via-zinc-950 to-black">
+    <section class="relative px-4 sm:px-8 pt-12 pb-16 border-b-4 border-white bg-gradient-to-b from-[#040d1a] via-[#07172e] to-[#040d1a]">
       <div class="max-w-6xl mx-auto">
 
         <!-- Selo de nicho -->
-        <div class="inline-flex items-center gap-2 bg-[#FFEB00] text-black border-4 border-black px-4 py-1.5 font-black uppercase text-xs sm:text-sm shadow-[5px_5px_0px_0px_#FFFFFF] mb-6">
-          <span>SISTEMA DE PREENCHIMENTO DE GRADE ESTÉTICA</span>
+        <div class="inline-flex items-center gap-2 bg-[#0a2a5e] text-white border-4 border-black px-4 py-1.5 font-black uppercase text-xs sm:text-sm shadow-[5px_5px_0px_0px_#25D366] mb-6">
+          <span class="w-2.5 h-2.5 bg-[#25D366] rounded-full status-dot"></span>
+          <span>ESTRUTURA DIGITAL & ATENDIMENTO ÁGIL</span>
         </div>
 
-        <!-- H1 GIGANTE ESTÉTICA -->
-        <h1 class="font-anton text-5xl sm:text-7xl md:text-8xl lg:text-9xl uppercase leading-[0.9] tracking-tight text-white mb-6">
-          23 CLIENTES PAGANTES <br>
-          <span class="bg-[#FFEB00] text-black px-2 sm:px-4 inline-block -rotate-1 border-4 border-black shadow-[6px_6px_0px_0px_#FFFFFF]">TODO MÊS.</span>
+        <!-- H1 GIGANTE ESTÉTICA ÉTICO -->
+        <h1 class="font-anton text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[0.95] tracking-tight text-white mb-6">
+          ESTRUTURA DIGITAL & CAPTAÇÃO PARA <br>
+          <span class="bg-[#0a2a5e] text-white px-3 sm:px-6 py-1 inline-block -rotate-1 border-4 border-[#25D366] shadow-[6px_6px_0px_0px_#25D366] mt-2">
+            CLÍNICAS DE ESTÉTICA
+          </span>
         </h1>
 
-        <!-- PROVA CABAL: SISTEMA RESPONDE EM 2 MINUTOS -->
-        <div class="bg-zinc-900 border-4 border-[#FFEB00] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFFFFF] max-w-4xl mb-8">
-          <div class="flex items-center gap-2 text-xs font-black uppercase bg-[#FFEB00] text-black px-2.5 py-1 w-fit mb-3 border border-black">
-            ⚡ PROVA DO SISTEMA GABDIN
+        <!-- SUBTÍTULO ÉTICO -->
+        <div class="bg-[#091830] border-4 border-zinc-700 p-6 sm:p-8 shadow-[6px_6px_0px_0px_#0a2a5e] max-w-4xl mb-8">
+          <div class="flex items-center gap-2 text-xs font-black uppercase bg-[#25D366] text-black px-2.5 py-1 w-fit mb-3 border border-black">
+            ⚡ ATENDIMENTO ÁGIL & PROFISSIONAL
           </div>
           <p class="text-xl sm:text-3xl font-extrabold text-white leading-snug">
-            Sistema responde avaliação em <span class="bg-[#FFEB00] text-black px-2 py-0.5">2 minutos</span> e filtra quem tem limite no cartão.
+            Sua clínica atende contatos em até <span class="text-[#25D366] underline decoration-4">2 minutos no WhatsApp</span> com triagem organizada.
           </p>
           <p class="text-sm sm:text-base text-zinc-300 font-medium mt-3 leading-relaxed">
-            Mulher querendo botox ou preenchimento pesquisa no impulso da emoção. Se você demora 30 minutos para responder no direct do Instagram, ela já fechou na clínica da esquina. 
-            Nosso bot faz a triagem da queixa facial em <strong>120 segundos</strong>, confirma o poder de compra e entrega a data da consulta agendada.
+            Quem procura por procedimentos como Botox, Harmonização ou Preenchimento pesquisa com interesse imediato. Se sua recepção demora horas para responder, a paciente procura outra clínica. 
+            Nosso sistema automatiza o primeiro contato, organiza a queixa principal e entrega o lead pronto para a sua secretária agendar a avaliação presencial.
           </p>
         </div>
 
         <!-- BOTÃO CTA DE CONVERSÃO -->
         <div class="max-w-2xl mb-8">
-          <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20Estetica%20-%2023%20Clientes" target="_blank" rel="noopener noreferrer" class="brutal-btn-yellow py-5 px-6 font-anton text-2xl sm:text-3xl uppercase tracking-wider block text-center">
-            QUERO 23 CLIENTES NO MEU WHATSAPP ➔
+          <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20uma%20estrutura%20digital%20para%20minha%20cl%C3%ADnica%20de%20est%C3%A9tica." target="_blank" rel="noopener noreferrer" class="brutal-btn-green py-5 px-6 font-anton text-xl sm:text-2xl uppercase tracking-wider block text-center">
+            QUERO UMA ESTRUTURA PROFISSIONAL NO WHATSAPP ➔
           </a>
           <p class="text-xs font-mono text-zinc-400 text-center mt-3">
-            R$ 1.900/mês • Sem fidelidade • Setup rodando em 48h
+            Página de alta performance • Triagem WhatsApp • Sem taxas ocultas
           </p>
         </div>
 
       </div>
     </section>
 
-    <!-- OS 3 PROCEDIMENTOS CARRO-CHEFE DA ESTÉTICA -->
-    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-black">
+    <!-- OS PROCEDIMENTOS MAIS PROCURADOS DA ESTÉTICA -->
+    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
       <div class="max-w-6xl mx-auto">
 
         <div class="mb-10">
-          <div class="inline-block bg-white text-black font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3">
-            FOCO EM ALTA MARGEM DE LUCRO
+          <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest mb-3">
+            POSICIONAMENTO E AUTORIDADE
           </div>
           <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
-            CHEGA DE FICAR <span class="text-red-500">FAZENDO LIMPEZA DE PELE</span> DE R$ 90
+            DESTAQUE OS PROCEDIMENTOS <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">DE ALTO VALOR</span>
           </h2>
           <p class="text-zinc-400 text-sm sm:text-base mt-2 max-w-2xl">
-            Sua clínica só escala quando o foco está em procedimentos injetáveis com ticket alto, aplicação rápida e alta fidelização:
+            Sua página deve valorizar o conhecimento técnico da equipe e esclarecer as dúvidas mais frequentes antes da consulta de avaliação:
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           <!-- CARD 1: HARMONIZAÇÃO FACIAL -->
-          <div class="bg-zinc-950 border-4 border-[#FFEB00] p-6 shadow-[6px_6px_0px_0px_#FFEB00]">
-            <div class="text-4xl mb-3">👑</div>
-            <div class="text-xs font-mono font-bold text-[#FFEB00] uppercase mb-1">TICKET: R$ 2.500 A R$ 8.000</div>
-            <h3 class="font-anton text-2xl uppercase text-white mb-3">
-              HARMONIZAÇÃO FACIAL COMPLETA
-            </h3>
-            <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-              Pacientes que buscam rejuvenescimento global: definição de mandíbula, mento, malar e sustentação. Procedimento de alto valor agregado com alta indicação boca a boca.
-            </p>
-            <div class="bg-black border-2 border-zinc-800 p-3 text-xs text-zinc-300">
-              <strong class="text-[#FFEB00]">Filtro GABDIN:</strong> Identifica se o objetivo é rejuvenescimento ou harmonização de traços e já descarta quem busca "promoção relâmpago".
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] flex flex-col justify-between">
+            <div>
+              <div class="text-4xl mb-3">👑</div>
+              <div class="text-xs font-mono font-bold text-[#25D366] uppercase mb-1">HARMONIZAÇÃO INTEGRADA</div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-3">
+                HARMONIZAÇÃO FACIAL COMPLETA
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Apresentação profissional com fotos reais de estrutura, explicação de zonas de aplicação (mento, mandíbula, malar) e orientações sobre a avaliação anatômica individual.
+              </p>
+            </div>
+            <div class="bg-[#040d1a] border-2 border-zinc-800 p-3 text-xs text-zinc-300">
+              <strong class="text-[#25D366]">Triagem Gabdin:</strong> Identifica a área de interesse do paciente e orienta sobre a necessidade da consulta prévia.
             </div>
           </div>
 
           <!-- CARD 2: BOTOX & BIOESTIMULADOR -->
-          <div class="bg-zinc-950 border-4 border-white p-6 shadow-[6px_6px_0px_0px_#FFFFFF]">
-            <div class="text-4xl mb-3">💉</div>
-            <div class="text-xs font-mono font-bold text-zinc-300 uppercase mb-1">TICKET: R$ 1.200 A R$ 3.500</div>
-            <h3 class="font-anton text-2xl uppercase text-white mb-3">
-              BOTOX & BIOESTIMULADOR
-            </h3>
-            <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-              Tratamento recorrente para pés de galinha, linhas de expressão e flacidez (Radiesse, Sculptra, Elleva). A paciente volta a cada 4 a 6 meses religiosamente.
-            </p>
-            <div class="bg-black border-2 border-zinc-800 p-3 text-xs text-zinc-300">
-              <strong class="text-white">Filtro GABDIN:</strong> Qualifica a urgência da aplicação (evento próximo, férias, manutenção) para fechar data imediata.
+          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 shadow-[6px_6px_0px_0px_#25D366] flex flex-col justify-between">
+            <div>
+              <div class="text-4xl mb-3">💉</div>
+              <div class="text-xs font-mono font-bold text-zinc-300 uppercase mb-1">CUIDADO CONTÍNUO</div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-3">
+                BOTOX & BIOESTIMULADORES
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Comunicação clara para pacientes que buscam prevenção e tratamento de linhas de expressão e flacidez (Radiesse, Sculptra, Elleva), facilitando o retorno periódico.
+              </p>
+            </div>
+            <div class="bg-[#040d1a] border-2 border-zinc-800 p-3 text-xs text-zinc-300">
+              <strong class="text-white">Triagem Gabdin:</strong> Verifica se a paciente já realizou o procedimento anteriormente ou se é a primeira aplicação.
             </div>
           </div>
 
           <!-- CARD 3: PREENCHIMENTO LABIAL & LIPO PAPADA -->
-          <div class="bg-zinc-950 border-4 border-[#FFEB00] p-6 shadow-[6px_6px_0px_0px_#FFEB00]">
-            <div class="text-4xl mb-3">💋</div>
-            <div class="text-xs font-mono font-bold text-[#FFEB00] uppercase mb-1">TICKET: R$ 1.200 A R$ 3.000</div>
-            <h3 class="font-anton text-2xl uppercase text-white mb-3">
-              PREENCHIMENTO LABIAL & PAPADA
-            </h3>
-            <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-              Público que quer resultado visível em 48h: lábios desenhados, efeito gloss, ou eliminação da gordura submentoniana (papada).
-            </p>
-            <div class="bg-black border-2 border-zinc-800 p-3 text-xs text-zinc-300">
-              <strong class="text-[#FFEB00]">Filtro GABDIN:</strong> Mostra os limites técnicos e assegura que a paciente entenda a necessidade da consulta prévia presencial.
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] flex flex-col justify-between">
+            <div>
+              <div class="text-4xl mb-3">💋</div>
+              <div class="text-xs font-mono font-bold text-[#25D366] uppercase mb-1">DETALHES & CONTORNO</div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-3">
+                PREENCHIMENTO LABIAL & PAPADA
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Página dedicada a alinhar expectativas reais, ressaltar a naturalidade dos resultados e incentivar a avaliação presencial com o profissional responsável.
+              </p>
+            </div>
+            <div class="bg-[#040d1a] border-2 border-zinc-800 p-3 text-xs text-zinc-300">
+              <strong class="text-[#25D366]">Triagem Gabdin:</strong> Tira dúvidas básicas de pré e pós-aplicação antes de passar para a secretária.
             </div>
           </div>
 
@@ -268,52 +291,46 @@
       </div>
     </section>
 
-    <!-- ELIMINANDO O 'VOU VER COM MEU MARIDO' E O NO-SHOW -->
-    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-zinc-950">
+    <!-- ATENDIMENTO RÁPIDO & REDUÇÃO DE FALTAS -->
+    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#040d1a]">
       <div class="max-w-5xl mx-auto">
 
         <div class="text-center mb-10">
-          <div class="inline-block bg-red-600 text-white font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3">
-            O MAIOR VENENO DA ESTÉTICA
+          <div class="inline-block bg-[#0a2a5e] text-white font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3 shadow-[2px_2px_0px_0px_#25D366]">
+            AGILIDADE OPERACIONAL
           </div>
           <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white leading-tight">
-            COMO MATAMOS O <span class="bg-red-600 text-white px-2">"VOU VER COM MEU MARIDO"</span> E O NO-SHOW
+            COMO A TECNOLOGIA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">ORGANIZA SUA RECEPÇÃO</span>
           </h2>
           <p class="text-zinc-400 text-sm sm:text-base mt-2">
-            Desmarcação de última hora destrói o faturamento da clínica. Nosso sistema blinda sua agenda.
+            Elimine mensagens perdidas no direct e reduza o número de faltas (no-show) com lembretes automáticos.
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-          <div class="bg-black border-4 border-zinc-700 p-6 shadow-[6px_6px_0px_0px_#ef4444]">
-            <div class="font-anton text-2xl text-red-500 uppercase mb-3">
-              O QUE ACONTECE HOJE NO SEU DIRECT:
+          <div class="bg-[#07172e] border-4 border-zinc-800 p-6 shadow-[6px_6px_0px_0px_#000]">
+            <div class="font-anton text-2xl text-red-400 uppercase mb-3 flex items-center gap-2">
+              <span>✕</span> O PROBLEMA DO ATENDIMENTO MANUAL LENTO:
             </div>
-            <p class="text-sm text-zinc-300 leading-relaxed">
-              1. A pessoa manda: <em>"Quanto tá a seringa de ácido?"</em><br>
-              2. Sua recepcionista passa o preço de R$ 1.200.<br>
-              3. A pessoa manda o clássico: <em>"Nossa, obrigada! Vou conversar com meu marido e te chamo."</em><br>
-              4. <strong>Ela nunca mais responde e foi embora.</strong>
+            <p class="text-sm text-zinc-300 leading-relaxed space-y-2">
+              • A paciente manda mensagem à noite e só recebe resposta no dia seguinte.<br>
+              • Dúvidas repetitivas sobre preços e horários sobrecarregam a recepcionista.<br>
+              • Pacientes esquecem da consulta e faltam sem avisar com antecedência.<br>
+              • A clínica perde tempo e deixa horários ociosos na grade de atendimento.
             </p>
-            <div class="mt-4 p-3 bg-red-950/40 border border-red-800 text-xs text-red-300">
-              Resultado: você perdeu tempo, a recepcionista ficou frustrada e o caixa ficou no zero.
-            </div>
           </div>
 
-          <div class="bg-black border-4 border-[#FFEB00] p-6 shadow-[6px_6px_0px_0px_#FFEB00]">
-            <div class="font-anton text-2xl text-[#FFEB00] uppercase mb-3">
-              O QUE O PIPELINE GABDIN FAZ EM 2 MIN:
+          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 shadow-[6px_6px_0px_0px_#25D366]">
+            <div class="font-anton text-2xl text-[#25D366] uppercase mb-3 flex items-center gap-2">
+              <span>✓</span> A SOLUÇÃO COM A ESTRUTURA GABDIN:
             </div>
-            <p class="text-sm text-zinc-300 leading-relaxed">
-              1. O lead nunca cai no direct: ele cai no fluxo do WhatsApp validado.<br>
-              2. O robô faz a pré-análise da área de incômodo e apresenta as soluções com facilidade de parcelamento.<br>
-              3. Sistema envia lembrete automático e confirmação 2h antes.<br>
-              4. <strong>A paciente chega decidida a fazer e passar o cartão na clínica.</strong>
+            <p class="text-sm text-zinc-200 leading-relaxed space-y-2">
+              • A paciente clica no site e inicia a conversa no WhatsApp em 1 clique.<br>
+              • Triagem em até 2 minutos tira dúvidas iniciais e identifica o procedimento.<br>
+              • Sua recepcionista recebe o contato qualificado com a queixa preenchida.<br>
+              • Lembretes automáticos reduzem faltas e facilitam o remanejamento de horários.
             </p>
-            <div class="mt-4 p-3 bg-zinc-900 border border-[#FFEB00] text-xs text-[#FFEB00] font-bold">
-              Resultado: Taxa de no-show cai de 40% para menos de 6%.
-            </div>
           </div>
 
         </div>
@@ -321,49 +338,61 @@
       </div>
     </section>
 
-    <!-- MATEMÁTICA BRUTALISTA DO RETORNO ESTÉTICA -->
-    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-black">
+    <!-- PROPOSTA TRANSPARENTE E ÉTICA (SEM PROMESSA ENGANOSA DE RESULTADO) -->
+    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
       <div class="max-w-4xl mx-auto">
-        <h2 class="font-anton text-3xl sm:text-5xl uppercase text-center text-white mb-8">
-          RETORNO PREVISÍVEL: <span class="bg-[#FFEB00] text-black px-2">23 CLIENTES PAGANTES</span>
-        </h2>
+        <div class="text-center mb-8">
+          <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#25D366] mb-3">
+            COMPROMISSO ÉTICO & TRANSPARÊNCIA
+          </div>
+          <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white">
+            ESTRUTURA COMPLETA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">PARA SUA CLÍNICA</span>
+          </h2>
+          <p class="text-zinc-400 text-sm mt-2">
+            Entregamos tecnologia de ponta, velocidade e presença digital de alto padrão.
+          </p>
+        </div>
 
-        <div class="bg-zinc-950 border-4 border-[#FFEB00] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#FFFFFF]">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center border-b-4 border-zinc-800 pb-6 mb-6">
+        <div class="bg-[#07172e] border-4 border-[#25D366] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#25D366]">
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pb-6 border-b-2 border-zinc-800 mb-6">
             <div>
-              <div class="text-xs font-mono text-zinc-400 uppercase">INVESTIMENTO MENSAL</div>
-              <div class="font-anton text-4xl text-white mt-1">R$ 1.900</div>
-              <div class="text-xs text-zinc-400">Sem fidelidade</div>
+              <h3 class="font-anton text-2xl text-white uppercase mb-2">O QUE ESTÁ INCLUSO:</h3>
+              <ul class="text-xs sm:text-sm text-zinc-300 space-y-2 font-mono">
+                <li>✓ Página web ultra-rápida (&lt; 0.8s) para mobile</li>
+                <li>✓ Botão de WhatsApp estratégico e bot de triagem</li>
+                <li>✓ Otimização de SEO para pesquisas no Google</li>
+                <li>✓ Rastreamento de conversões (Google Ads e Meta)</li>
+                <li>✓ Hospedagem segura, domínio configurado e SSL</li>
+                <li>✓ Suporte técnico direto com o desenvolvedor</li>
+              </ul>
             </div>
-            <div>
-              <div class="text-xs font-mono text-zinc-400 uppercase">META DO PIPELINE</div>
-              <div class="font-anton text-4xl text-[#FFEB00] mt-1">23 CLIENTES</div>
-              <div class="text-xs text-zinc-400">Qualificados no WhatsApp</div>
-            </div>
-            <div>
-              <div class="text-xs font-mono text-zinc-400 uppercase">TICKET MÉDIO CONSERVADOR</div>
-              <div class="font-anton text-4xl text-[#00FF66] mt-1">R$ 1.200</div>
-              <div class="text-xs text-zinc-400">Botox ou Preenchimento</div>
+            
+            <div class="bg-[#040d1a] border-2 border-zinc-700 p-5 flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-mono text-zinc-400 uppercase">PLANO DE ATIVAÇÃO & SUPORTE</div>
+                <div class="font-anton text-4xl text-[#25D366] mt-1">R$ 1.900<span class="text-sm text-white font-sans">/mês</span></div>
+                <div class="text-xs text-zinc-400 mt-1">Sem fidelidade • Cancele quando quiser</div>
+              </div>
+              <div class="mt-4 text-xs font-mono text-zinc-300 border-t border-zinc-800 pt-3">
+                Pagamento via Pix ou boleto bancário mensal
+              </div>
             </div>
           </div>
 
-          <div class="p-4 bg-zinc-900 border-2 border-zinc-700 text-center">
-            <p class="text-base sm:text-lg font-bold text-zinc-200">
-              Se você atender os <span class="text-[#FFEB00] font-black">23 clientes do fluxo</span>:
+          <!-- NOTA ÉTICA OBRIGATÓRIA -->
+          <div class="p-4 bg-[#040d1a] border-2 border-zinc-700 mb-6">
+            <div class="flex items-center gap-2 text-xs font-black text-[#25D366] uppercase mb-1">
+              <span>⚖️</span> NOTA DE ÉTICA E PUBLICIDADE RESPONSÁVEL:
+            </div>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              A GABDIN TECH não realiza promessas de faturamento garantido ou quantidade prefixada de pacientes. Os resultados de qualquer negócio dependem de fatores mercadológicos, demanda regional, qualidade do atendimento da equipe e conduta clínica. Nosso compromisso é fornecer ferramentas de tecnologia e comunicação ágil de alto nível para sua clínica ser vista com autoridade.
             </p>
-            <div class="font-anton text-3xl sm:text-5xl text-[#FFEB00] mt-2">
-              23 × R$ 1.200 = R$ 27.600 EM FATURAMENTO
-            </div>
-            <p class="text-xs font-mono text-zinc-400 mt-2">
-              Mais de 14x de retorno sobre o investimento em captação no primeiro mês.
-            </p>
           </div>
 
-          <div class="mt-8">
-            <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20Estetica%20-%2023%20Clientes" target="_blank" rel="noopener noreferrer" class="brutal-btn-yellow w-full py-5 text-center font-anton text-2xl sm:text-3xl uppercase tracking-wider block">
-              QUERO 23 CLIENTES NA MINHA CLÍNICA DE ESTÉTICA ➔
-            </a>
-          </div>
+          <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20proposta%20para%20minha%20cl%C3%ADnica%20de%20est%C3%A9tica." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-4 text-center font-anton text-xl sm:text-2xl uppercase tracking-wider block">
+            SOLICITAR PROPOSTA PARA MINHA CLÍNICA NO WHATSAPP ➔
+          </a>
 
         </div>
 
@@ -373,38 +402,38 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="bg-black border-t-4 border-white text-zinc-400 py-12 px-4 sm:px-8">
+  <footer class="bg-[#02070f] border-t-4 border-white text-zinc-400 py-12 px-4 sm:px-8">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
       <div>
-        <div class="font-anton text-2xl text-[#FFEB00] uppercase">GABDIN TECH • ESTÉTICA</div>
+        <div class="font-anton text-2xl text-[#25D366] uppercase">GABDIN TECH • ESPECIALIDADE ESTÉTICA</div>
         <p class="text-xs text-zinc-400 mt-1">
-          gabdin.tech • gabdintech.com.br • Exclusivo Estética Itaquá, Guarulhos, Arujá e Poá.
+          gabdintech.com.br • Guarulhos e todo o Brasil. Tecnologia ética e alta conversão.
         </p>
       </div>
       <div class="flex items-center gap-4 text-xs font-bold uppercase">
-        <a href="index.html" class="hover:text-white">Página Inicial</a>
+        <a href="index.html" class="hover:text-white">← SITES & SISTEMAS</a>
         <span>•</span>
-        <a href="odonto.html" class="hover:text-white">Pipeline Odonto</a>
+        <a href="odonto.html" class="hover:text-white">Solução Odonto</a>
         <span>•</span>
-        <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20Estetica%20-%2023%20Clientes" target="_blank" rel="noopener noreferrer" class="text-[#FFEB00] hover:underline">WhatsApp Oficial</a>
+        <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vim%20pelo%20site%20gabdintech.com.br%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="text-[#25D366] hover:underline">WhatsApp Oficial</a>
       </div>
     </div>
   </footer>
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
   <aside aria-label="WhatsApp Flutuante Estética" class="fixed bottom-5 right-5 z-50">
-    <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20Estetica%20-%2023%20Clientes" 
+    <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20cl%C3%ADnica%20de%20est%C3%A9tica." 
        id="floating-whatsapp-estetica"
        target="_blank" 
        rel="noopener noreferrer" 
-       class="brutal-btn-yellow px-4 py-3 sm:px-5 sm:py-4 flex items-center gap-3 font-anton text-lg sm:text-xl uppercase tracking-wider shadow-[6px_6px_0px_0px_#FFFFFF]"
+       class="brutal-btn-green floating-whatsapp-pulse px-4 py-3 sm:px-5 sm:py-3.5 flex items-center gap-3 font-anton text-base sm:text-lg uppercase tracking-wider shadow-[6px_6px_0px_0px_#0a2a5e]"
        aria-label="Falar no WhatsApp Estética">
       <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-black" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-1.116-.062-.275-.089-.63-.207-1.127-.42-2.096-.897-3.468-3.033-3.573-3.173-.105-.14-1.04-1.383-1.04-2.637 0-1.254.656-1.871.889-2.128.232-.257.509-.321.679-.321.17 0 .339.001.488.009.158.007.369-.06.577.44.212.509.722 1.761.785 1.89.064.129.106.28.021.45-.085.17-.127.276-.254.424-.127.148-.267.33-.381.443-.127.127-.26.265-.112.519.148.254.659 1.087 1.416 1.761.975.868 1.796 1.137 2.051 1.264.254.127.402.106.551-.064.148-.17.636-.741.806-.995.17-.254.339-.212.572-.127.233.085 1.482.699 1.736.826.254.127.424.19.487.297.064.106.064.614-.08 1.019zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.179L2 22l4.954-1.399C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
       </svg>
       <div class="text-left leading-none">
-        <span class="block text-[10px] sm:text-xs font-mono font-bold tracking-tight">RESPOSTA EM 2 MIN</span>
-        <span class="block text-sm sm:text-lg font-anton">QUERO 23 CLIENTES</span>
+        <span class="block text-[10px] sm:text-xs font-mono font-bold tracking-tight">ONLINE AGORA</span>
+        <span class="block text-sm sm:text-base font-anton">FALAR NO WHATSAPP</span>
       </div>
     </a>
   </aside>

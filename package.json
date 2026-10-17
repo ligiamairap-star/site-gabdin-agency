@@ -6,7 +6,16 @@
   "scripts": {
     "start": "serve ."
   },
-  "keywords": ["gabdin", "tech", "odonto", "estetica"],
+  "keywords": [
+    "gabdin",
+    "tech",
+    "odonto",
+    "estetica"
+  ],
   "author": "GABDIN TECH",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "tailwindcss": "^3.4.17"
+  }
 }

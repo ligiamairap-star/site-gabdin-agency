@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #040d1a;
+    color: #FFFFFF;
+    font-family: 'Inter', Arial, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+.font-anton {
+  font-family: 'Anton', 'Arial Black', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Borders */
+.brutal-border-black {
+  border: 4px solid #000000;
+}
+
+.brutal-border-blue {
+  border: 4px solid #0a2a5e;
+}
+
+.brutal-border-green {
+  border: 4px solid #25D366;
+}
+
+.brutal-border-white {
+  border: 4px solid #FFFFFF;
+}
+
+/* WhatsApp Green Primary Button */
+.brutal-btn-green {
+  background-color: #25D366;
+  color: #000000;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px 0px #0a2a5e;
+  font-weight: 800;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brutal-btn-green:hover {
+  background-color: #20ba5a;
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px 0px #FFFFFF;
+}
+
+.brutal-btn-green:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #0a2a5e;
+}
+
+/* Navy Blue Button */
+.brutal-btn-blue {
+  background-color: #0a2a5e;
+  color: #FFFFFF;
+  border: 3px solid #25D366;
+  box-shadow: 5px 5px 0px 0px #25D366;
+  font-weight: 800;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brutal-btn-blue:hover {
+  background-color: #123e85;
+  border-color: #FFFFFF;
+  box-shadow: 7px 7px 0px 0px #FFFFFF;
+  transform: translate(-2px, -2px);
+}
+
+.brutal-btn-blue:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #25D366;
+}
+
+/* White Button */
+.brutal-btn-white {
+  background-color: #FFFFFF;
+  color: #0a2a5e;
+  border: 3px solid #000000;
+  box-shadow: 5px 5px 0px 0px #25D366;
+  font-weight: 800;
+  transition: all 0.15s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brutal-btn-white:hover {
+  background-color: #f1f5f9;
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px 0px #0a2a5e;
+}
+
+.brutal-btn-white:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #000000;
+}
+
+/* Legacy Yellow button support */
+.brutal-btn-yellow {
+  background-color: #FFEB00;
+  color: #000000;
+  border: 4px solid #000000;
+  box-shadow: 5px 5px 0px 0px #0a2a5e;
+  transition: all 0.15s ease-in-out;
+}
+
+.brutal-btn-yellow:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px 0px #25D366;
+}
+
+/* Infinite Ticker */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 24s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Blinking status dot */
+@keyframes blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.85); }
+}
+
+.status-dot {
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+/* WhatsApp Floating Radar Pulse */
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.floating-whatsapp-pulse {
+  animation: whatsapp-pulse 2s infinite;
+}

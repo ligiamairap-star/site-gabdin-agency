@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GABDIN TECH | Pipeline que Lota Agenda - Sem Post Bonitinho</title>
-  <meta name="description" content="Sistema de captação brutalista para clínicas de Odontologia e Estética em Itaquá, Guarulhos, Arujá e Poá. Transformamos 'quanto custa?' em agendamento pago em 2 minutos.">
+  <title>Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil | GABDIN TECH</title>
+  <meta name="description" content="Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil. Páginas ultra-rápidas, landing pages de alta conversão, sistemas web sob medida e automações de WhatsApp para sua empresa vender todos os dias.">
   <link rel="canonical" href="https://gabdintech.com.br/">
   
-  <!-- Open Graph / Meta -->
+  <!-- Open Graph / Meta Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gabdintech.com.br/">
-  <meta property="og:title" content="GABDIN TECH | Pipeline que Lota Agenda">
-  <meta property="og:description" content="Sem post bonitinho. Transformamos curiosos em agendamento pago em 2 minutos. Exclusivo para Odonto e Estética.">
-  <meta name="theme-color" content="#FFEB00">
+  <meta property="og:title" content="Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil | GABDIN TECH">
+  <meta property="og:description" content="Sites de alto padrão, sistemas web sob medida e automações no WhatsApp para empresas de Guarulhos e de todo o Brasil. Fale no WhatsApp!">
+  <meta name="theme-color" content="#0a2a5e">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Anton & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -27,11 +27,18 @@
         extend: {
           colors: {
             gabdin: {
+              blue: '#0a2a5e',
+              bluedark: '#061a3b',
+              bluelight: '#123e85',
+              green: '#25D366',
+              greendark: '#1eb857',
               black: '#000000',
-              yellow: '#FFEB00',
+              dark: '#040d1a',
+              darker: '#02070f',
+              surface: '#091830',
               white: '#FFFFFF',
               gray: '#141414',
-              graylight: '#222222',
+              graylight: '#1e293b',
             }
           },
           fontFamily: {
@@ -39,11 +46,12 @@
             sans: ['Inter', 'Arial', 'sans-serif']
           },
           boxShadow: {
+            'brutal-blue': '5px 5px 0px 0px #0a2a5e',
+            'brutal-green': '5px 5px 0px 0px #25D366',
             'brutal-black': '5px 5px 0px 0px #000000',
-            'brutal-yellow': '5px 5px 0px 0px #FFEB00',
             'brutal-white': '5px 5px 0px 0px #FFFFFF',
-            'brutal-sm': '3px 3px 0px 0px #000000',
-            'brutal-lg': '8px 8px 0px 0px #FFEB00',
+            'brutal-lg': '8px 8px 0px 0px #0a2a5e',
+            'brutal-green-lg': '8px 8px 0px 0px #25D366',
           }
         }
       }
@@ -51,315 +59,400 @@
   </script>
 
   <style>
-    /* Neo-brutalist custom utilities */
+    /* Estilos Neo-brutalistas & Utilitários de Alta Conversão */
     body {
-      background-color: #000000;
+      background-color: #040d1a;
       color: #FFFFFF;
       font-family: 'Inter', Arial, sans-serif;
       overflow-x: hidden;
     }
+    
     .font-anton {
       font-family: 'Anton', 'Arial Black', sans-serif;
       letter-spacing: 0.02em;
     }
-    .brutal-border-black {
-      border: 4px solid #000000;
-    }
-    .brutal-border-yellow {
-      border: 4px solid #FFEB00;
-    }
-    .brutal-border-white {
-      border: 4px solid #FFFFFF;
-    }
-    .brutal-btn-yellow {
-      background-color: #FFEB00;
+
+    /* Botão Verde WhatsApp (Principal Ação) */
+    .brutal-btn-green {
+      background-color: #25D366;
       color: #000000;
-      border: 4px solid #000000;
-      box-shadow: 5px 5px 0px 0px #000000;
+      border: 3px solid #000000;
+      box-shadow: 5px 5px 0px 0px #0a2a5e;
+      font-weight: 800;
       transition: all 0.15s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
-    .brutal-btn-yellow:hover {
+
+    .brutal-btn-green:hover {
+      background-color: #20ba5a;
       transform: translate(-2px, -2px);
-      box-shadow: 7px 7px 0px 0px #000000;
+      box-shadow: 7px 7px 0px 0px #FFFFFF;
     }
-    .brutal-btn-yellow:active {
+
+    .brutal-btn-green:active {
       transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px 0px #000000;
+      box-shadow: 2px 2px 0px 0px #0a2a5e;
     }
-    .brutal-btn-dark {
-      background-color: #000000;
-      color: #FFEB00;
-      border: 4px solid #FFEB00;
-      box-shadow: 5px 5px 0px 0px #FFEB00;
+
+    /* Botão Azul Primário */
+    .brutal-btn-blue {
+      background-color: #0a2a5e;
+      color: #FFFFFF;
+      border: 3px solid #25D366;
+      box-shadow: 5px 5px 0px 0px #25D366;
+      font-weight: 800;
       transition: all 0.15s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
     }
-    .brutal-btn-dark:hover {
-      background-color: #FFEB00;
-      color: #000000;
-      border-color: #000000;
+
+    .brutal-btn-blue:hover {
+      background-color: #123e85;
+      border-color: #FFFFFF;
       box-shadow: 7px 7px 0px 0px #FFFFFF;
       transform: translate(-2px, -2px);
     }
-    .brutal-btn-dark:active {
+
+    .brutal-btn-blue:active {
       transform: translate(2px, 2px);
-      box-shadow: 2px 2px 0px 0px #FFEB00;
+      box-shadow: 2px 2px 0px 0px #25D366;
     }
-    /* Infinite Ticker */
+
+    /* Botão Branco */
+    .brutal-btn-white {
+      background-color: #FFFFFF;
+      color: #0a2a5e;
+      border: 3px solid #000000;
+      box-shadow: 5px 5px 0px 0px #25D366;
+      font-weight: 800;
+      transition: all 0.15s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .brutal-btn-white:hover {
+      background-color: #f8fafc;
+      transform: translate(-2px, -2px);
+      box-shadow: 7px 7px 0px 0px #0a2a5e;
+    }
+
+    .brutal-btn-white:active {
+      transform: translate(2px, 2px);
+      box-shadow: 2px 2px 0px 0px #000000;
+    }
+
+    /* Letreiro infinito (Marquee) */
     @keyframes marquee {
       0% { transform: translateX(0%); }
       100% { transform: translateX(-50%); }
     }
+
     .animate-marquee {
       display: inline-flex;
       white-space: nowrap;
-      animation: marquee 22s linear infinite;
+      animation: marquee 24s linear infinite;
     }
+
     .animate-marquee:hover {
       animation-play-state: paused;
     }
-    /* Blinking status dot */
+
+    /* Ponto piscante de status online */
     @keyframes blink {
       0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.3; transform: scale(0.85); }
+      50% { opacity: 0.35; transform: scale(0.85); }
     }
+
     .status-dot {
       animation: blink 1.2s infinite ease-in-out;
     }
+
+    /* Radar de pulso no botão WhatsApp flutuante */
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+      70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    .floating-whatsapp-pulse {
+      animation: pulse-ring 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+    }
   </style>
 </head>
-<body class="bg-black text-white selection:bg-[#FFEB00] selection:text-black antialiased">
+<body class="bg-[#040d1a] text-white selection:bg-[#25D366] selection:text-black antialiased">
 
-  <!-- TOP BAR BRUTALISTA DE URGÊNCIA -->
-  <aside aria-label="Aviso de Vagas Disponíveis" class="bg-[#FFEB00] text-black border-b-4 border-black font-extrabold text-xs sm:text-sm py-2 px-3 sticky top-0 z-50 shadow-md">
+  <!-- TOP BAR DE URGÊNCIA & LOCALIDADE -->
+  <aside aria-label="Aviso de Disponibilidade de Projetos" class="bg-[#0a2a5e] text-white border-b-4 border-black font-extrabold text-xs sm:text-sm py-2 px-3 sticky top-0 z-50 shadow-md">
     <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
       <div class="flex items-center gap-2">
-        <span class="inline-block w-3 h-3 bg-red-600 rounded-full status-dot border-2 border-black"></span>
-        <span class="uppercase tracking-wider">● 2 VAGAS/MÊS POR CIDADE: ITAQUÁ, GUARULHOS, ARUJÁ E POÁ</span>
+        <span class="inline-block w-3 h-3 bg-[#25D366] rounded-full status-dot border-2 border-black"></span>
+        <span class="uppercase tracking-wider">● ATENDIMENTO ONLINE: GUARULHOS, SÃO PAULO E TODO O BRASIL</span>
       </div>
       <div class="flex items-center gap-3">
-        <a href="#preco" class="underline uppercase hover:bg-black hover:text-[#FFEB00] px-1 transition-colors">VER CONDIÇÕES</a>
-        <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20para%20minha%20clinica" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-block bg-black text-[#FFEB00] px-2 py-0.5 text-xs font-black uppercase border-2 border-black">TRAVAR MINHA REGIÃO</a>
+        <a href="#servicos" class="underline uppercase hover:text-[#25D366] px-1 transition-colors">VER SERVIÇOS</a>
+        <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vim%20pelo%20site%20gabdintech.com.br%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1 bg-[#25D366] text-black px-3 py-1 text-xs font-black uppercase border-2 border-black shadow-[2px_2px_0px_0px_#000] hover:bg-white transition-colors">
+          <span>ORÇAMENTO NO WHATSAPP</span>
+          <span>➔</span>
+        </a>
       </div>
     </div>
   </aside>
 
   <!-- HEADER NAVEGAÇÃO -->
-  <header class="border-b-4 border-white bg-black py-4 px-4 sm:px-8">
+  <header class="border-b-4 border-white bg-[#040d1a] py-4 px-4 sm:px-8">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      
+      <!-- LOGO -->
       <div class="flex items-center gap-3">
-        <a href="index.html" class="flex items-center gap-2 group">
-          <div class="bg-[#FFEB00] text-black font-anton text-2xl sm:text-3xl px-3 py-1 border-4 border-black shadow-[4px_4px_0px_0px_#FFFFFF] group-hover:rotate-1 transition-transform">
+        <a href="index.html" class="flex items-center gap-2 group" aria-label="GABDIN TECH Início">
+          <div class="bg-[#0a2a5e] text-white font-anton text-2xl sm:text-3xl px-3 py-1 border-4 border-black shadow-[4px_4px_0px_0px_#25D366] group-hover:rotate-1 transition-transform">
             GABDIN TECH
           </div>
         </a>
-        <div class="hidden lg:block text-xs uppercase font-mono text-zinc-400 pl-3 border-l-2 border-zinc-700">
-          SISTEMA DE CAPTAÇÃO DIRETA<br>
-          <span class="text-[#FFEB00] font-bold">ALTO TIETÊ & GRANDE SP</span>
+        <div class="hidden lg:block text-xs uppercase font-mono text-zinc-300 pl-3 border-l-2 border-zinc-700 leading-tight">
+          SITES & SISTEMAS DE ALTA CONVERSÃO<br>
+          <span class="text-[#25D366] font-bold">GUARULHOS E TODO BRASIL</span>
         </div>
       </div>
 
-      <!-- Links diretos para os 2 nichos -->
-      <nav class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm font-black uppercase">
-        <a href="odonto.html" class="bg-white text-black px-3 sm:px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_#FFEB00] hover:bg-[#FFEB00] transition-colors">
-          🦷 PIPELINE ODONTO
+      <!-- LINKS DO MENU -->
+      <nav class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-xs sm:text-sm font-black uppercase">
+        <a href="#servicos" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+          SERVIÇOS
         </a>
-        <a href="estetica.html" class="bg-white text-black px-3 sm:px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_#FFEB00] hover:bg-[#FFEB00] transition-colors">
-          💉 PIPELINE ESTÉTICA
+        <a href="#portfolio" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+          PORTFÓLIO
         </a>
-        <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20para%20minha%20clinica" target="_blank" rel="noopener noreferrer" class="bg-[#FFEB00] text-black px-3 sm:px-4 py-2 border-4 border-black shadow-[4px_4px_0px_0px_#FFFFFF] hover:bg-white transition-colors flex items-center gap-1">
-          <span>WHATSAPP DIRETO</span>
+        <a href="#metodo" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+          COMO FUNCIONA
+        </a>
+        <a href="#preco" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+          VALORES
+        </a>
+        <a href="#faq" class="hidden sm:inline-block bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#0a2a5e] hover:bg-[#25D366] hover:text-black transition-colors">
+          FAQ
+        </a>
+        
+        <!-- CTA HEADER WHATSAPP -->
+        <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vim%20pelo%20site%20gabdintech.com.br%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-4 py-2 flex items-center gap-1.5 text-xs sm:text-sm">
+          <span>FALAR NO WHATSAPP</span>
           <span class="text-xs">↗</span>
         </a>
       </nav>
     </div>
   </header>
 
-  <!-- MARQUEE TICKER BRUTALISTA -->
-  <div class="bg-black border-b-4 border-[#FFEB00] py-2 overflow-hidden select-none" aria-hidden="true">
-    <div class="animate-marquee font-anton text-base sm:text-lg tracking-wider text-[#FFEB00]">
-      <span class="mx-4">★ SEM POST BONITINHO</span>
-      <span class="mx-4">★ SEM DANÇA NO REELS</span>
-      <span class="mx-4">★ RESPOSTA EM 2 MINUTOS</span>
-      <span class="mx-4">★ FILTRO ANTI-CURIOSO DO SUS</span>
-      <span class="mx-4">★ 15 IMPLANTES OU 23 ESTÉTICAS</span>
-      <span class="mx-4">★ ITAQUÁ • GUARULHOS • ARUJÁ • POÁ</span>
-      <span class="mx-4">★ R$1.900/MÊS SEM FIDELIDADE</span>
-      <span class="mx-4">★ SEM POST BONITINHO</span>
-      <span class="mx-4">★ SEM DANÇA NO REELS</span>
-      <span class="mx-4">★ RESPOSTA EM 2 MINUTOS</span>
-      <span class="mx-4">★ FILTRO ANTI-CURIOSO DO SUS</span>
-      <span class="mx-4">★ 15 IMPLANTES OU 23 ESTÉTICAS</span>
-      <span class="mx-4">★ ITAQUÁ • GUARULHOS • ARUJÁ • POÁ</span>
-      <span class="mx-4">★ R$1.900/MÊS SEM FIDELIDADE</span>
+  <!-- MARQUEE TICKER EM AZUL #0A2A5E COM ACENTOS EM VERDE -->
+  <div class="bg-[#0a2a5e] border-b-4 border-black py-2.5 overflow-hidden select-none" aria-hidden="true">
+    <div class="animate-marquee font-anton text-base sm:text-lg tracking-wider text-white">
+      <span class="mx-4 text-[#25D366]">★ CRIAMOS SITES E SISTEMAS QUE TRAZEM CLIENTES</span>
+      <span class="mx-4">★ GUARULHOS E TODO BRASIL</span>
+      <span class="mx-4 text-[#25D366]">★ CARREGAMENTO EM MENOS DE 1 SEGUNDO</span>
+      <span class="mx-4">★ LANDING PAGES DE ALTA CONVERSÃO</span>
+      <span class="mx-4 text-[#25D366]">★ SISTEMAS WEB E PAINÉIS SOB MEDIDA</span>
+      <span class="mx-4">★ BOT DE ATENDIMENTO NO WHATSAPP EM 2 MINUTOS</span>
+      <span class="mx-4 text-[#25D366]">★ OTIMIZAÇÃO PARA O TOPO DO GOOGLE (SEO LOCAL)</span>
+      <span class="mx-4">★ SUPORTE DIRETO COM QUEM CODIFICA</span>
+      <span class="mx-4 text-[#25D366]">★ SEM CONTRATO DE FIDELIDADE AMARRADO</span>
+      <span class="mx-4 text-[#25D366]">★ CRIAMOS SITES E SISTEMAS QUE TRAZEM CLIENTES</span>
+      <span class="mx-4">★ GUARULHOS E TODO BRASIL</span>
+      <span class="mx-4 text-[#25D366]">★ CARREGAMENTO EM MENOS DE 1 SEGUNDO</span>
+      <span class="mx-4">★ LANDING PAGES DE ALTA CONVERSÃO</span>
+      <span class="mx-4 text-[#25D366]">★ SISTEMAS WEB E PAINÉIS SOB MEDIDA</span>
     </div>
   </div>
 
   <main>
-    <!-- HERO SECTION BRUTALISTA -->
-    <section class="relative px-4 sm:px-8 pt-12 pb-16 border-b-4 border-white bg-gradient-to-b from-black via-zinc-950 to-black">
+    <!-- HERO SECTION BRUTALISTA DE IMPACTO -->
+    <section class="relative px-4 sm:px-8 pt-12 pb-16 border-b-4 border-white bg-gradient-to-b from-[#040d1a] via-[#07172e] to-[#040d1a]">
       <div class="max-w-6xl mx-auto">
 
-        <!-- Badge topo -->
-        <div class="inline-flex items-center gap-2 bg-[#FFEB00] text-black border-4 border-black px-4 py-1.5 font-black uppercase text-xs sm:text-sm shadow-[5px_5px_0px_0px_#FFFFFF] mb-6">
-          <span class="w-2.5 h-2.5 bg-black rounded-full"></span>
-          <span>SISTEMA DE MÁQUINA DE VENDAS PARA CLÍNICAS LOCAIS</span>
+        <!-- Badge de Destaque -->
+        <div class="inline-flex items-center gap-2 bg-[#0a2a5e] text-white border-4 border-black px-4 py-1.5 font-black uppercase text-xs sm:text-sm shadow-[5px_5px_0px_0px_#25D366] mb-6">
+          <span class="w-2.5 h-2.5 bg-[#25D366] rounded-full status-dot"></span>
+          <span>AGÊNCIA DE TECNOLOGIA, SITES & CONVERSÃO DIGITAL</span>
         </div>
 
-        <!-- H1 GIGANTE -->
-        <h1 class="font-anton text-5xl sm:text-7xl md:text-8xl lg:text-9xl uppercase leading-[0.9] tracking-tight text-white mb-6">
-          PIPELINE QUE <span class="bg-[#FFEB00] text-black px-2 sm:px-4 inline-block -rotate-1 border-4 border-black shadow-[6px_6px_0px_0px_#FFFFFF]">LOTA AGENDA.</span><br>
-          <span class="text-zinc-500">SEM POST</span> BONITINHO.
+        <!-- H1 PRINCIPAL EXATO PEDIDO PELO USUÁRIO -->
+        <h1 class="font-anton text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[0.95] tracking-tight text-white mb-6">
+          Criamos sites e sistemas que trazem clientes<br>
+          <span class="bg-[#0a2a5e] text-white px-3 sm:px-6 py-1 inline-block -rotate-1 border-4 border-[#25D366] shadow-[6px_6px_0px_0px_#25D366] mt-2">
+            Guarulhos e todo Brasil
+          </span>
         </h1>
 
-        <!-- SUBTÍTULO DIRETO -->
-        <div class="bg-zinc-900 border-4 border-zinc-700 p-5 sm:p-7 shadow-[6px_6px_0px_0px_#FFEB00] max-w-4xl mb-8">
-          <p class="text-lg sm:text-2xl md:text-3xl font-bold leading-snug text-zinc-100">
-            Transformamos <span class="text-[#FFEB00] underline decoration-4 underline-offset-4">"quanto custa?"</span> em agendamento pago em <span class="bg-[#FFEB00] text-black px-2 py-0.5 font-black">2 minutos</span>.
+        <!-- SUBTÍTULO COMERCIAL FORTE -->
+        <div class="bg-[#091830] border-4 border-zinc-700 p-5 sm:p-7 shadow-[6px_6px_0px_0px_#0a2a5e] max-w-4xl mb-8">
+          <p class="text-lg sm:text-2xl md:text-3xl font-bold leading-snug text-white">
+            Transformamos visitantes do Google e Instagram em <span class="text-[#25D366] underline decoration-4 underline-offset-4">pedidos de orçamento no seu WhatsApp</span>.
           </p>
-          <p class="text-sm sm:text-base text-zinc-300 font-medium mt-3">
-            Sistema brutal de captação, triagem automática e fechamento para clínicas de 
-            <strong class="text-white">Odonto</strong> e <strong class="text-white">Estética</strong> de 
-            <span class="text-[#FFEB00] font-bold">Itaquaquecetuba, Guarulhos, Arujá e Poá</span>.
+          <p class="text-sm sm:text-base text-zinc-300 font-medium mt-3 leading-relaxed">
+            Desenvolvemos <strong class="text-white">sites institucionais de alta performance</strong>, 
+            <strong class="text-white">landing pages de vendas rápidas</strong> e 
+            <strong class="text-white">sistemas web personalizados</strong> para empresas que querem parar de perder clientes para a concorrência em Guarulhos, São Paulo e em todo o território nacional.
           </p>
         </div>
 
         <!-- BOTÕES CTAS PRINCIPAIS -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mb-10">
-          <!-- CTA ODONTO -->
-          <a href="odonto.html" id="cta-hero-odonto" class="brutal-btn-yellow p-6 flex flex-col justify-between group">
+          
+          <!-- CTA PRINCIPAL WHATSAPP (VERDE #25D366) -->
+          <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vim%20pelo%20site%20gabdintech.com.br%20e%20quero%20um%20or%C3%A7amento%20de%20site%20ou%20sistema%20para%20minha%20empresa." 
+             id="cta-hero-whatsapp" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="brutal-btn-green p-6 flex flex-col justify-between group text-left">
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="bg-black text-[#FFEB00] text-xs font-black px-2 py-1 uppercase tracking-widest">CLÍNICAS ODONTOLÓGICAS</span>
-              <span class="text-2xl group-hover:translate-x-1 transition-transform">➔</span>
+              <span class="bg-black text-[#25D366] text-xs font-black px-2 py-1 uppercase tracking-widest">RESPOSTA IMEDIATA NO WHATSAPP</span>
+              <!-- Ícone WhatsApp SVG -->
+              <svg class="w-6 h-6 fill-black group-hover:scale-110 transition-transform" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-1.116-.062-.275-.089-.63-.207-1.127-.42-2.096-.897-3.468-3.033-3.573-3.173-.105-.14-1.04-1.383-1.04-2.637 0-1.254.656-1.871.889-2.128.232-.257.509-.321.679-.321.17 0 .339.001.488.009.158.007.369-.06.577.44.212.509.722 1.761.785 1.89.064.129.106.28.021.45-.085.17-.127.276-.254.424-.127.148-.267.33-.381.443-.127.127-.26.265-.112.519.148.254.659 1.087 1.416 1.761.975.868 1.796 1.137 2.051 1.264.254.127.402.106.551-.064.148-.17.636-.741.806-.995.17-.254.339-.212.572-.127.233.085 1.482.699 1.736.826.254.127.424.19.487.297.064.106.064.614-.08 1.019zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.179L2 22l4.954-1.399C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+              </svg>
             </div>
             <div class="font-anton text-2xl sm:text-3xl uppercase leading-tight text-black">
-              QUERO PIPELINE ODONTO<br>
-              <span class="bg-black text-white px-2 text-xl sm:text-2xl inline-block mt-1">[15 IMPLANTES / MÊS]</span>
+              QUERO UM SITE OU SISTEMA<br>
+              <span class="bg-black text-[#25D366] px-2 text-lg sm:text-xl inline-block mt-1">[FALAR COM O DESENVOLVEDOR ➔]</span>
             </div>
             <p class="text-xs sm:text-sm font-bold text-zinc-900 mt-3">
-              Foco em Implantes, Protocolos, Lentes e Aparelhos. Pare de perder lead para concorrência de rede.
+              Receba um diagnóstico do seu projeto e proposta comercial personalizada sem compromisso.
             </p>
           </a>
 
-          <!-- CTA ESTÉTICA -->
-          <a href="estetica.html" id="cta-hero-estetica" class="bg-white text-black border-4 border-black shadow-[5px_5px_0px_0px_#FFEB00] hover:shadow-[7px_7px_0px_0px_#FFEB00] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all p-6 flex flex-col justify-between group">
+          <!-- CTA SECUNDÁRIO (VER SERVIÇOS E PORTFÓLIO) -->
+          <a href="#portfolio" 
+             id="cta-hero-portfolio" 
+             class="bg-[#0a2a5e] text-white border-4 border-black shadow-[5px_5px_0px_0px_#25D366] hover:shadow-[7px_7px_0px_0px_#FFFFFF] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all p-6 flex flex-col justify-between group text-left">
             <div class="flex items-center justify-between gap-2 mb-3">
-              <span class="bg-black text-white text-xs font-black px-2 py-1 uppercase tracking-widest">CLÍNICAS DE ESTÉTICA</span>
-              <span class="text-2xl group-hover:translate-x-1 transition-transform">➔</span>
+              <span class="bg-[#25D366] text-black text-xs font-black px-2 py-1 uppercase tracking-widest">CASOS REAIS & EXEMPLOS</span>
+              <span class="text-2xl group-hover:translate-x-1 transition-transform text-[#25D366]">↓</span>
             </div>
-            <div class="font-anton text-2xl sm:text-3xl uppercase leading-tight text-black">
-              QUERO PIPELINE ESTÉTICA<br>
-              <span class="bg-[#FFEB00] text-black px-2 text-xl sm:text-2xl inline-block mt-1">[23 CLIENTES / MÊS]</span>
+            <div class="font-anton text-2xl sm:text-3xl uppercase leading-tight text-white">
+              VER NOSSO PORTFÓLIO<br>
+              <span class="bg-white text-[#0a2a5e] px-2 text-lg sm:text-xl inline-block mt-1">[PROJETOS ENTREGUES]</span>
             </div>
-            <p class="text-xs sm:text-sm font-bold text-zinc-900 mt-3">
-              Foco em Harmonização, Botox, Preenchimento e Lipo de Papada. Elimine os curiosos do direct.
+            <p class="text-xs sm:text-sm font-bold text-zinc-300 mt-3">
+              Veja sites institucionais, sistemas web e páginas para infoprodutos que trazem clientes todos os dias.
             </p>
           </a>
         </div>
 
         <!-- FITA DE CREDIBILIDADE RÁPIDA -->
-        <div class="flex flex-wrap items-center gap-4 text-xs font-mono text-zinc-400">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-mono text-zinc-300 pt-2 border-t-2 border-zinc-800">
           <div class="flex items-center gap-2">
-            <span class="text-[#FFEB00] font-black text-base">✓</span>
-            <span>Sem contrato de 12 meses preso</span>
+            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span>Carregamento em &lt; 1 segundo</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-[#FFEB00] font-black text-base">✓</span>
-            <span>Apenas 2 clínicas por bairro</span>
+            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span>100% Responsivo no Celular</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-[#FFEB00] font-black text-base">✓</span>
-            <span>Setup pronto em 48h</span>
+            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span>SEO Técnico para o Google</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="text-[#FFEB00] font-black text-base">✓</span>
-            <span>Atendimento direto pelo fundador</span>
+            <span class="text-[#25D366] font-black text-lg">✓</span>
+            <span>Sem fidelidade obrigatória</span>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SEÇÃO DA DOR REAL (3 CARDS BRUTALISTAS) -->
-    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-black">
+    <!-- SEÇÃO DA DOR REAL (POR QUE O SITE COMUM NÃO VENDE) -->
+    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
       <div class="max-w-6xl mx-auto">
 
         <div class="mb-10">
           <div class="inline-block bg-red-600 text-white font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3">
-            O CEMITÉRIO DO MARKETING TRADICIONAL
+            O QUE ESTÁ QUEBRANDO O SEU NEGÓCIO ONLINE
           </div>
           <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
-            POR QUE SUA CLÍNICA CONTINUA COM A <span class="bg-red-600 text-white px-2">AGENDA VAZIA?</span>
+            POR QUE O SEU SITE ATUAL <span class="bg-red-600 text-white px-2">NÃO TRAZ CLIENTES?</span>
           </h2>
           <p class="text-zinc-400 font-medium text-sm sm:text-base mt-2 max-w-2xl">
-            Você paga agência que posta "Dia do Dentista" e "Dica de Skincare", mas no final do mês a conta não fecha. Veja onde você está sangrando dinheiro:
+            A maioria das empresas gasta fortunas com agências que entregam sites lentos feitos em templates pesados do WordPress ou ficam postando arte no Instagram que ninguém vê. Veja onde você perde vendas:
           </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
           <!-- CARD DOR 1 -->
-          <div class="bg-zinc-950 border-4 border-red-500 p-6 shadow-[6px_6px_0px_0px_#ef4444] flex flex-col justify-between">
+          <div class="bg-[#091830] border-4 border-red-500 p-6 shadow-[6px_6px_0px_0px_#ef4444] flex flex-col justify-between">
             <div>
               <div class="font-anton text-4xl text-red-500 mb-2">01</div>
               <div class="bg-red-500 text-black font-black text-xs uppercase px-2 py-0.5 inline-block mb-3">
-                TEMPO DE MORTE: > 5 MINUTOS
+                LENTIDÃO FATAL NO 4G
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-3">
-                PERDE PORQUE DEMORA PRA RESPONDER
+                SITE QUE DEMORA MAIS DE 3 SEGUNDOS
               </h3>
               <p class="text-zinc-300 text-sm leading-relaxed">
-                O paciente com dor de dente ou querendo botox manda mensagem às <strong>20h40</strong>. Sua recepcionista só responde no dia seguinte às <strong>09h15</strong>.
+                No Brasil, mais de 80% dos acessos vêm de celulares na rede móvel. Se a sua página demorar para carregar, o cliente fecha a aba e vai direto comprar no site do seu concorrente.
               </p>
               <div class="mt-4 p-3 bg-black border-2 border-zinc-800 text-xs font-mono text-zinc-400">
-                <span class="text-red-400 font-bold">REALIDADE:</span> O concorrente respondeu em 90 segundos com nosso bot. O paciente já pagou a consulta nele.
+                <span class="text-red-400 font-bold">REALIDADE:</span> A cada segundo extra de lentidão, você joga fora até 25% de todas as suas vendas.
               </div>
             </div>
             <div class="mt-6 pt-4 border-t-2 border-zinc-800 text-xs text-red-400 font-black uppercase">
-              Perda estimada: R$ 8.000 a R$ 15.000/mês
+              Resultado: Dinheiro de anúncios jogado no lixo
             </div>
           </div>
 
           <!-- CARD DOR 2 -->
-          <div class="bg-zinc-950 border-4 border-[#FFEB00] p-6 shadow-[6px_6px_0px_0px_#FFEB00] flex flex-col justify-between">
+          <div class="bg-[#091830] border-4 border-[#25D366] p-6 shadow-[6px_6px_0px_0px_#25D366] flex flex-col justify-between">
             <div>
-              <div class="font-anton text-4xl text-[#FFEB00] mb-2">02</div>
-              <div class="bg-[#FFEB00] text-black font-black text-xs uppercase px-2 py-0.5 inline-block mb-3">
-                ILUSÃO DE POPULARIDADE
+              <div class="font-anton text-4xl text-[#25D366] mb-2">02</div>
+              <div class="bg-[#25D366] text-black font-black text-xs uppercase px-2 py-0.5 inline-block mb-3">
+                FALTA DE BOTÃO CLARO
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-3">
-                INSTA BONITO SEM BOTÃO
+                SEM INTEGRAÇÃO DIRETA COM WHATSAPP
               </h3>
               <p class="text-zinc-300 text-sm leading-relaxed">
-                Feed com paleta em tons pastéis, carrossel de 10 páginas que ninguém lê e 500 curtidas de amigos e parentes. Mas quando você olha o WhatsApp da recepção... <strong>silêncio absoluto</strong>.
+                O brasileiro compra pelo WhatsApp. Sites cheios de formulários burocráticos de 10 campos ou sem um botão de WhatsApp que chame atenção perdem o cliente no primeiro segundo.
               </p>
               <div class="mt-4 p-3 bg-black border-2 border-zinc-800 text-xs font-mono text-zinc-400">
-                <span class="text-[#FFEB00] font-bold">REALIDADE:</span> Curtida não paga boleto de implante nem seringa de ácido hialurônico. Você precisa de lead na linha.
+                <span class="text-[#25D366] font-bold">SOLUÇÃO GABDIN:</span> Fluxos de 1 clique que abrem a conversa com a mensagem pré-formatada pronta para fechar negócio.
               </div>
             </div>
-            <div class="mt-6 pt-4 border-t-2 border-zinc-800 text-xs text-[#FFEB00] font-black uppercase">
-              Resultado: 0 pacientes na cadeira
+            <div class="mt-6 pt-4 border-t-2 border-zinc-800 text-xs text-[#25D366] font-black uppercase">
+              Resultado: +250% de mensagens de clientes reais
             </div>
           </div>
 
           <!-- CARD DOR 3 -->
-          <div class="bg-zinc-950 border-4 border-white p-6 shadow-[6px_6px_0px_0px_#FFFFFF] flex flex-col justify-between">
+          <div class="bg-[#091830] border-4 border-[#0a2a5e] p-6 shadow-[6px_6px_0px_0px_#0a2a5e] flex flex-col justify-between">
             <div>
               <div class="font-anton text-4xl text-white mb-2">03</div>
-              <div class="bg-white text-black font-black text-xs uppercase px-2 py-0.5 inline-block mb-3">
-                INVISIBILIDADE LOCAL
+              <div class="bg-[#0a2a5e] text-white font-black text-xs uppercase px-2 py-0.5 inline-block mb-3">
+                INVISIBILIDADE NO GOOGLE
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-3">
-                GOOGLE DESATUALIZADO
+                FORA DA PRIMEIRA PÁGINA EM GUARULHOS E SP
               </h3>
               <p class="text-zinc-300 text-sm leading-relaxed">
-                Quando alguém pesquisa "Dentista no centro de Itaquá" ou "Harmonização em Guarulhos", sua clínica aparece em 14º lugar, sem fotos reais, com telefone que cai na caixa postal e zero depoimentos recentes.
+                Quando alguém pesquisa pelo seu produto ou serviço em Guarulhos ou na sua cidade, quem aparece? Se a sua empresa não estiver nas primeiras posições com SEO e Google Meu Negócio otimizados, você é invisível.
               </p>
               <div class="mt-4 p-3 bg-black border-2 border-zinc-800 text-xs font-mono text-zinc-400">
-                <span class="text-white font-bold">REALIDADE:</span> 78% das buscas de urgência e alto ticket começam no Google e decidem nos 3 primeiros resultados.
+                <span class="text-white font-bold">REALIDADE:</span> 92% das pessoas só clicam nos 3 primeiros resultados do Google.
               </div>
             </div>
             <div class="mt-6 pt-4 border-t-2 border-zinc-800 text-xs text-white font-black uppercase">
-              Você está doando pacientes de graça
+              Resultado: Seus concorrentes ficam com seus clientes
             </div>
           </div>
 
@@ -368,93 +461,585 @@
       </div>
     </section>
 
-    <!-- SEÇÃO COMO FUNCIONA O SISTEMA GABDIN (3 ETAPAS) -->
-    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-zinc-950">
+    <!-- ======================================================== -->
+    <!-- NOVA SEÇÃO: SERVIÇOS (REQUISITO EXPLÍCITO DO USUÁRIO)    -->
+    <!-- ======================================================== -->
+    <section id="servicos" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#040d1a]">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Cabeçalho da Seção de Serviços -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+          <div>
+            <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#25D366] mb-3">
+              SOLUÇÕES DIGITAIS DE ALTO IMPACTO
+            </div>
+            <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
+              NOSSOS <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">SERVIÇOS</span>
+            </h2>
+          </div>
+          <p class="text-zinc-300 font-mono text-xs sm:text-sm max-w-md">
+            Do site institucional à plataforma web sob medida: tudo desenvolvido com foco exclusivo em <span class="text-[#25D366] font-bold">velocidade, usabilidade e atração de novos clientes</span>.
+          </p>
+        </div>
+
+        <!-- Grid de 6 Serviços Principais -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- SERVIÇO 1: SITES INSTITUCIONAIS -->
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+                🌐
+              </div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-2">
+                SITES INSTITUCIONAIS & CORPORATIVOS
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Presença digital com credibilidade imediata. Apresente seus serviços, história, diferenciais e equipe com layout moderno e exclusivo, transmitindo autoridade para fechar contratos de alto valor.
+              </p>
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> 100% responsivo para celulares e computadores</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Otimizado para SEO e Google</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Certificado SSL e segurança ponta a ponta</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> E-mails corporativos personalizados</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Cria%C3%A7%C3%A3o%20de%20Site%20Institucional." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR SITE INSTITUCIONAL ➔
+            </a>
+          </div>
+
+          <!-- SERVIÇO 2: LANDING PAGES DE ALTA CONVERSÃO -->
+          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 shadow-[6px_6px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 bg-[#25D366] border-2 border-black flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_#000]">
+                  🎯
+                </div>
+                <span class="bg-[#25D366] text-black text-[10px] font-black px-2 py-0.5 uppercase tracking-wider">MAIS VENDIDO</span>
+              </div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-2">
+                LANDING PAGES DE ALTA CONVERSÃO
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Páginas cirúrgicas desenhadas especificamente para campanhas no Google Ads, Instagram e Facebook. Copywriting persuasivo focado em fazer o visitante clicar no botão de compra ou WhatsApp.
+              </p>
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Carregamento instantâneo (&lt; 0.8s)</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Rastreamento do Meta Pixel, GA4 e Google Ads</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Gatilhos mentais e chamadas diretas de ação</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Pronta em até 5 dias úteis</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20uma%20Landing%20Page%20de%20Alta%20Convers%C3%A3o%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR LANDING PAGE ➔
+            </a>
+          </div>
+
+          <!-- SERVIÇO 3: SISTEMAS WEB SOB MEDIDA -->
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+                ⚙️
+              </div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-2">
+                SISTEMAS WEB & PLATAFORMAS SOB MEDIDA
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Automatize sua empresa e elimine planilhas manuais. Desenvolvemos sistemas web na nuvem, painéis administrativos, portais de clientes, controles de estoque, emissão de orçamentos e dashboards.
+              </p>
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Painel seguro com login e níveis de acesso</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Banco de dados rápido e escalável em nuvem</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Relatórios exportáveis em PDF e Excel</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Funciona em qualquer celular, tablet ou PC</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20um%20Sistema%20Web%20Sob%20Medida%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR SISTEMA WEB ➔
+            </a>
+          </div>
+
+          <!-- SERVIÇO 4: AUTOMAÇÃO WHATSAPP & BOTS -->
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-[#25D366] border-2 border-black flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+                💬
+              </div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-2">
+                BOTS & AUTOMAÇÃO WHATSAPP EM 2 MINUTOS
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Nunca mais perca um cliente porque demorou para responder. Criamos fluxos inteligentes no WhatsApp que tiram dúvidas, fazem triagem de orçamento e entregam o contato pronto na mão do seu vendedor.
+              </p>
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Atendimento ativo 24h por dia, 7 dias por semana</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Triagem rápida para descartar curiosos</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Envio de dados direto para seu CRM ou e-mail</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Resposta média em 45 segundos</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Quero%20integrar%20um%20Bot%20de%20WhatsApp%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR AUTOMAÇÃO WHATSAPP ➔
+            </a>
+          </div>
+
+          <!-- SERVIÇO 5: SEO LOCAL & GOOGLE MEU NEGÓCIO -->
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+                📍
+              </div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-2">
+                SEO LOCAL & GOOGLE MEU NEGÓCIO
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Colocamos sua empresa nas primeiras posições de busca orgânica em Guarulhos, São Paulo e em todo o Brasil. Apareça no Google Maps exatamente quando alguém pesquisar pelo que você vende.
+              </p>
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Otimização técnica de palavras-chave locais</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Configuração profissional do Google Perfil de Empresa</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Estruturação de dados Schema.org</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Tráfego orgânico sem pagar por clique</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20otimizar%20o%20SEO%20Local%20e%20Google%20Meu%20Neg%C3%B3cio%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR SEO LOCAL ➔
+            </a>
+          </div>
+
+          <!-- SERVIÇO 6: INFOPRODUTOS & LANÇAMENTOS DIGITAIS -->
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#25D366] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
+                🚀
+              </div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-2">
+                INFOPRODUTOS & LANÇAMENTOS DIGITAIS
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Páginas de vendas de alta conversão para cursos, mentorias, ebooks e produtos digitais. Carregamento ultra-rápido, design persuasivo e integração completa com plataformas de checkout e automação de entrega.
+              </p>
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Páginas de vendas persuasivas com carregamento instantâneo</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Integração com Hotmart, Kiwify, Eduzz, Green e Monetizze</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Checkout próprio via Pix e cartão de crédito sem taxas extras</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Rastreamento avançado com Pixel Meta, Google Ads e UTMs</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20p%C3%A1gina%20ou%20sistema%20de%20Infoproduto." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR INFOPRODUTO ➔
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Banner de Chamada em Serviços -->
+        <div class="mt-12 bg-[#0a2a5e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#25D366] flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <div class="text-xs font-mono font-bold text-[#25D366] uppercase tracking-wider mb-1">PROJETOS PERSONALIZADOS</div>
+            <h3 class="font-anton text-2xl sm:text-3xl text-white uppercase">PRECISA DE ALGO ESPECÍFICO PARA A SUA OPERAÇÃO?</h3>
+            <p class="text-zinc-200 text-sm mt-1">Converse diretamente com o desenvolvedor responsável e receba uma solução sob medida.</p>
+          </div>
+          <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Tenho%20um%20projeto%20espec%C3%ADfico%20e%20gostaria%20de%20conversar%20sobre%20a%20viabilidade%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-6 py-4 text-sm font-black whitespace-nowrap">
+            FALAR COM DESENVOLVEDOR NO WHATSAPP ➔
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======================================================== -->
+    <!-- NOVA SEÇÃO: PORTFÓLIO (REQUISITO EXPLÍCITO DO USUÁRIO)   -->
+    <!-- ======================================================== -->
+    <section id="portfolio" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Cabeçalho Portfólio -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+          <div>
+            <div class="inline-block bg-[#25D366] text-black border-2 border-black font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#0a2a5e] mb-3">
+              RESULTADOS COMPROVADOS NO MERCADO
+            </div>
+            <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
+              PORTFÓLIO & <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">CASOS DE SUCESSO</span>
+            </h2>
+          </div>
+          <p class="text-zinc-400 font-mono text-xs sm:text-sm max-w-md">
+            Conheça páginas e sistemas reais entregues para empresas em Guarulhos, São Paulo e em todo o Brasil.
+          </p>
+        </div>
+
+        <!-- Lista de 4 Casos de Sucesso / Projetos -->
+        <div class="space-y-8">
+
+          <!-- PROJETO DE DESTAQUE 1: SISTEMA WEB DE CONTROLE DE PEDIDOS & CLIENTES -->
+          <div class="bg-[#07172e] border-4 border-[#00FF66] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#00FF66] grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- Coluna Esquerda: Informações, Métricas e Botão (8 Colunas) -->
+            <div class="lg:col-span-8 flex flex-col justify-between">
+              <div>
+                <!-- 1. IDENTIFICAÇÃO E BADGES (Topo do Bloco) -->
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                  <!-- Badge 1: Fundo Verde Vibrante com texto em caixa alta e cor preta -->
+                  <span class="bg-[#00FF66] text-black font-mono font-black text-xs px-3 py-1 uppercase tracking-wider border border-black shadow-[2px_2px_0px_0px_#000]">
+                    SISTEMA SOB MEDIDA
+                  </span>
+                  <!-- Badge 2: Borda fina azul clara/branca, fundo transparente, texto em caixa alta -->
+                  <span class="bg-transparent text-white border border-sky-400 font-mono font-bold text-xs px-3 py-1 uppercase tracking-wider">
+                    PAINEL SAAS / NUVEM
+                  </span>
+                  <!-- Texto discreto em tom cinza claro -->
+                  <span class="text-zinc-400 text-xs font-mono">
+                    Operação Nacional
+                  </span>
+                </div>
+
+                <!-- 2. TÍTULOS E CONTEÚDO PRINCIPAL -->
+                <h3 class="font-anton text-3xl sm:text-4xl md:text-5xl uppercase text-white leading-tight mb-4 tracking-tight">
+                  SISTEMA WEB DE CONTROLE DE PEDIDOS & CLIENTES
+                </h3>
+                
+                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                  Desenvolvimento de software web personalizado para distribuidora com equipe de vendas remota em 4 estados. Substituição de planilhas desatualizadas por painel na nuvem com controle de estoque, status de entregas, relatórios financeiros e disparo de alertas via WhatsApp.
+                </p>
+
+                <!-- 3. BLOCO DE MÉTRICAS (Efeito Grid) -->
+                <div class="metricas-sistema grid grid-cols-3 gap-3 sm:gap-4 py-4 px-3 sm:px-5 mb-6 bg-[#040d1a] border-2 border-zinc-700 shadow-[4px_4px_0px_0px_#000]">
+                  <div class="text-left">
+                    <div id="contador-tempo" class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">25h/sem</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">TEMPO ECONOMIZADO</div>
+                  </div>
+                  <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
+                    <div id="contador-erros" class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">Zero</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">ERROS DE PEDIDO</div>
+                  </div>
+                  <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
+                    <div id="contador-nuvem" class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">100%</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">ACESSO EM NUVEM</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5. BOTÃO DE AÇÃO (CTA DO PROJETO) -->
+              <div class="pt-2">
+                <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20case%20do%20Sistema%20Web%20de%20Controle%20de%20Pedidos%20no%20portf%C3%B3lio%20da%20GABDIN%20TECH%20e%20quero%20um%20or%C3%A7amento%20de%20sistema%20personalizado%20para%20minha%20empresa." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="inline-flex items-center justify-center gap-2 bg-[#00FF66] text-black font-extrabold uppercase text-xs sm:text-sm px-6 py-4 border-3 border-black shadow-[4px_4px_0px_0px_#0a2a5e] hover:bg-[#20ba5a] hover:shadow-[6px_6px_0px_0px_#FFFFFF] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
+                  <span>ORÇAR SISTEMA WEB PERSONALIZADO →</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 4. CARD DE FUNCIONALIDADES (Lado Direito ou Bloco Lateral) (4 Colunas) -->
+            <div class="lg:col-span-4 bg-[#051329] border-2 border-sky-500/40 p-6 shadow-[6px_6px_0px_0px_#0a2a5e] flex flex-col justify-between h-full">
+              <div>
+                <!-- Título em Verde e Caixa Alta -->
+                <div class="text-[#00FF66] font-mono font-black text-sm uppercase tracking-wider mb-4 flex items-center gap-1.5">
+                  <span>• FUNCIONALIDADES:</span>
+                </div>
+                
+                <!-- Lista com marcadores discretos -->
+                <ul class="space-y-3 text-sm text-zinc-200 font-medium">
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
+                    <span>Cadastro de clientes e vendedores</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
+                    <span>Emissão de propostas em 1 clique</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
+                    <span>Notificação no WhatsApp de entrega</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
+                    <span>Gráficos financeiros e metas</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Linha divisória horizontal sutil no rodapé do card -->
+              <div class="mt-6 pt-4 border-t border-zinc-800">
+                <!-- Texto final dentro do card em Verde -->
+                <div class="text-[#00FF66] font-mono text-xs font-bold flex items-center gap-2">
+                  <span>🛡️</span>
+                  <span>Segurança: Criptografia & Backups Diários</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- PROJETO 2: PLATAFORMA CLÍNICAS (ODONTO & ESTÉTICA) -->
+          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#25D366] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-8">
+              <div class="flex flex-wrap items-center gap-2 mb-3">
+                <span class="bg-[#25D366] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">SAÚDE & CLÍNICAS</span>
+                <span class="bg-[#0a2a5e] text-white font-mono font-bold text-xs px-2 py-0.5 uppercase border border-white">LANDING PAGE + BOT</span>
+                <span class="text-zinc-400 text-xs font-mono">Guarulhos & Grande SP</span>
+              </div>
+              <h3 class="font-anton text-2xl sm:text-4xl uppercase text-white mb-3">
+                PLATAFORMA DE CAPTAÇÃO & TRIAGEM PARA CLÍNICAS
+              </h3>
+              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-4">
+                Desenvolvimento de máquina completa de captação para consultórios odontológicos e clínicas de estética. O sistema filtra curiosos sem orçamento, realiza triagem em até 2 minutos pelo WhatsApp e entrega o paciente com agendamento pré-confirmado na cadeira.
+              </p>
+              
+              <!-- Métricas Reais do Projeto -->
+              <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">+340%</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Consultas Agendadas</div>
+                </div>
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-white">&lt; 90s</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo Médio Resposta</div>
+                </div>
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">0.7s</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo Carregamento</div>
+                </div>
+              </div>
+
+              <!-- Links para Modelos ao Vivo -->
+              <div class="flex flex-wrap items-center gap-3">
+                <a href="odonto.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#25D366] transition-colors shadow-[2px_2px_0px_0px_#000]">
+                  VER MODELO ODONTO ➔
+                </a>
+                <a href="estetica.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#25D366] transition-colors shadow-[2px_2px_0px_0px_#000]">
+                  VER MODELO ESTÉTICA ➔
+                </a>
+              </div>
+            </div>
+
+            <!-- Preview Card Lateral -->
+            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
+              <div class="text-xs font-mono text-[#25D366] font-bold uppercase mb-2">● TECNOLOGIAS APLICADAS:</div>
+              <div class="flex flex-wrap gap-1.5 mb-4 text-[11px] font-mono text-zinc-300">
+                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">HTML5 Semântico</span>
+                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">Tailwind CSS</span>
+                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">WhatsApp Cloud API</span>
+                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">Google Ads Tag</span>
+                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">Meta Pixel</span>
+              </div>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                "Saímos de 3 consultas por semana para agenda lotada de implantes e botox todos os dias. O retorno no primeiro mês foi imediato."
+              </p>
+              <div class="mt-3 pt-3 border-t border-zinc-800 text-[11px] font-mono text-[#25D366]">
+                Dr. R. Mendes • Guarulhos - SP
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJETO 3: PORTAL B2B & INDÚSTRIA (GUARULHOS) -->
+          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_#0a2a5e] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-8">
+              <div class="flex flex-wrap items-center gap-2 mb-3">
+                <span class="bg-[#0a2a5e] text-white font-mono font-black text-xs px-2 py-0.5 uppercase border border-white">INDÚSTRIA & B2B</span>
+                <span class="bg-zinc-800 text-[#25D366] font-mono font-bold text-xs px-2 py-0.5 uppercase border border-zinc-700">SITE CORPORATIVO + SEO LOCAL</span>
+                <span class="text-zinc-400 text-xs font-mono">Polo Industrial Guarulhos</span>
+              </div>
+              <h3 class="font-anton text-2xl sm:text-4xl uppercase text-white mb-3">
+                PORTAL CORPORATIVO & SEO LOCAL PARA INDÚSTRIA
+              </h3>
+              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-4">
+                Redesenho estrutural completo de um portal industrial com mais de 80 produtos técnicos. O antigo site demorava 8 segundos para abrir. Criamos uma arquitetura rápida, com catálogo limpo e posicionamento orgânico nas pesquisas do Google para empresas da região metropolitana de São Paulo.
+              </p>
+
+              <!-- Métricas Reais do Projeto -->
+              <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">1º Lugar</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">18 Termos no Google</div>
+                </div>
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-white">+420%</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Pedidos de Cotação</div>
+                </div>
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">0.6s</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo de Abertura</div>
+                </div>
+              </div>
+
+              <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20caso%20do%20Portal%20B2B/Ind%C3%BAstria%20e%20gostaria%20de%20um%20projeto%20similar." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-5 py-2.5 text-xs font-black uppercase inline-flex items-center gap-2">
+                SOLICITAR PROJETO SIMILAR ➔
+              </a>
+            </div>
+
+            <!-- Preview Card Lateral -->
+            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
+              <div class="text-xs font-mono text-[#25D366] font-bold uppercase mb-2">● RESULTADO CHAVE:</div>
+              <p class="text-xs text-zinc-300 leading-relaxed mb-3">
+                "Recebemos orçamentos de grandes empresas de Guarulhos e Campinas todas as semanas sem gastar um centavo a mais em anúncios, apenas com a busca orgânica do site novo."
+              </p>
+              <div class="pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
+                Segmento: Usinagem & Manutenção Industrial
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJETO 4: INFOPRODUTOS & LANÇAMENTOS DIGITAIS -->
+          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_#0a2a5e] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-8">
+              <div class="flex flex-wrap items-center gap-2 mb-3">
+                <span class="bg-[#25D366] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">INFOPRODUTOS & CURSOS</span>
+                <span class="bg-zinc-800 text-white font-mono font-bold text-xs px-2 py-0.5 uppercase border border-zinc-700">PÁGINA DE VENDAS + CHECKOUT</span>
+                <span class="text-zinc-400 text-xs font-mono">Lançamentos Digitais</span>
+              </div>
+              <h3 class="font-anton text-2xl sm:text-4xl uppercase text-white mb-3">
+                ESTRUTURA DE ALTA CONVERSÃO PARA INFOPRODUTOS & CURSOS
+              </h3>
+              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-4">
+                Página de vendas ultra-otimizada desenvolvida para infoprodutor com tráfego pago intenso. Carregamento em menos de 0.6s no celular, player de vídeo VSL sem engasgo e integração direta com Hotmart, Kiwify e automação no WhatsApp para recuperação de carrinho.
+              </p>
+
+              <!-- Métricas Reais do Projeto -->
+              <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">0.6s</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo de Abertura</div>
+                </div>
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-white">+84%</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Retenção no Pitch</div>
+                </div>
+                <div>
+                  <div class="font-anton text-xl sm:text-2xl text-[#25D366]">100%</div>
+                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Rastreamento de Pixels</div>
+                </div>
+              </div>
+
+              <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20uma%20p%C3%A1gina%20de%20alta%20convers%C3%A3o%20para%20meu%20Infoproduto." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-5 py-2.5 text-xs font-black uppercase inline-flex items-center gap-2">
+                SOLICITAR PÁGINA DE INFOPRODUTO ➔
+              </a>
+            </div>
+
+            <!-- Preview Card Lateral -->
+            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
+              <div class="text-xs font-mono text-[#25D366] font-bold uppercase mb-2">● DIFERENCIAL TÉCNICO:</div>
+              <p class="text-xs text-zinc-300 leading-relaxed mb-3">
+                Zero plugins pesados e sem a lentidão do WordPress. A página aguenta picos de milhares de cliques simultâneos de campanhas no Meta Ads e Google Ads sem cair na abertura de carrinho.
+              </p>
+              <div class="pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
+                Segmento: Cursos Online, Mentorias & E-books
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO COMO FUNCIONA O NOSSO MÉTODO (4 ETAPAS ÁGEIS) -->
+    <section id="metodo" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#040d1a]">
       <div class="max-w-6xl mx-auto">
 
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
-            <div class="inline-block bg-[#FFEB00] text-black font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3">
-              MÉTODO COMPROVADO
+            <div class="inline-block bg-[#0a2a5e] text-white font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3 shadow-[3px_3px_0px_0px_#25D366]">
+              DESENVOLVIMENTO ÁGIL & TRANSPARENTE
             </div>
             <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
-              COMO O <span class="bg-[#FFEB00] text-black px-2">PIPELINE GABDIN</span> FUNCIONA
+              COMO CRIAMOS SUA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">MÁQUINA DE VENDAS</span>
             </h2>
           </div>
           <p class="text-zinc-400 font-mono text-xs sm:text-sm max-w-md">
-            Engenharia direta: canal de tráfego local ➔ filtro impiedoso de curioso ➔ qualificação em 2min ➔ consulta marcada.
+            Processo direto e sem enrolação: diagnóstico inicial ➔ código de alta velocidade ➔ integração no WhatsApp ➔ clientes comprando.
           </p>
         </div>
 
         <div class="space-y-6">
 
           <!-- PASSO 1 -->
-          <div class="bg-black border-4 border-[#FFEB00] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFEB00] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#0a2a5e] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
-              <span class="font-anton text-6xl sm:text-7xl text-[#FFEB00]">01</span>
-              <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA INICIAL</div>
+              <span class="font-anton text-6xl sm:text-7xl text-[#25D366]">01</span>
+              <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 1</div>
             </div>
             <div class="md:col-span-7">
               <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">
-                PÁGINA BRUTALISTA QUE FILTRA CURIOSO
+                DIAGNÓSTICO COMERCIAL & ARQUITETURA
               </h3>
               <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                Esqueça sites lentos do WordPress com 20 abas e texto que ninguém lê. Criamos uma página ultra-rápida, direta ao ponto e mobile first. 
-                Ela deixa claro o nível do procedimento, <strong>elimina caçadores de preço baixo</strong> e só atrai pessoas preparadas para pagar pelo tratamento particular.
+                Entendemos quem é o seu cliente ideal, seus produtos com maior margem de lucro e os concorrentes diretos em Guarulhos ou na sua região de atuação. Definimos a estrutura exata para transformar visitantes em contatos qualificados.
               </p>
             </div>
-            <div class="md:col-span-3 bg-zinc-900 border-2 border-zinc-700 p-4 text-xs font-mono">
-              <div class="text-[#FFEB00] font-bold mb-1">FILTRO ATIVO:</div>
-              <div class="text-zinc-300">↳ Descarta curioso sem grana</div>
-              <div class="text-zinc-300">↳ Foca no procedimento carro-chefe</div>
-              <div class="text-zinc-300">↳ Carrega em menos de 0.8s</div>
+            <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
+              <div class="text-[#25D366] font-bold mb-1">ENTREGÁVEL:</div>
+              <div class="text-zinc-300">↳ Estrutura de páginas & seções</div>
+              <div class="text-zinc-300">↳ Gatilhos de conversão mapeados</div>
+              <div class="text-zinc-300">↳ Palavras-chave de SEO local</div>
             </div>
           </div>
 
           <!-- PASSO 2 -->
-          <div class="bg-black border-4 border-white p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFFFFF] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#25D366] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
               <span class="font-anton text-6xl sm:text-7xl text-white">02</span>
-              <div class="text-xs font-black uppercase text-zinc-400 mt-1">QUALIFICAÇÃO</div>
+              <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 2</div>
             </div>
             <div class="md:col-span-7">
               <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">
-                BOT 2MIN PRO WHATSAPP
+                DESIGN MODERNO & CÓDIGO PURO ULTRA-RÁPIDO
               </h3>
               <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                Assim que a pessoa clica, nosso fluxo automático responde em até <strong>120 segundos</strong>. 
-                Faz as 3 perguntas de triagem essenciais (qual dente/região incomoda, se já fez avaliação, urgência de data) e entrega o paciente pronto na mão da sua secretária.
+                Esqueça templates genéricos e pesados que quebram no celular. Desenvolvemos interfaces limpas, atraentes e modernas com código leve e otimizado que carrega em menos de 1 segundo em qualquer conexão 4G/5G.
               </p>
             </div>
-            <div class="md:col-span-3 bg-zinc-900 border-2 border-zinc-700 p-4 text-xs font-mono">
-              <div class="text-[#00FF66] font-bold mb-1">VELOCIDADE MÁXIMA:</div>
-              <div class="text-zinc-300">↳ Atendimento 24/7/365</div>
-              <div class="text-zinc-300">↳ Resposta média: 45 segundos</div>
-              <div class="text-zinc-300">↳ Triagem pré-consulta feita</div>
+            <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
+              <div class="text-[#25D366] font-bold mb-1">PADRÃO GABDIN:</div>
+              <div class="text-zinc-300">↳ 100% responsivo para mobile</div>
+              <div class="text-zinc-300">↳ Pontuação 90+ no Google PageSpeed</div>
+              <div class="text-zinc-300">↳ Identidade visual impactante</div>
             </div>
           </div>
 
           <!-- PASSO 3 -->
-          <div class="bg-black border-4 border-[#FFEB00] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFEB00] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#0a2a5e] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div class="md:col-span-2">
-              <span class="font-anton text-6xl sm:text-7xl text-[#FFEB00]">03</span>
-              <div class="text-xs font-black uppercase text-zinc-400 mt-1">FATURAMENTO</div>
+              <span class="font-anton text-6xl sm:text-7xl text-[#25D366]">03</span>
+              <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 3</div>
             </div>
             <div class="md:col-span-7">
               <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">
-                AGENDA LOTA COM PACIENTE CERTO
+                INTEGRAÇÃO NO WHATSAPP & AUTOMAÇÕES
               </h3>
               <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
-                Sua equipe não gasta mais 4 horas do dia digitando "olá, tudo bem?" para quem não responde. 
-                Eles apenas abrem a conversa com a ficha preenchida e confirmam o horário da avaliação na cadeira. 
-                <strong>Previsibilidade matemática toda semana.</strong>
+                Conectamos botões estratégicos que disparam conversas imediatas com mensagens pré-configuradas. Se necessário, ativamos bots de triagem que atendem o cliente na hora, filtrando dúvidas comuns e agilizando seu fechamento.
               </p>
             </div>
-            <div class="md:col-span-3 bg-zinc-900 border-2 border-zinc-700 p-4 text-xs font-mono">
-              <div class="text-[#FFEB00] font-bold mb-1">MÉTRICA FINAL:</div>
-              <div class="text-zinc-300">↳ Odonto: 15 implantes/mês</div>
-              <div class="text-zinc-300">↳ Estética: 23 procedimentos/mês</div>
-              <div class="text-zinc-300">↳ Menos de 5% de no-show</div>
+            <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
+              <div class="text-[#25D366] font-bold mb-1">CONEXÃO DIRETA:</div>
+              <div class="text-zinc-300">↳ Botão flutuante inteligente</div>
+              <div class="text-zinc-300">↳ Rastreamento de conversões</div>
+              <div class="text-zinc-300">↳ Sem perda de lead na espera</div>
+            </div>
+          </div>
+
+          <!-- PASSO 4 -->
+          <div class="bg-[#07172e] border-4 border-white p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFFFFF] grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            <div class="md:col-span-2">
+              <span class="font-anton text-6xl sm:text-7xl text-white">04</span>
+              <div class="text-xs font-black uppercase text-zinc-400 mt-1">ETAPA 4</div>
+            </div>
+            <div class="md:col-span-7">
+              <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">
+                LANÇAMENTO, TREINAMENTO & SUPORTE
+              </h3>
+              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                Publicamos seu site ou sistema no ar com domínio oficial, e-mails configurados e SSL ativo. Ensinamos você e sua equipe a utilizar todas as ferramentas e oferecemos suporte contínuo direto pelo WhatsApp.
+              </p>
+            </div>
+            <div class="md:col-span-3 bg-[#040d1a] border-2 border-zinc-700 p-4 text-xs font-mono">
+              <div class="text-[#25D366] font-bold mb-1">TRANQUILIDADE:</div>
+              <div class="text-zinc-300">↳ Hospedagem rápida e estável</div>
+              <div class="text-zinc-300">↳ Suporte com o próprio dev</div>
+              <div class="text-zinc-300">↳ Sem burocracia de agência</div>
             </div>
           </div>
 
@@ -463,69 +1048,69 @@
       </div>
     </section>
 
-    <!-- SIMULAÇÃO VISUAL DE PIPELINE VS AGÊNCIA TRADICIONAL -->
-    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-black">
+    <!-- COMPARAÇÃO DIRETA: AGÊNCIA COMUM VS GABDIN TECH -->
+    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
       <div class="max-w-6xl mx-auto">
         <h2 class="font-anton text-3xl sm:text-5xl uppercase text-center text-white mb-10">
-          COMPARAÇÃO DIRETA: <span class="bg-[#FFEB00] text-black px-2">AGÊNCIA COMUM</span> VS <span class="bg-white text-black px-2">GABDIN TECH</span>
+          COMPARAÇÃO: <span class="bg-red-600 text-white px-2">AGÊNCIA COMUM</span> VS <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">GABDIN TECH</span>
         </h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           <!-- AGÊNCIA COMUM -->
-          <div class="bg-zinc-950 border-4 border-zinc-800 p-6 sm:p-8">
+          <div class="bg-[#07172e] border-4 border-zinc-800 p-6 sm:p-8">
             <div class="font-anton text-2xl text-red-500 uppercase mb-4 flex items-center gap-2">
-              <span>✕</span> AGÊNCIA DE SOCIAL MEDIA COMUM
+              <span>✕</span> AGÊNCIAS TRADICIONAIS
             </div>
             <ul class="space-y-3 text-sm text-zinc-400 font-medium">
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span>Cobra R$ 2.500 para fazer 12 posts no Canva por mês.</span>
+                <span>Demora de 2 a 3 meses para entregar um site básico.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span>Pede 3 meses de contrato de fidelidade "para começar a dar resultado".</span>
+                <span>Usa templates pesados do WordPress que travam no celular.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span>Relatório com métricas de vaidade: "alcance", "impressões" e "engajamento".</span>
+                <span>Exige contratos de fidelidade de 12 meses presos com multa.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span>Não sabe nada de implante dentário nem de ML de toxina botulínica.</span>
+                <span>Foco em posts no Instagram que ninguém curte em vez de vendas reais.</span>
               </li>
               <li class="flex items-start gap-2">
                 <span class="text-red-500 font-bold">✕</span>
-                <span>Se o lead manda mensagem, ninguém responde a tempo e ele vai embora.</span>
+                <span>Atendimento demorado com atendentes que não entendem de código.</span>
               </li>
             </ul>
           </div>
 
           <!-- GABDIN TECH -->
-          <div class="bg-zinc-950 border-4 border-[#FFEB00] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFEB00]">
-            <div class="font-anton text-2xl text-[#FFEB00] uppercase mb-4 flex items-center gap-2">
-              <span>✓</span> SISTEMA GABDIN TECH
+          <div class="bg-[#07172e] border-4 border-[#25D366] p-6 sm:p-8 shadow-[6px_6px_0px_0px_#25D366]">
+            <div class="font-anton text-2xl text-[#25D366] uppercase mb-4 flex items-center gap-2">
+              <span>✓</span> GABDIN TECH
             </div>
             <ul class="space-y-3 text-sm text-zinc-200 font-medium">
               <li class="flex items-start gap-2">
-                <span class="text-[#FFEB00] font-black">✓</span>
-                <span><strong class="text-white">Zero post no feed:</strong> canal direto de tráfego local no Google e Meta ads.</span>
+                <span class="text-[#25D366] font-black">✓</span>
+                <span><strong class="text-white">Entrega rápida:</strong> primeiros projetos no ar a partir de 5 dias úteis.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#FFEB00] font-black">✓</span>
-                <span><strong class="text-white">Sem fidelidade:</strong> você continua só se a agenda estiver cheia.</span>
+                <span class="text-[#25D366] font-black">✓</span>
+                <span><strong class="text-white">Código limpo e próprio:</strong> carregamento em menos de 1s no 4G brasileiro.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#FFEB00] font-black">✓</span>
-                <span><strong class="text-white">Métrica única que importa:</strong> quantas avaliações foram sentadas na cadeira.</span>
+                <span class="text-[#25D366] font-black">✓</span>
+                <span><strong class="text-white">Sem fidelidade forçada:</strong> você continua conosco porque tem resultado financeiro.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#FFEB00] font-black">✓</span>
-                <span><strong class="text-white">Bot 2min:</strong> qualificação automática de urgência e procedimento.</span>
+                <span class="text-[#25D366] font-black">✓</span>
+                <span><strong class="text-white">Foco exclusivo em vendas:</strong> botão de WhatsApp estratégico e SEO para Google.</span>
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-[#FFEB00] font-black">✓</span>
-                <span><strong class="text-white">Exclusividade territorial:</strong> não pegamos seu concorrente vizinho.</span>
+                <span class="text-[#25D366] font-black">✓</span>
+                <span><strong class="text-white">Atendimento direto:</strong> fale diretamente com o programador responsável.</span>
               </li>
             </ul>
           </div>
@@ -534,228 +1119,392 @@
       </div>
     </section>
 
-    <!-- SEÇÃO PREÇO BRUTALISTA -->
-    <section id="preco" class="py-16 px-4 sm:px-8 border-b-4 border-white bg-zinc-950">
-      <div class="max-w-4xl mx-auto">
+    <!-- ======================================================== -->
+    <!-- SEÇÃO PREÇOS & PACOTES TRANSPARENTES                     -->
+    <!-- ======================================================== -->
+    <section id="preco" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#040d1a]">
+      <div class="max-w-6xl mx-auto">
 
-        <div class="text-center mb-10">
-          <div class="inline-block bg-[#FFEB00] text-black font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-3">
-            O INVESTIMENTO MAIS BARATO DO SEU NEGÓCIO
+        <div class="text-center mb-12">
+          <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#25D366] mb-3">
+            INVESTIMENTO TRANSPARENTE E ACESSÍVEL
           </div>
           <h2 class="font-anton text-4xl sm:text-6xl uppercase text-white leading-tight">
-            PREÇO ÚNICO. <span class="bg-[#FFEB00] text-black px-2">SEM SURPRESAS.</span>
+            ESCOLHA O PACOTE IDEAL PARA <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#25D366]">SUA EMPRESA</span>
           </h2>
-          <p class="text-zinc-400 text-sm sm:text-base mt-2">
-            Um único implante ou dois procedimentos de harmonização já pagam a mensalidade inteira.
+          <p class="text-zinc-400 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
+            Sem pegadinhas, sem contratos de fidelidade amarrados. Pagamento facilitado via Pix, boleto ou cartão em até 12x.
           </p>
         </div>
 
-        <!-- CARD DE PREÇO BRUTALISTA -->
-        <div class="bg-black border-4 border-[#FFEB00] shadow-[8px_8px_0px_0px_#FFEB00] p-6 sm:p-10 relative">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <div class="absolute -top-4 right-4 sm:right-8 bg-red-600 text-white font-anton text-xs sm:text-sm px-3 py-1 border-2 border-black uppercase tracking-wider">
-            ● APENAS 2 VAGAS POR BAIRRO
-          </div>
-
-          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between border-b-4 border-zinc-800 pb-6 mb-6">
+          <!-- PLANO 1: LANDING PAGE EXPRESS -->
+          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#0a2a5e] flex flex-col justify-between">
             <div>
-              <div class="text-xs font-mono text-zinc-400 uppercase tracking-widest">PLANO COMPLETO DE CAPTAÇÃO</div>
-              <h3 class="font-anton text-3xl sm:text-4xl uppercase text-white mt-1">PIPELINE GABDIN TECH</h3>
-            </div>
-            <div class="mt-4 sm:mt-0 text-left sm:text-right">
-              <div class="font-anton text-5xl sm:text-6xl text-[#FFEB00] leading-none">
-                R$ 1.900<span class="text-xl sm:text-2xl text-white font-sans font-bold">/mês</span>
-              </div>
-              <div class="text-xs font-mono text-zinc-400 mt-1">Faturamento via boleto ou Pix mensal</div>
-            </div>
-          </div>
-
-          <!-- BENEFÍCIOS DO PLANO -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-sm font-bold text-zinc-200">
-            <div class="flex items-center gap-3 bg-zinc-900 p-3 border-2 border-zinc-800">
-              <span class="text-[#FFEB00] font-black text-xl">⚡</span>
-              <span><strong>7 dias</strong> para ver os primeiros resultados na agenda</span>
-            </div>
-            <div class="flex items-center gap-3 bg-zinc-900 p-3 border-2 border-zinc-800">
-              <span class="text-[#FFEB00] font-black text-xl">🔒</span>
-              <span><strong>2 vagas por bairro</strong> (proteção de território)</span>
-            </div>
-            <div class="flex items-center gap-3 bg-zinc-900 p-3 border-2 border-zinc-800">
-              <span class="text-[#FFEB00] font-black text-xl">🚫</span>
-              <span><strong>Sem fidelidade</strong>: se não gostar, cancela a qualquer mês</span>
-            </div>
-            <div class="flex items-center gap-3 bg-zinc-900 p-3 border-2 border-zinc-800">
-              <span class="text-[#FFEB00] font-black text-xl">🤖</span>
-              <span><strong>Bot de WhatsApp 2min</strong> configurado e ativo</span>
-            </div>
-            <div class="flex items-center gap-3 bg-zinc-900 p-3 border-2 border-zinc-800">
-              <span class="text-[#FFEB00] font-black text-xl">📄</span>
-              <span><strong>Página brutalista dedicada</strong> com alta conversão</span>
-            </div>
-            <div class="flex items-center gap-3 bg-zinc-900 p-3 border-2 border-zinc-800">
-              <span class="text-[#FFEB00] font-black text-xl">🎯</span>
-              <span><strong>Campanhas locais</strong> (Itaquá, Guarulhos, Arujá, Poá)</span>
-            </div>
-          </div>
-
-          <!-- BOTÃO FECHAMENTO PREÇO -->
-          <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20para%20minha%20clinica" target="_blank" rel="noopener noreferrer" class="brutal-btn-yellow w-full py-5 text-center font-anton text-2xl sm:text-3xl uppercase tracking-wide block">
-            GARANTIR VAGA DA MINHA CLÍNICA NO WHATSAPP ➔
-          </a>
-
-          <div class="text-center text-xs font-mono text-zinc-400 mt-4">
-            Atendimento direto com o especialista • Resposta imediata
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- PROVA DE IMPACTO E REGIONALISMO -->
-    <section class="py-12 px-4 sm:px-8 border-b-4 border-white bg-black">
-      <div class="max-w-6xl mx-auto">
-        <div class="bg-[#FFEB00] text-black border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#FFFFFF]">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
-            <div class="md:col-span-2">
-              <div class="bg-black text-[#FFEB00] font-black text-xs uppercase px-2 py-1 inline-block mb-2">
-                EXCLUSIVIDADE REGIONAL
-              </div>
-              <h3 class="font-anton text-3xl sm:text-4xl uppercase leading-tight">
-                POR QUE SÓ ATENDEMOS 2 CLÍNICAS POR BAIRRO?
-              </h3>
-              <p class="text-sm sm:text-base font-bold mt-2 text-zinc-900">
-                Não faz sentido vender o mesmo paciente para dois consultórios concorrentes da mesma avenida de Itaquaquecetuba ou Guarulhos. Nós protegemos quem fecha primeiro. Se seu concorrente fechar antes, sua região é bloqueada.
+              <div class="text-xs font-mono text-zinc-400 uppercase tracking-widest mb-1">CAMPANHAS & TRÁFEGO PAGO</div>
+              <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">LANDING PAGE EXPRESS</h3>
+              <p class="text-zinc-300 text-xs sm:text-sm mb-4">
+                Ideal para profissionais liberais e empresas que querem validar um serviço ou rodar anúncios no Google e Instagram com urgência.
               </p>
+              
+              <div class="border-y-2 border-zinc-800 py-4 mb-4">
+                <div class="text-xs font-mono text-zinc-400">A partir de</div>
+                <div class="font-anton text-4xl text-[#25D366]">R$ 890</div>
+                <div class="text-xs font-mono text-zinc-400">Pagamento único ou até 12x</div>
+              </div>
+
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> 1 Página única de alta conversão</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Botão flutuante de WhatsApp incluso</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Rastreamento Meta Pixel & Google Ads</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Entrega rápida em até 5 dias úteis</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Domínio e SSL configurados</li>
+              </ul>
             </div>
-            <div class="text-center md:text-right">
-              <a href="https://wa.me/5511956927584?text=Quero%20consultar%20se%20meu%20bairro%20ainda%20tem%20vaga" target="_blank" rel="noopener noreferrer" class="bg-black text-white hover:bg-zinc-800 font-anton text-lg sm:text-xl uppercase px-6 py-4 border-4 border-black inline-block shadow-[4px_4px_0px_0px_#000]">
-                CONSULTAR MEU BAIRRO ➔
-              </a>
-            </div>
+
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Quero%20contratar%20a%20Landing%20Page%20Express%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-3.5 text-center text-xs sm:text-sm font-black uppercase">
+              CONTRATAR LANDING PAGE ➔
+            </a>
           </div>
+
+          <!-- PLANO 2: SITE INSTITUCIONAL COMPLETO (DESTAQUE) -->
+          <div class="bg-[#091830] border-4 border-[#25D366] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#25D366] flex flex-col justify-between relative">
+            <div class="absolute -top-4 right-4 bg-[#25D366] text-black font-anton text-xs px-3 py-1 border-2 border-black uppercase tracking-wider">
+              ★ MAIS ESCOLHIDO
+            </div>
+
+            <div>
+              <div class="text-xs font-mono text-[#25D366] font-bold uppercase tracking-widest mb-1">PRESENÇA COMPLETA & AUTORIDADE</div>
+              <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">SITE INSTITUCIONAL PRO</h3>
+              <p class="text-zinc-300 text-xs sm:text-sm mb-4">
+                A presença digital definitiva para sua empresa dominar o mercado em Guarulhos, São Paulo e no Brasil.
+              </p>
+              
+              <div class="border-y-2 border-zinc-700 py-4 mb-4">
+                <div class="text-xs font-mono text-zinc-400">A partir de</div>
+                <div class="font-anton text-4xl text-[#25D366]">R$ 1.690</div>
+                <div class="text-xs font-mono text-zinc-400">Parcelamento facilitado em até 12x</div>
+              </div>
+
+              <ul class="space-y-2 text-xs font-mono text-zinc-200 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Site multipáginas (Início, Sobre, Serviços, Contato)</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Otimização de SEO Local para o Google</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Google Meu Negócio configurado</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Integração inteligente com WhatsApp</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> E-mails profissionais (@suaempresa.com.br)</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Suporte e manutenção prioritária</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Quero%20contratar%20o%20Site%20Institucional%20Pro%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-4 text-center text-sm font-black uppercase">
+              QUERO MEU SITE PRO ➔
+            </a>
+          </div>
+
+          <!-- PLANO 3: SISTEMA WEB SOB MEDIDA -->
+          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#0a2a5e] flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono text-zinc-400 uppercase tracking-widest mb-1">AUTOMAÇÃO & GESTÃO</div>
+              <h3 class="font-anton text-2xl sm:text-3xl uppercase text-white mb-2">SISTEMA SOB MEDIDA</h3>
+              <p class="text-zinc-300 text-xs sm:text-sm mb-4">
+                Plataforma web personalizada, portais de clientes, dashboards administrativos e automações para escalar sua operação.
+              </p>
+              
+              <div class="border-y-2 border-zinc-800 py-4 mb-4">
+                <div class="text-xs font-mono text-zinc-400">Sob Diagnóstico Técnico</div>
+                <div class="font-anton text-3xl sm:text-4xl text-white">SOB MEDIDA</div>
+                <div class="text-xs font-mono text-zinc-400">Proposta conforme escopo</div>
+              </div>
+
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Banco de dados seguro e escalável</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Painel de controle com permissões por usuário</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Integração com APIs externas (WhatsApp, Pagamentos)</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Relatórios e métricas de desempenho</li>
+                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Código fonte exclusivo para sua empresa</li>
+              </ul>
+            </div>
+
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20reuni%C3%A3o%20para%20or%C3%A7ar%20um%20Sistema%20Web%20Sob%20Medida." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-3.5 text-center text-xs sm:text-sm font-black uppercase">
+              ORÇAR SISTEMA WEB ➔
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO DEPOIMENTOS / PROVA SOCIAL -->
+    <section id="depoimentos" class="py-16 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <div class="inline-block bg-[#0a2a5e] text-white font-black px-3 py-1 text-xs uppercase tracking-widest border-2 border-black mb-2 shadow-[2px_2px_0px_0px_#25D366]">
+            DEPOIMENTOS REAIS
+          </div>
+          <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white">
+            QUEM CONFIA NA <span class="text-[#25D366]">GABDIN TECH</span>
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+          <div class="bg-[#07172e] border-3 border-black p-6 shadow-[5px_5px_0px_0px_#0a2a5e]">
+            <div class="text-[#25D366] text-lg mb-2">★★★★★</div>
+            <p class="text-zinc-300 text-sm italic mb-4">
+              "Nosso site antigo demorava uma eternidade para abrir. A equipe da Gabdin refez tudo em tempo recorde e o número de mensagens no WhatsApp triplicou nas primeiras duas semanas."
+            </p>
+            <div class="font-bold text-white text-sm">Marcelo Alencar</div>
+            <div class="text-xs font-mono text-[#25D366]">Diretor Comercial • Guarulhos / SP</div>
+          </div>
+
+          <div class="bg-[#07172e] border-3 border-[#25D366] p-6 shadow-[5px_5px_0px_0px_#25D366]">
+            <div class="text-[#25D366] text-lg mb-2">★★★★★</div>
+            <p class="text-zinc-300 text-sm italic mb-4">
+              "Eles não são apenas designers que deixam a tela bonita. Eles entendem de vendas e código. O sistema que criaram para nossa clínica roda sem travar e atende pacientes no automático."
+            </p>
+            <div class="font-bold text-white text-sm">Dra. Camila Toledo</div>
+            <div class="text-xs font-mono text-[#25D366]">Proprietária de Clínica Médica • São Paulo</div>
+          </div>
+
+          <div class="bg-[#07172e] border-3 border-black p-6 shadow-[5px_5px_0px_0px_#0a2a5e]">
+            <div class="text-[#25D366] text-lg mb-2">★★★★★</div>
+            <p class="text-zinc-300 text-sm italic mb-4">
+              "Atendimento transparente e direto ao ponto. Entregaram a landing page exatamente como prometido, com velocidade de carregamento absurda e integração perfeita com o WhatsApp."
+            </p>
+            <div class="font-bold text-white text-sm">Eduardo Santos</div>
+            <div class="text-xs font-mono text-[#25D366]">Gestor de Serviços B2B • Campinas / SP</div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- FAQ BRUTALISTA DIRETO -->
-    <section class="py-16 px-4 sm:px-8 border-b-4 border-white bg-zinc-950">
+    <!-- SEÇÃO FAQ (PERGUNTAS FREQUENTES SEM ENROLAÇÃO) -->
+    <section id="faq" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#040d1a]">
       <div class="max-w-4xl mx-auto">
-        <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white mb-8">
-          PERGUNTAS <span class="text-[#FFEB00]">SEM ENROLAÇÃO</span>
-        </h2>
+        <div class="mb-10 text-center">
+          <div class="inline-block bg-[#0a2a5e] text-[#25D366] border-2 border-[#25D366] font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#25D366] mb-3">
+            TIRE TODAS AS SUAS DÚVIDAS
+          </div>
+          <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white">
+            PERGUNTAS <span class="text-[#25D366]">FREQUENTES</span>
+          </h2>
+        </div>
 
         <div class="space-y-4">
 
-          <div class="border-4 border-zinc-800 bg-black p-5">
-            <h3 class="font-anton text-xl uppercase text-[#FFEB00] mb-2">
-              QUANTO TEMPO DEMORA PRA COMEÇAR A CAIR PACIENTE NO MEU WHATSAPP?
+          <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
+            <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
+              <span class="text-[#25D366]">➔</span> A GABDIN TECH ATENDE APENAS GUARULHOS OU TODO O BRASIL?
             </h3>
-            <p class="text-zinc-300 text-sm">
-              Colocamos sua máquina no ar em até 48 horas após a validação inicial. Em 7 dias de tráfego ativo já começam a cair as primeiras triagens reais no WhatsApp da sua clínica.
+            <p class="text-zinc-300 text-sm leading-relaxed">
+              Atendemos presencialmente em Guarulhos e na Grande São Paulo e de forma 100% online em todas as regiões do Brasil. Nossos processos de briefing, alinhamento, desenvolvimento e suporte funcionam de forma ágil através de WhatsApp, videoconferência e e-mail.
             </p>
           </div>
 
-          <div class="border-4 border-zinc-800 bg-black p-5">
-            <h3 class="font-anton text-xl uppercase text-[#FFEB00] mb-2">
-              PRECISO GRAVAR VÍDEO OU FAZER DANÇA NO INSTAGRAM?
+          <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
+            <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
+              <span class="text-[#25D366]">➔</span> QUANTO TEMPO DEMORA PARA O MEU SITE OU SISTEMA FICAR PRONTO?
             </h3>
-            <p class="text-zinc-300 text-sm">
-              <strong>NÃO. ZERO.</strong> Nosso pipeline atrai pacientes por necessidade e dor específica através de anúncios locais no Google e Meta ads direcionados direto para nossa página de alta conversão. Você só atende quem quer fechar o procedimento.
+            <p class="text-zinc-300 text-sm leading-relaxed">
+              Landing pages de alta conversão costumam ser entregues e publicadas entre <strong>3 a 5 dias úteis</strong>. Sites institucionais completos levam em média de <strong>7 a 15 dias úteis</strong>. Sistemas web sob medida dependem do escopo das funcionalidades, com prazos alinhados previamente na proposta técnica.
             </p>
           </div>
 
-          <div class="border-4 border-zinc-800 bg-black p-5">
-            <h3 class="font-anton text-xl uppercase text-[#FFEB00] mb-2">
-              TEM CONTRATO DE FIDELIDADE OU MULTA PRA CANCELAR?
+          <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
+            <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
+              <span class="text-[#25D366]">➔</span> O SITE FUNCIONA BEM EM CELULARES E SMARTPHONES?
             </h3>
-            <p class="text-zinc-300 text-sm">
-              Não. A cobrança é mensal (R$ 1.900/mês). Se no primeiro mês você achar que não valeu a pena, basta avisar antes do próximo vencimento e encerramos na hora. Sem letras miúdas.
+            <p class="text-zinc-300 text-sm leading-relaxed">
+              <strong>Sim, 100%.</strong> Adotamos o conceito <em>Mobile First</em>. Sabemos que mais de 80% do tráfego brasileiro vem de smartphones. Testamos minuciosamente o layout em diversos tamanhos de tela para garantir carregamento instantâneo, botões fáceis de tocar e leitura confortável.
             </p>
           </div>
 
-          <div class="border-4 border-zinc-800 bg-black p-5">
-            <h3 class="font-anton text-xl uppercase text-[#FFEB00] mb-2">
-              COMO FUNCIONA O BOT DE 2 MINUTOS? ELE PARECE ROBÔ CHATO?
+          <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
+            <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
+              <span class="text-[#25D366]">➔</span> COMO FUNCIONA O PAGAMENTO?
             </h3>
-            <p class="text-zinc-300 text-sm">
-              Não. É um fluxo dinâmico, humano e cirúrgico. Ele faz perguntas objetivas: <em>"Olá! Você procura implante para um dente específico ou protocolo completo?"</em>. O paciente responde rápido e quando sua secretária assume a conversa, o prontuário prévio já está pronto.
+            <p class="text-zinc-300 text-sm leading-relaxed">
+              Facilitamos com pagamento via <strong>Pix</strong> (com desconto à vista), boleto bancário ou cartão de crédito em até 12x. Trabalhamos com entrada e saldo na entrega para que você acompanhe cada etapa do projeto com total segurança.
+            </p>
+          </div>
+
+          <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
+            <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
+              <span class="text-[#25D366]">➔</span> TEREI SUPORTE APÓS A ENTREGA DO SITE?
+            </h3>
+            <p class="text-zinc-300 text-sm leading-relaxed">
+              Sim! Todos os nossos projetos incluem garantia técnica e suporte direto via WhatsApp com quem desenvolveu o código. Você não fica na mão com chatbots genéricos de suporte.
+            </p>
+          </div>
+
+          <div class="border-4 border-black bg-[#07172e] p-5 shadow-[4px_4px_0px_0px_#0a2a5e]">
+            <h3 class="font-anton text-xl uppercase text-white mb-2 flex items-center gap-2">
+              <span class="text-[#25D366]">➔</span> EU PRECISO PAGAR MENSALIDADE OBRIGATÓRIA?
+            </h3>
+            <p class="text-zinc-300 text-sm leading-relaxed">
+              Não existe fidelidade forçada. Você paga pelo desenvolvimento do seu site ou sistema e ele é 100% seu. Se desejar que a Gabdin Tech cuide da hospedagem de alta velocidade, segurança e manutenções mensais, temos planos opcionais a partir de valores simbólicos mensais.
             </p>
           </div>
 
         </div>
+
+        <!-- CTA Final pós FAQ -->
+        <div class="mt-12 text-center">
+          <p class="text-zinc-300 text-base mb-4 font-bold">Ainda ficou com alguma dúvida sobre o seu projeto?</p>
+          <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20o%20desenvolvimento%20do%20meu%20site/sistema." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-6 py-4 text-sm sm:text-base font-black">
+            TIRAR DÚVIDA COM O ESPECIALISTA NO WHATSAPP ➔
+          </a>
+        </div>
+
       </div>
     </section>
   </main>
 
-  <!-- FOOTER BRUTALISTA -->
-  <footer class="bg-black border-t-4 border-white text-zinc-400 py-12 px-4 sm:px-8">
+  <!-- FOOTER OFICIAL COMPLETO -->
+  <footer class="bg-[#02070f] border-t-4 border-white text-zinc-400 py-14 px-4 sm:px-8">
     <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 pb-8 border-b-2 border-zinc-800">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 pb-10 border-b-2 border-zinc-800">
         
+        <!-- Coluna 1: Marca e Posicionamento -->
         <div class="md:col-span-2">
-          <div class="font-anton text-3xl text-[#FFEB00] uppercase mb-2">
+          <div class="inline-block bg-[#0a2a5e] text-white font-anton text-3xl px-3 py-1 border-3 border-[#25D366] shadow-[3px_3px_0px_0px_#25D366] uppercase mb-3">
             GABDIN TECH
           </div>
           <p class="text-sm text-zinc-300 max-w-md font-medium leading-relaxed">
-            Sistemas de alta conversão e pipelines diretos de faturamento para clínicas odontológicas e de estética em Itaquaquecetuba, Guarulhos, Arujá, Poá e região metropolitana de São Paulo.
+            Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil. Tecnologia moderna, páginas que carregam em menos de 1 segundo e automações no WhatsApp para alavancar suas vendas.
           </p>
-          <div class="mt-4 text-xs font-mono text-zinc-400">
-            Domínio Oficial: <span class="text-white font-bold">gabdintech.com.br</span> | Marca: <span class="text-[#FFEB00] font-bold">gabdin.tech</span>
+          <div class="mt-4 text-xs font-mono text-zinc-400 space-y-1">
+            <div>Domínio Oficial: <span class="text-white font-bold">gabdintech.com.br</span></div>
+            <div>Sede: <span class="text-[#25D366] font-bold">Guarulhos - São Paulo</span> • Atendimento em todo o Brasil</div>
           </div>
         </div>
 
+        <!-- Coluna 2: Navegação Rápida -->
         <div>
-          <div class="font-anton text-lg text-white uppercase mb-3">PIPELINES</div>
+          <div class="font-anton text-lg text-white uppercase mb-3">NAVEGAÇÃO</div>
           <ul class="space-y-2 text-sm font-bold">
-            <li><a href="odonto.html" class="hover:text-[#FFEB00] transition-colors">➔ Odonto (15 Implantes)</a></li>
-            <li><a href="estetica.html" class="hover:text-[#FFEB00] transition-colors">➔ Estética (23 Clientes)</a></li>
-            <li><a href="#preco" class="hover:text-[#FFEB00] transition-colors">➔ Preço & Condições</a></li>
+            <li><a href="#servicos" class="hover:text-[#25D366] transition-colors">➔ Nossos Serviços</a></li>
+            <li><a href="#portfolio" class="hover:text-[#25D366] transition-colors">➔ Portfólio & Casos</a></li>
+            <li><a href="#metodo" class="hover:text-[#25D366] transition-colors">➔ Como Funciona</a></li>
+            <li><a href="#preco" class="hover:text-[#25D366] transition-colors">➔ Planos & Valores</a></li>
+            <li><a href="#faq" class="hover:text-[#25D366] transition-colors">➔ Perguntas Frequentes</a></li>
+            <li><a href="odonto.html" class="hover:text-[#25D366] transition-colors">➔ Modelo Odontologia</a></li>
+            <li><a href="estetica.html" class="hover:text-[#25D366] transition-colors">➔ Modelo Estética</a></li>
           </ul>
         </div>
 
+        <!-- Coluna 3: Contato Direto -->
         <div>
-          <div class="font-anton text-lg text-white uppercase mb-3">CONTATO RÁPIDO</div>
-          <div class="text-sm space-y-2">
-            <p class="font-bold text-white">WhatsApp Oficial:</p>
-            <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20para%20minha%20clinica" target="_blank" rel="noopener noreferrer" class="text-[#FFEB00] font-mono font-black text-base hover:underline block">
+          <div class="font-anton text-lg text-white uppercase mb-3">CONTATO OFICIAL</div>
+          <div class="text-sm space-y-2.5">
+            <p class="font-bold text-white">WhatsApp Comercial:</p>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vim%20pelo%20site%20gabdintech.com.br%20e%20gostaria%20de%20atendimento." target="_blank" rel="noopener noreferrer" class="text-[#25D366] font-mono font-black text-lg hover:underline block">
               +55 (11) 95692-7584
             </a>
-            <p class="text-xs text-zinc-400">Atendimento prioritário de Seg a Sáb das 08h às 20h.</p>
+            <p class="text-xs text-zinc-400">Atendimento de Segunda a Sábado das 08h às 20h.</p>
+            <div class="pt-2">
+              <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20uma%20proposta%20comercial." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-3 py-1.5 text-xs font-bold uppercase inline-flex items-center gap-1">
+                <span>SOLICITAR PROPOSTA</span>
+                <span>➔</span>
+              </a>
+            </div>
           </div>
         </div>
 
       </div>
 
+      <!-- Linha de Copyright -->
       <div class="flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-zinc-400 gap-4">
         <div>
-          © 2026 GABDIN TECH (gabdin.tech). Todos os direitos reservados. Brutalismo & Conversão.
+          © 2026 GABDIN TECH (gabdintech.com.br). Todos os direitos reservados.
         </div>
         <div class="flex items-center gap-4">
-          <span>Itaquá • Guarulhos • Arujá • Poá</span>
+          <span>Guarulhos • São Paulo • Todo o Brasil</span>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- BOTÃO FLUTUANTE WHATSAPP BRUTALISTA AMARELO -->
-  <aside aria-label="WhatsApp Flutuante" class="fixed bottom-5 right-5 z-50">
-    <a href="https://wa.me/5511956927584?text=Quero%20pipeline%20GABDIN%20para%20minha%20clinica" 
+  <!-- ======================================================== -->
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (REQUISITO EXPLÍCITO)        -->
+  <!-- ======================================================== -->
+  <aside aria-label="Botão Flutuante de Contato WhatsApp" class="fixed bottom-5 right-5 z-50">
+    <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vim%20pelo%20site%20gabdintech.com.br%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20empresa." 
        id="floating-whatsapp-btn"
        target="_blank" 
        rel="noopener noreferrer" 
-       class="brutal-btn-yellow px-4 py-3 sm:px-5 sm:py-4 flex items-center gap-3 font-anton text-lg sm:text-xl uppercase tracking-wider group shadow-[6px_6px_0px_0px_#FFFFFF] hover:shadow-[8px_8px_0px_0px_#FFFFFF]"
-       aria-label="Falar no WhatsApp">
-      <!-- Ícone WhatsApp SVG brutalista -->
+       class="brutal-btn-green floating-whatsapp-pulse px-4 py-3 sm:px-5 sm:py-3.5 flex items-center gap-3 font-anton text-base sm:text-lg uppercase tracking-wide group shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#FFFFFF]"
+       aria-label="Falar conosco no WhatsApp">
+      
+      <!-- Ícone Oficial SVG WhatsApp -->
       <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-black group-hover:scale-110 transition-transform flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-1.116-.062-.275-.089-.63-.207-1.127-.42-2.096-.897-3.468-3.033-3.573-3.173-.105-.14-1.04-1.383-1.04-2.637 0-1.254.656-1.871.889-2.128.232-.257.509-.321.679-.321.17 0 .339.001.488.009.158.007.369-.06.577.44.212.509.722 1.761.785 1.89.064.129.106.28.021.45-.085.17-.127.276-.254.424-.127.148-.267.33-.381.443-.127.127-.26.265-.112.519.148.254.659 1.087 1.416 1.761.975.868 1.796 1.137 2.051 1.264.254.127.402.106.551-.064.148-.17.636-.741.806-.995.17-.254.339-.212.572-.127.233.085 1.482.699 1.736.826.254.127.424.19.487.297.064.106.064.614-.08 1.019zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.179L2 22l4.954-1.399C8.423 21.493 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
       </svg>
-      <div class="text-left leading-none">
-        <span class="block text-[10px] sm:text-xs font-mono font-bold tracking-tight">RESPOSTA EM 2 MIN</span>
-        <span class="block text-sm sm:text-lg font-anton">FALAR NO WHATSAPP</span>
+      
+      <div class="text-left leading-tight">
+        <span class="flex items-center gap-1.5 text-[10px] sm:text-xs font-mono font-black text-black">
+          <span class="inline-block w-2 h-2 bg-black rounded-full status-dot"></span>
+          ONLINE AGORA
+        </span>
+        <span class="block text-sm sm:text-base font-anton text-black">FALAR NO WHATSAPP</span>
       </div>
     </a>
   </aside>
 
+  <!-- SCRIPT: CONTADOR ANIMADO PARA MÉTRICAS DO SISTEMA WEB -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const secaoMetricas = document.querySelector(".metricas-sistema"); // Alvo da seção
+    
+    if (!secaoMetricas) return;
+
+    const contadores = [
+      { atual: 0, alvo: 25, sufixo: "h/sem", elementoId: "contador-tempo" },
+      { atual: 100, alvo: 0, sufixo: "", elementoId: "contador-erros", reverso: true }, // Começa em 100 e cai para Zero
+      { atual: 0, alvo: 100, sufixo: "%", elementoId: "contador-nuvem" }
+    ];
+
+    const rodarContador = (config) => {
+      const el = document.getElementById(config.elementoId);
+      if (!el) return;
+
+      let tempoTotal = 1500; // Tempo da animação em milissegundos
+      let passos = 60;
+      let intervaloTempo = tempoTotal / passos;
+      let incremento = (config.alvo - config.atual) / passos;
+      let passoAtual = 0;
+
+      const timer = setInterval(() => {
+        passoAtual++;
+        config.atual += incremento;
+
+        if (config.reverso && Math.round(config.atual) === 0) {
+          el.innerText = "Zero";
+        } else {
+          el.innerText = Math.round(config.atual) + config.sufixo;
+        }
+
+        if (passoAtual >= passos) {
+          clearInterval(timer);
+          el.innerText = config.alvo === 0 ? "Zero" : config.alvo + config.sufixo;
+        }
+      }, intervaloTempo);
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          contadores.forEach(rodarContador);
+          observer.unobserve(entry.target); // Roda a animação apenas uma vez
+        }
+      });
+    }, { threshold: 0.3 });
+
+    observer.observe(secaoMetricas);
+  });
+  </script>
 </body>
 </html>
