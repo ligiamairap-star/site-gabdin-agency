@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil | GABDIN TECH</title>
-  <meta name="description" content="Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil. Páginas ultra-rápidas, landing pages de alta conversão, sistemas web sob medida e automações de WhatsApp para sua empresa vender todos os dias.">
+  <title>Agência Digital Completa - Guarulhos | GabdinTech</title>
+  <meta name="description" content="Agência Digital Completa em Guarulhos e Brasil. Criação de sites de alta conversão, marketing digital (SEO e Google Ads), gestão de redes sociais, apps e automação de processos. Fale com um especialista!">
   <link rel="canonical" href="https://gabdintech.com.br/">
   
   <!-- Open Graph / Meta Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://gabdintech.com.br/">
-  <meta property="og:title" content="Criamos sites e sistemas que trazem clientes - Guarulhos e todo Brasil | GABDIN TECH">
-  <meta property="og:description" content="Sites de alto padrão, sistemas web sob medida e automações no WhatsApp para empresas de Guarulhos e de todo o Brasil. Fale no WhatsApp!">
+  <meta property="og:title" content="Agência Digital Completa - Guarulhos | GabdinTech">
+  <meta property="og:description" content="Soluções digitais que transformam negócios em Guarulhos e Brasil. Criação de sites, marketing digital, apps e automação de processos.">
   <meta name="theme-color" content="#0a2a5e">
   <link rel="icon" type="image/jpeg" href="img/logo.jpg">
   <link rel="apple-touch-icon" href="img/logo.jpg">
@@ -198,6 +198,61 @@
       animation: pulse-ring 2.2s infinite cubic-bezier(0.4, 0, 0.6, 1);
     }
   </style>
+
+  <!-- Schema.org Structured Data (JSON-LD) para acelerar a indexação do Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://gabdintech.com.br/#organization",
+        "name": "GabdinTech",
+        "url": "https://gabdintech.com.br/",
+        "logo": "https://gabdintech.com.br/img/logo.jpg",
+        "description": "Agência Digital Completa - Criação de sites, marketing digital, redes sociais, aplicativos e automação de processos.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+5511956927584",
+          "contactType": "customer service",
+          "availableLanguage": "Portuguese"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://gabdintech.com.br/#website",
+        "url": "https://gabdintech.com.br/",
+        "name": "GabdinTech",
+        "description": "Agência Digital Completa - Guarulhos e Brasil",
+        "publisher": {
+          "@id": "https://gabdintech.com.br/#organization"
+        },
+        "inLanguage": "pt-BR"
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://gabdintech.com.br/#service",
+        "name": "GabdinTech - Agência Digital Completa",
+        "url": "https://gabdintech.com.br/",
+        "image": "https://gabdintech.com.br/img/logo.jpg",
+        "telephone": "+5511956927584",
+        "priceRange": "$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Guarulhos",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "areaServed": [
+          "Guarulhos",
+          "São Paulo",
+          "ABC Paulista",
+          "Brasil"
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body class="bg-[#040d1a] text-white selection:bg-[#25D366] selection:text-black antialiased">
 
@@ -243,8 +298,8 @@
         <a href="#servicos" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
           SERVIÇOS
         </a>
-        <a href="#portfolio" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
-          PORTFÓLIO
+        <a href="#cases" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
+          CASES
         </a>
         <a href="#metodo" class="bg-white text-black px-3 py-2 border-3 border-black shadow-[3px_3px_0px_0px_#00D2FF] hover:bg-[#00D2FF] hover:text-black transition-colors">
           COMO FUNCIONA
@@ -298,9 +353,9 @@
 
         <!-- H1 PRINCIPAL EXATO PEDIDO PELO USUÁRIO -->
         <h1 class="font-anton text-4xl sm:text-6xl md:text-7xl lg:text-8xl uppercase leading-[0.95] tracking-tight text-white mb-6">
-          Criamos sites e sistemas que trazem clientes<br>
+          Soluções digitais que transformam negócios<br>
           <span class="bg-[#0a2a5e] text-white px-3 sm:px-6 py-1 inline-block -rotate-1 border-4 border-[#00D2FF] shadow-[6px_6px_0px_0px_#00D2FF] mt-2">
-            Guarulhos e todo Brasil
+            em Guarulhos e Brasil
           </span>
         </h1>
 
@@ -342,7 +397,7 @@
           </a>
 
           <!-- CTA SECUNDÁRIO (VER SERVIÇOS E PORTFÓLIO) -->
-          <a href="#portfolio" 
+          <a href="#cases" 
              id="cta-hero-portfolio" 
              class="bg-[#0a2a5e] text-white border-4 border-black shadow-[5px_5px_0px_0px_#00D2FF] hover:shadow-[7px_7px_0px_0px_#FFFFFF] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all p-6 flex flex-col justify-between group text-left">
             <div class="flex items-center justify-between gap-2 mb-3">
@@ -488,460 +543,396 @@
             </h2>
           </div>
           <p class="text-zinc-300 font-mono text-xs sm:text-sm max-w-md">
-            Do site institucional à plataforma web sob medida: tudo desenvolvido com foco exclusivo em <span class="text-[#00D2FF] font-bold">velocidade, usabilidade e atração de novos clientes</span>.
+            Do site profissional à automação de atendimento: tudo desenvolvido com foco exclusivo em <span class="text-[#00D2FF] font-bold">atração de clientes, velocidade e aumento de faturamento</span>.
           </p>
         </div>
 
-        <!-- Grid de 6 Serviços Principais -->
+        <!-- Grid de 5 Serviços Principais -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-          <!-- SERVIÇO 1: SITES INSTITUCIONAIS -->
+          <!-- SERVIÇO 1: CRIAÇÃO DE SITES -->
           <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
-                🌐
-              </div>
-              <h3 class="font-anton text-2xl uppercase text-white mb-2">
-                SITES INSTITUCIONAIS & CORPORATIVOS
-              </h3>
-              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-                Presença digital com credibilidade imediata. Apresente seus serviços, história, diferenciais e equipe com layout moderno e exclusivo, transmitindo autoridade para fechar contratos de alto valor.
-              </p>
-              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> 100% responsivo para celulares e computadores</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Otimizado para SEO e Google</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Certificado SSL e segurança ponta a ponta</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> E-mails corporativos personalizados</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Cria%C3%A7%C3%A3o%20de%20Site%20Institucional." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
-              ORÇAR SITE INSTITUCIONAL ➔
-            </a>
-          </div>
-
-          <!-- SERVIÇO 2: LANDING PAGES DE ALTA CONVERSÃO -->
-          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 shadow-[6px_6px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
-            <div>
               <div class="flex items-center justify-between mb-4">
-                <div class="w-12 h-12 bg-[#00D2FF] border-2 border-black flex items-center justify-center text-2xl shadow-[3px_3px_0px_0px_#000]">
-                  🎯
+                <div class="w-14 h-14 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-[#00D2FF] shadow-[3px_3px_0px_0px_#000]">
+                  <!-- Ícone Criação de Sites -->
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <rect x="2" y="3" width="20" height="14" rx="2" stroke-width="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21" stroke-width="2"/>
+                    <line x1="12" y1="17" x2="12" y2="21" stroke-width="2"/>
+                    <circle cx="6" cy="7" r="1" fill="currentColor"/>
+                    <circle cx="9" cy="7" r="1" fill="currentColor"/>
+                    <circle cx="12" cy="7" r="1" fill="currentColor"/>
+                  </svg>
                 </div>
                 <span class="bg-[#00D2FF] text-black text-[10px] font-black px-2 py-0.5 uppercase tracking-wider">MAIS VENDIDO</span>
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
-                LANDING PAGES DE ALTA CONVERSÃO
+                CRIAÇÃO DE SITES
               </h3>
               <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-                Páginas cirúrgicas desenhadas especificamente para campanhas no Google Ads, Instagram e Facebook. Copywriting persuasivo focado em fazer o visitante clicar no botão de compra ou WhatsApp.
+                Sites institucionais modernos, landing pages de alta conversão e lojas virtuais ultrarrápidas. Design exclusivo que transmite autoridade imediata e transforma visitantes em pedidos.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Carregamento instantâneo (&lt; 0.8s)</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Rastreamento do Meta Pixel, GA4 e Google Ads</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Gatilhos mentais e chamadas diretas de ação</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Pronta em até 5 dias úteis</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> 100% responsivo para celulares e computadores</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Otimizado para SEO e primeiras posições no Google</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Carregamento ultrarrápido (menos de 1 segundo)</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Botão e checkout direto com WhatsApp integrado</li>
               </ul>
             </div>
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20uma%20Landing%20Page%20de%20Alta%20Convers%C3%A3o%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
-              ORÇAR LANDING PAGE ➔
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Cria%C3%A7%C3%A3o%20de%20Sites." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR CRIAÇÃO DE SITES →
             </a>
           </div>
 
-          <!-- SERVIÇO 3: SISTEMAS WEB SOB MEDIDA -->
+          <!-- SERVIÇO 2: MARKETING DIGITAL (SEO, GOOGLE ADS, REDES) -->
+          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 shadow-[6px_6px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-14 h-14 bg-[#00D2FF] border-2 border-black flex items-center justify-center text-black shadow-[3px_3px_0px_0px_#000]">
+                  <!-- Ícone Marketing Digital / Foguete / Performance -->
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                  </svg>
+                </div>
+                <span class="bg-[#25D366] text-black text-[10px] font-black px-2 py-0.5 uppercase tracking-wider">ALTA CONVERSÃO</span>
+              </div>
+              <h3 class="font-anton text-2xl uppercase text-white mb-2">
+                MARKETING DIGITAL (SEO, GOOGLE ADS, REDES)
+              </h3>
+              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                Atraia clientes prontos para comprar. Gerenciamento profissional de Google Ads para captar quem já pesquisa pelo seu serviço e campanhas em redes sociais focadas em geração de leads.
+              </p>
+              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Campanhas cirúrgicas de Google Ads (pesquisa e mapa)</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> SEO Local para liderar buscas em Guarulhos e SP</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Rastreamento avançado com Meta Pixel e Google Analytics 4</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Relatórios descomplicados de vendas e ROI real</li>
+              </ul>
+            </div>
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Marketing%20Digital%20(Google%20Ads%20e%20SEO)." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR MARKETING DIGITAL →
+            </a>
+          </div>
+
+          <!-- SERVIÇO 3: GESTÃO DE REDES SOCIAIS -->
           <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
-                ⚙️
+              <div class="w-14 h-14 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-[#00D2FF] mb-4 shadow-[3px_3px_0px_0px_#000]">
+                <!-- Ícone Gestão de Redes Sociais -->
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
-                SISTEMAS WEB & PLATAFORMAS SOB MEDIDA
+                GESTÃO DE REDES SOCIAIS
               </h3>
               <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-                Automatize sua empresa e elimine planilhas manuais. Desenvolvemos sistemas web na nuvem, painéis administrativos, portais de clientes, controles de estoque, emissão de orçamentos e dashboards.
+                Construção de autoridade e engajamento constante no Instagram, Facebook e LinkedIn. Conteúdo planejado, design profissional e copies persuasivas para atrair seguidores qualificados.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Painel seguro com login e níveis de acesso</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Banco de dados rápido e escalável em nuvem</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Relatórios exportáveis em PDF e Excel</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Funciona em qualquer celular, tablet ou PC</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Calendário editorial estratégico alinhado ao seu nicho</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Artes, carrosséis e roteiros para vídeos e reels</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Posicionamento visual de alto padrão e branding</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Foco em relacionamento e conversão para o WhatsApp</li>
               </ul>
             </div>
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20um%20Sistema%20Web%20Sob%20Medida%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
-              ORÇAR SISTEMA WEB ➔
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20Gest%C3%A3o%20de%20Redes%20Sociais." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR GESTÃO DE REDES →
             </a>
           </div>
 
-          <!-- SERVIÇO 4: AUTOMAÇÃO WHATSAPP & BOTS -->
-          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between">
-            <div>
-              <div class="w-12 h-12 bg-[#25D366] border-2 border-black flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
-                💬
-              </div>
-              <h3 class="font-anton text-2xl uppercase text-white mb-2">
-                BOTS & AUTOMAÇÃO WHATSAPP EM 2 MINUTOS
-              </h3>
-              <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-                Nunca mais perca um cliente porque demorou para responder. Criamos fluxos inteligentes no WhatsApp que tiram dúvidas, fazem triagem de orçamento e entregam o contato pronto na mão do seu vendedor.
-              </p>
-              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Atendimento ativo 24h por dia, 7 dias por semana</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Triagem rápida para descartar curiosos</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Envio de dados direto para seu CRM ou e-mail</li>
-                <li class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Resposta média em 45 segundos</li>
-              </ul>
-            </div>
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Quero%20integrar%20um%20Bot%20de%20WhatsApp%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
-              ORÇAR AUTOMAÇÃO WHATSAPP ➔
-            </a>
-          </div>
-
-          <!-- SERVIÇO 5: SEO LOCAL & GOOGLE MEU NEGÓCIO -->
+          <!-- SERVIÇO 4: DESENVOLVIMENTO DE APPS -->
           <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
-                📍
+              <div class="w-14 h-14 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-[#00D2FF] mb-4 shadow-[3px_3px_0px_0px_#000]">
+                <!-- Ícone Desenvolvimento de Apps -->
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <rect x="5" y="2" width="14" height="20" rx="3" stroke-width="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18" stroke-width="3" stroke-linecap="round"/>
+                </svg>
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
-                SEO LOCAL & GOOGLE MEU NEGÓCIO
+                DESENVOLVIMENTO DE APPS
               </h3>
               <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-                Colocamos sua empresa nas primeiras posições de busca orgânica em Guarulhos, São Paulo e em todo o Brasil. Apareça no Google Maps exatamente quando alguém pesquisar pelo que você vende.
+                Aplicativos web (PWAs) e plataformas sob medida para delivery, gestão interna, agendamentos e controle operacional. Sem comissões de terceiros e totalmente customizados para a sua empresa.
               </p>
               <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Otimização técnica de palavras-chave locais</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Configuração profissional do Google Perfil de Empresa</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Estruturação de dados Schema.org</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Tráfego orgânico sem pagar por clique</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Aplicativos leves que funcionam em qualquer celular</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Painel de gestão completo com relatórios e pedidos</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Integração com Pix e pagamentos automatizados</li>
+                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Sem mensalidades ou comissões abusivas por venda</li>
               </ul>
             </div>
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20otimizar%20o%20SEO%20Local%20e%20Google%20Meu%20Neg%C3%B3cio%20da%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
-              ORÇAR SEO LOCAL ➔
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20or%C3%A7ar%20o%20Desenvolvimento%20de%20um%20App%20ou%20Sistema." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
+              ORÇAR DESENVOLVIMENTO DE APPS →
             </a>
           </div>
 
-          <!-- SERVIÇO 6: INFOPRODUTOS & LANÇAMENTOS DIGITAIS -->
-          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 transition-all flex flex-col justify-between">
+          <!-- SERVIÇO 5: AUTOMAÇÃO DE PROCESSOS -->
+          <div class="bg-[#07172e] border-4 border-black p-6 shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#25D366] hover:-translate-y-1 transition-all flex flex-col justify-between md:col-span-2 lg:col-span-2">
             <div>
-              <div class="w-12 h-12 bg-[#0a2a5e] border-2 border-[#00D2FF] flex items-center justify-center text-2xl mb-4 shadow-[3px_3px_0px_0px_#000]">
-                🚀
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-14 h-14 bg-[#25D366] border-2 border-black flex items-center justify-center text-black shadow-[3px_3px_0px_0px_#000]">
+                  <!-- Ícone Automação de Processos / Raio & Engrenagem -->
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <span class="bg-[#25D366] text-black text-[10px] font-black px-3 py-1 uppercase tracking-wider">RESPOSTA EM 2 MINUTOS</span>
               </div>
               <h3 class="font-anton text-2xl uppercase text-white mb-2">
-                INFOPRODUTOS & LANÇAMENTOS DIGITAIS
+                AUTOMAÇÃO DE PROCESSOS & BOTS DE WHATSAPP
               </h3>
               <p class="text-zinc-300 text-sm leading-relaxed mb-4">
-                Páginas de vendas de alta conversão para cursos, mentorias, ebooks e produtos digitais. Carregamento ultra-rápido, design persuasivo e integração completa com plataformas de checkout e automação de entrega.
+                Elimine tarefas manuais repetitivas e nunca mais perca vendas por demora no atendimento. Robôs inteligentes no WhatsApp para qualificação de leads, triagem de clientes, agendamento de consultas e integração com planilhas e CRMs.
               </p>
-              <ul class="space-y-2 text-xs font-mono text-zinc-300 mb-6">
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Páginas de vendas persuasivas com carregamento instantâneo</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Integração com Hotmart, Kiwify, Eduzz, Green e Monetizze</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Checkout próprio via Pix e cartão de crédito sem taxas extras</li>
-                <li class="flex items-center gap-2"><span class="text-[#00D2FF] font-bold">✓</span> Rastreamento avançado com Pixel Meta, Google Ads e UTMs</li>
-              </ul>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs font-mono text-zinc-300 mb-6">
+                <div class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Atendimento ativo 24h por dia, 7 dias por semana</div>
+                <div class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Triagem rápida para descartar curiosos</div>
+                <div class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Disparo automático de lembretes e confirmações</div>
+                <div class="flex items-center gap-2"><span class="text-[#25D366] font-bold">✓</span> Conexão com sistemas, e-mails e bancos de dados</div>
+              </div>
             </div>
-            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20p%C3%A1gina%20ou%20sistema%20de%20Infoproduto." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-2.5 text-xs font-black uppercase text-center">
-              ORÇAR INFOPRODUTO ➔
+            <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Quero%20integrar%20Automa%C3%A7%C3%A3o%20de%20Processos%20e%20Bots%20na%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green w-full py-3 text-xs font-black uppercase text-center">
+              ORÇAR AUTOMAÇÃO DE PROCESSOS →
             </a>
           </div>
 
         </div>
-
-        <!-- Banner de Chamada em Serviços -->
-        <div class="mt-12 bg-[#0a2a5e] border-4 border-black p-6 sm:p-8 shadow-[6px_6px_0px_0px_#00D2FF] flex flex-col md:flex-row items-center justify-between gap-6">
-          <div>
-            <div class="text-xs font-mono font-bold text-[#00D2FF] uppercase tracking-wider mb-1">PROJETOS PERSONALIZADOS</div>
-            <h3 class="font-anton text-2xl sm:text-3xl text-white uppercase">PRECISA DE ALGO ESPECÍFICO PARA A SUA OPERAÇÃO?</h3>
-            <p class="text-zinc-200 text-sm mt-1">Converse diretamente com o desenvolvedor responsável e receba uma solução sob medida.</p>
-          </div>
-          <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Tenho%20um%20projeto%20espec%C3%ADfico%20e%20gostaria%20de%20conversar%20sobre%20a%20viabilidade%20t%C3%A9cnica." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-6 py-4 text-sm font-black whitespace-nowrap">
-            FALAR COM DESENVOLVEDOR NO WHATSAPP ➔
-          </a>
-        </div>
-
       </div>
     </section>
 
     <!-- ======================================================== -->
     <!-- NOVA SEÇÃO: PORTFÓLIO (REQUISITO EXPLÍCITO DO USUÁRIO)   -->
     <!-- ======================================================== -->
-    <section id="portfolio" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
+    <section id="cases" class="py-20 px-4 sm:px-8 border-b-4 border-white bg-[#02070f]">
+      <!-- Âncora legada para compatibilidade de links -->
+      <span id="portfolio" class="sr-only"></span>
       <div class="max-w-6xl mx-auto">
 
-        <!-- Cabeçalho Portfólio -->
+        <!-- Cabeçalho Cases -->
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
           <div>
             <div class="inline-block bg-[#00D2FF] text-black border-2 border-black font-black px-3 py-1 text-xs uppercase tracking-widest shadow-[3px_3px_0px_0px_#0a2a5e] mb-3">
-              RESULTADOS COMPROVADOS NO MERCADO
+              RESULTADOS COMPROVADOS EM NÚMEROS
             </div>
             <h2 class="font-anton text-3xl sm:text-5xl md:text-6xl uppercase text-white leading-tight">
-              PORTFÓLIO & <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#00D2FF]">CASOS DE SUCESSO</span>
+              CASES DE <span class="bg-[#0a2a5e] text-white px-2 border-2 border-[#00D2FF]">SUCESSO</span>
             </h2>
           </div>
           <p class="text-zinc-400 font-mono text-xs sm:text-sm max-w-md">
-            Conheça páginas e sistemas reais entregues para empresas em Guarulhos, São Paulo e em todo o Brasil.
+            Conheça soluções digitais reais entregues para empresas em Guarulhos, São Paulo, ABC Paulista e em todo o Brasil.
           </p>
         </div>
 
-        <!-- Lista de 4 Casos de Sucesso / Projetos -->
-        <div class="space-y-8">
+        <!-- Lista dos 3 Cases de Sucesso -->
+        <div class="space-y-10">
 
-          <!-- PROJETO DE DESTAQUE 1: SISTEMA WEB DE CONTROLE DE PEDIDOS & CLIENTES -->
+          <!-- CASE 1: SITE PARA LOJA DE ROUPAS (GUARULHOS) - LOJA XPTO -->
           <div class="bg-[#07172e] border-4 border-[#00FF66] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#00FF66] grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-            
-            <!-- Coluna Esquerda: Informações, Métricas e Botão (8 Colunas) -->
             <div class="lg:col-span-8 flex flex-col justify-between">
               <div>
-                <!-- 1. IDENTIFICAÇÃO E BADGES (Topo do Bloco) -->
                 <div class="flex flex-wrap items-center gap-3 mb-4">
-                  <!-- Badge 1: Fundo Verde Vibrante com texto em caixa alta e cor preta -->
                   <span class="bg-[#00FF66] text-black font-mono font-black text-xs px-3 py-1 uppercase tracking-wider border border-black shadow-[2px_2px_0px_0px_#000]">
-                    SISTEMA SOB MEDIDA
+                    E-COMMERCE & ANÚNCIOS NO GOOGLE
                   </span>
-                  <!-- Badge 2: Borda fina azul clara/branca, fundo transparente, texto em caixa alta -->
                   <span class="bg-transparent text-white border border-sky-400 font-mono font-bold text-xs px-3 py-1 uppercase tracking-wider">
-                    PAINEL SAAS / NUVEM
+                    LOJA XPTO
                   </span>
-                  <!-- Texto discreto em tom cinza claro -->
                   <span class="text-zinc-400 text-xs font-mono">
-                    Operação Nacional
+                    Guarulhos - SP
                   </span>
                 </div>
 
-                <!-- 2. TÍTULOS E CONTEÚDO PRINCIPAL -->
                 <h3 class="font-anton text-3xl sm:text-4xl md:text-5xl uppercase text-white leading-tight mb-4 tracking-tight">
-                  SISTEMA WEB DE CONTROLE DE PEDIDOS & CLIENTES
+                  SITE PARA LOJA DE ROUPAS (GUARULHOS)
                 </h3>
                 
+                <div class="bg-[#0a2a5e] border-l-4 border-[#00FF66] p-4 mb-5 text-white font-bold text-sm sm:text-base leading-snug">
+                  "Aumentamos vendas em 50% para a Loja XPTO de Guarulhos com e-commerce e anúncios no Google"
+                </div>
+
                 <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
-                  Desenvolvimento de software web personalizado para distribuidora com equipe de vendas remota em 4 estados. Substituição de planilhas desatualizadas por painel na nuvem com controle de estoque, status de entregas, relatórios financeiros e disparo de alertas via WhatsApp.
+                  Desenvolvimento de catálogo e loja virtual de carregamento instantâneo, integrado ao WhatsApp e associado a campanhas hiperlocais no Google Ads para compradores de moda em Guarulhos e região.
                 </p>
 
-                <!-- 3. BLOCO DE MÉTRICAS (Efeito Grid) -->
-                <div class="metricas-sistema grid grid-cols-3 gap-3 sm:gap-4 py-4 px-3 sm:px-5 mb-6 bg-[#040d1a] border-2 border-zinc-700 shadow-[4px_4px_0px_0px_#000]">
+                <!-- BLOCO DE NÚMEROS E MÉTRICAS DESTACADAS -->
+                <div class="grid grid-cols-3 gap-3 sm:gap-4 py-4 px-3 sm:px-5 mb-6 bg-[#040d1a] border-2 border-zinc-700 shadow-[4px_4px_0px_0px_#000]">
                   <div class="text-left">
-                    <div id="contador-tempo" class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">25h/sem</div>
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">+50%</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">VENDAS EM 2 MESES</div>
+                  </div>
+                  <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">3.8x</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">RETORNO NO GOOGLE ADS</div>
+                  </div>
+                  <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">0.6s</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">ABERTURA NO CELULAR</div>
+                  </div>
+                </div>
+
+                <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20case%20da%20Loja%20de%20Roupas%20(Loja%20XPTO)%20e%20gostaria%20de%20um%20projeto%20similar." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-6 py-3 text-xs sm:text-sm font-black uppercase inline-flex items-center gap-2">
+                  SOLICITAR PROJETO SIMILAR →
+                </a>
+              </div>
+            </div>
+
+            <!-- Coluna Lateral: Depoimento Integrado da Loja XPTO -->
+            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e] flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-mono text-[#00FF66] font-bold uppercase mb-2">★ DEPOIMENTO DO CLIENTE:</div>
+                <p class="text-sm text-zinc-200 leading-relaxed italic mb-4">
+                  "Com o site da GabdinTech, meus clientes aumentaram 30% em 2 meses! O catálogo é rápido e os clientes fecham direto no WhatsApp."
+                </p>
+                <div class="border-t border-zinc-800 pt-3">
+                  <div class="font-bold text-white text-sm">João</div>
+                  <div class="text-xs font-mono text-[#00FF66]">Dono da Loja XPTO — Guarulhos / SP</div>
+                </div>
+              </div>
+              <div class="mt-4 pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
+                Segmento: Moda, Vestuário & E-commerce
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 2: SISTEMA DE GESTÃO PARA ACADEMIA (SÃO PAULO) -->
+          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#00D2FF] grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            <div class="lg:col-span-8 flex flex-col justify-between">
+              <div>
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                  <span class="bg-[#00D2FF] text-black font-mono font-black text-xs px-3 py-1 uppercase tracking-wider border border-black shadow-[2px_2px_0px_0px_#000]">
+                    SISTEMA WEB & GESTÃO SAAS
+                  </span>
+                  <span class="bg-transparent text-white border border-sky-400 font-mono font-bold text-xs px-3 py-1 uppercase tracking-wider">
+                    CONTROLE REVENDA & TREINOS
+                  </span>
+                  <span class="text-zinc-400 text-xs font-mono">
+                    São Paulo - SP
+                  </span>
+                </div>
+
+                <h3 class="font-anton text-3xl sm:text-4xl md:text-5xl uppercase text-white leading-tight mb-4 tracking-tight">
+                  SISTEMA DE GESTÃO PARA ACADEMIA (SÃO PAULO)
+                </h3>
+
+                <div class="bg-[#0a2a5e] border-l-4 border-[#00D2FF] p-4 mb-5 text-white font-bold text-sm sm:text-base leading-snug">
+                  "Eliminamos a perda de mensalidades com controle de presença digital e cobranças automáticas no WhatsApp"
+                </div>
+
+                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                  Plataforma em nuvem desenvolvida sob medida para substituir planilhas manuais. Controle completo de matrícula de alunos, renovação automática de planos e lembretes automáticos enviados via WhatsApp antes do vencimento.
+                </p>
+
+                <!-- BLOCO DE NÚMEROS E MÉTRICAS DESTACADAS -->
+                <div class="grid grid-cols-3 gap-3 sm:gap-4 py-4 px-3 sm:px-5 mb-6 bg-[#040d1a] border-2 border-zinc-700 shadow-[4px_4px_0px_0px_#000]">
+                  <div class="text-left">
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00D2FF] leading-none mb-1">25h/sem</div>
                     <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">TEMPO ECONOMIZADO</div>
                   </div>
                   <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
-                    <div id="contador-erros" class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">Zero</div>
-                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">ERROS DE PEDIDO</div>
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00D2FF] leading-none mb-1">Zero</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">ERROS DE COBRANÇA</div>
                   </div>
                   <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
-                    <div id="contador-nuvem" class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">100%</div>
-                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">ACESSO EM NUVEM</div>
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00D2FF] leading-none mb-1">100%</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">OPERAÇÃO EM NUVEM</div>
                   </div>
                 </div>
-              </div>
 
-              <!-- 5. BOTÃO DE AÇÃO (CTA DO PROJETO) -->
-              <div class="pt-2">
-                <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20case%20do%20Sistema%20Web%20de%20Controle%20de%20Pedidos%20no%20portf%C3%B3lio%20da%20GABDIN%20TECH%20e%20quero%20um%20or%C3%A7amento%20de%20sistema%20personalizado%20para%20minha%20empresa." 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="inline-flex items-center justify-center gap-2 bg-[#00FF66] text-black font-extrabold uppercase text-xs sm:text-sm px-6 py-4 border-3 border-black shadow-[4px_4px_0px_0px_#0a2a5e] hover:bg-[#20ba5a] hover:shadow-[6px_6px_0px_0px_#FFFFFF] hover:-translate-x-0.5 hover:-translate-y-0.5 transition-all">
-                  <span>ORÇAR SISTEMA WEB PERSONALIZADO →</span>
+                <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20case%20do%20Sistema%20para%20Academia%20e%20gostaria%20de%20um%20sistema%20para%20minha%20empresa." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-6 py-3 text-xs sm:text-sm font-black uppercase inline-flex items-center gap-2">
+                  CONSULTAR SISTEMA PARA ACADEMIA →
                 </a>
               </div>
             </div>
 
-            <!-- 4. CARD DE FUNCIONALIDADES (Lado Direito ou Bloco Lateral) (4 Colunas) -->
-            <div class="lg:col-span-4 bg-[#051329] border-2 border-sky-500/40 p-6 shadow-[6px_6px_0px_0px_#0a2a5e] flex flex-col justify-between h-full">
+            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e] flex flex-col justify-between">
               <div>
-                <!-- Título em Verde e Caixa Alta -->
-                <div class="text-[#00FF66] font-mono font-black text-sm uppercase tracking-wider mb-4 flex items-center gap-1.5">
-                  <span>• FUNCIONALIDADES:</span>
+                <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">★ IMPACTO OPERACIONAL:</div>
+                <p class="text-sm text-zinc-200 leading-relaxed italic mb-4">
+                  "A recepção parou de cobrar aluno no balcão. O sistema avisa com link de pagamento direto no WhatsApp e nossa inadimplência caiu para praticamente zero."
+                </p>
+                <div class="border-t border-zinc-800 pt-3">
+                  <div class="font-bold text-white text-sm">Rodrigo Silva</div>
+                  <div class="text-xs font-mono text-[#00D2FF]">Gestor de Academia — São Paulo / SP</div>
                 </div>
-                
-                <!-- Lista com marcadores discretos -->
-                <ul class="space-y-3 text-sm text-zinc-200 font-medium">
-                  <li class="flex items-start gap-2.5">
-                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
-                    <span>Cadastro de clientes e vendedores</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
-                    <span>Emissão de propostas em 1 clique</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
-                    <span>Notificação no WhatsApp de entrega</span>
-                  </li>
-                  <li class="flex items-start gap-2.5">
-                    <span class="text-[#00FF66] text-sm leading-none mt-1">▪</span>
-                    <span>Gráficos financeiros e metas</span>
-                  </li>
-                </ul>
               </div>
-
-              <!-- Linha divisória horizontal sutil no rodapé do card -->
-              <div class="mt-6 pt-4 border-t border-zinc-800">
-                <!-- Texto final dentro do card em Verde -->
-                <div class="text-[#00FF66] font-mono text-xs font-bold flex items-center gap-2">
-                  <span>🛡️</span>
-                  <span>Segurança: Criptografia & Backups Diários</span>
-                </div>
+              <div class="mt-4 pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
+                Segmento: Fitness, Saúde & Bem-estar
               </div>
             </div>
-
           </div>
 
-          <!-- PROJETO 2: PLATAFORMA CLÍNICAS (ODONTO & ESTÉTICA) -->
-          <div class="bg-[#07172e] border-4 border-[#00D2FF] p-6 sm:p-8 shadow-[8px_8px_0px_0px_#00D2FF] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-            <div class="lg:col-span-8">
-              <div class="flex flex-wrap items-center gap-2 mb-3">
-                <span class="bg-[#00D2FF] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">SAÚDE & CLÍNICAS</span>
-                <span class="bg-[#0a2a5e] text-white font-mono font-bold text-xs px-2 py-0.5 uppercase border border-white">LANDING PAGE + BOT</span>
-                <span class="text-zinc-400 text-xs font-mono">Guarulhos & Grande SP</span>
-              </div>
-              <h3 class="font-anton text-2xl sm:text-4xl uppercase text-white mb-3">
-                PLATAFORMA DE CAPTAÇÃO & TRIAGEM PARA CLÍNICAS
-              </h3>
-              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-4">
-                Desenvolvimento de máquina completa de captação para consultórios odontológicos e clínicas de estética. O sistema filtra curiosos sem orçamento, realiza triagem em até 2 minutos pelo WhatsApp e entrega o paciente com agendamento pré-confirmado na cadeira.
-              </p>
-              
-              <!-- Métricas Reais do Projeto -->
-              <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">+340%</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Consultas Agendadas</div>
+          <!-- CASE 3: APP DE DELIVERY PARA RESTAURANTE (ABC PAULISTA) -->
+          <div class="bg-[#07172e] border-4 border-white p-6 sm:p-8 shadow-[8px_8px_0px_0px_#FFFFFF] grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            <div class="lg:col-span-8 flex flex-col justify-between">
+              <div>
+                <div class="flex flex-wrap items-center gap-3 mb-4">
+                  <span class="bg-white text-black font-mono font-black text-xs px-3 py-1 uppercase tracking-wider border border-black shadow-[2px_2px_0px_0px_#000]">
+                    APP DE DELIVERY PRÓPRIO
+                  </span>
+                  <span class="bg-transparent text-white border border-sky-400 font-mono font-bold text-xs px-3 py-1 uppercase tracking-wider">
+                    SEM TAXAS ABUSIVAS
+                  </span>
+                  <span class="text-zinc-400 text-xs font-mono">
+                    ABC Paulista
+                  </span>
                 </div>
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-white">&lt; 90s</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo Médio Resposta</div>
-                </div>
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">0.7s</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo Carregamento</div>
-                </div>
-              </div>
 
-              <!-- Links para Modelos ao Vivo -->
-              <div class="flex flex-wrap items-center gap-3">
-                <a href="odonto.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#00D2FF] transition-colors shadow-[2px_2px_0px_0px_#00D2FF]">
-                  VER MODELO ODONTO ➔
-                </a>
-                <a href="estetica.html" class="bg-white text-black px-4 py-2 border-2 border-black font-black text-xs uppercase hover:bg-[#00D2FF] transition-colors shadow-[2px_2px_0px_0px_#00D2FF]">
-                  VER MODELO ESTÉTICA ➔
+                <h3 class="font-anton text-3xl sm:text-4xl md:text-5xl uppercase text-white leading-tight mb-4 tracking-tight">
+                  APP DE DELIVERY PARA RESTAURANTE (ABC PAULISTA)
+                </h3>
+
+                <div class="bg-[#0a2a5e] border-l-4 border-white p-4 mb-5 text-white font-bold text-sm sm:text-base leading-snug">
+                  "Aplicativo próprio de pedidos e delivery sem comissões de terceiros, com pedidos caindo direto na cozinha via WhatsApp"
+                </div>
+
+                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6 font-normal">
+                  Cardápio digital ágil e responsivo para smartphones. Permite escolha de adicionais, cálculo de frete por distância/bairro, pagamento facilitado por Pix e emissão imediata da comanda de preparo.
+                </p>
+
+                <!-- BLOCO DE NÚMEROS E MÉTRICAS DESTACADAS -->
+                <div class="grid grid-cols-3 gap-3 sm:gap-4 py-4 px-3 sm:px-5 mb-6 bg-[#040d1a] border-2 border-zinc-700 shadow-[4px_4px_0px_0px_#000]">
+                  <div class="text-left">
+                    <div class="font-anton text-2xl sm:text-4xl text-white leading-none mb-1">100%</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">LUCRO PRÓPRIO (ZERO TAXAS)</div>
+                  </div>
+                  <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00D2FF] leading-none mb-1">+45%</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">PEDIDOS RECORRENTES</div>
+                  </div>
+                  <div class="text-left border-l border-zinc-800 pl-3 sm:pl-4">
+                    <div class="font-anton text-2xl sm:text-4xl text-[#00FF66] leading-none mb-1">&lt; 40s</div>
+                    <div class="text-[10px] sm:text-xs font-mono uppercase text-zinc-400 tracking-wider font-semibold">TEMPO POR PEDIDO</div>
+                  </div>
+                </div>
+
+                <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20case%20do%20App%20de%20Delivery%20e%20gostaria%20de%20um%20sistema%20para%20meu%20restaurante." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-6 py-3 text-xs sm:text-sm font-black uppercase inline-flex items-center gap-2">
+                  MONTAR APP DE DELIVERY →
                 </a>
               </div>
             </div>
 
-            <!-- Preview Card Lateral -->
-            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
-              <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">● TECNOLOGIAS APLICADAS:</div>
-              <div class="flex flex-wrap gap-1.5 mb-4 text-[11px] font-mono text-zinc-300">
-                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">HTML5 Semântico</span>
-                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">Tailwind CSS</span>
-                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">WhatsApp Cloud API</span>
-                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">Google Ads Tag</span>
-                <span class="bg-zinc-800 px-2 py-0.5 border border-zinc-700">Meta Pixel</span>
-              </div>
-              <p class="text-xs text-zinc-400 leading-relaxed">
-                "Saímos de 3 consultas por semana para agenda lotada de implantes e botox todos os dias. O retorno no primeiro mês foi imediato."
-              </p>
-              <div class="mt-3 pt-3 border-t border-zinc-800 text-[11px] font-mono text-[#00D2FF]">
-                Dr. R. Mendes • Guarulhos - SP
-              </div>
-            </div>
-          </div>
-
-          <!-- PROJETO 3: PORTAL B2B & INDÚSTRIA (GUARULHOS) -->
-          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_#0a2a5e] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-            <div class="lg:col-span-8">
-              <div class="flex flex-wrap items-center gap-2 mb-3">
-                <span class="bg-[#0a2a5e] text-white font-mono font-black text-xs px-2 py-0.5 uppercase border border-white">INDÚSTRIA & B2B</span>
-                <span class="bg-zinc-800 text-[#00D2FF] font-mono font-bold text-xs px-2 py-0.5 uppercase border border-zinc-700">SITE CORPORATIVO + SEO LOCAL</span>
-                <span class="text-zinc-400 text-xs font-mono">Polo Industrial Guarulhos</span>
-              </div>
-              <h3 class="font-anton text-2xl sm:text-4xl uppercase text-white mb-3">
-                PORTAL CORPORATIVO & SEO LOCAL PARA INDÚSTRIA
-              </h3>
-              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-4">
-                Redesenho estrutural completo de um portal industrial com mais de 80 produtos técnicos. O antigo site demorava 8 segundos para abrir. Criamos uma arquitetura rápida, com catálogo limpo e posicionamento orgânico nas pesquisas do Google para empresas da região metropolitana de São Paulo.
-              </p>
-
-              <!-- Métricas Reais do Projeto -->
-              <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">1º Lugar</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">18 Termos no Google</div>
-                </div>
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-white">+420%</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Pedidos de Cotação</div>
-                </div>
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">0.6s</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo de Abertura</div>
+            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e] flex flex-col justify-between">
+              <div>
+                <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">★ ECONOMIA REAL:</div>
+                <p class="text-sm text-zinc-200 leading-relaxed italic mb-4">
+                  "Deixamos de pagar 27% para plataformas de marketplace nos clientes fiéis da nossa região. O app se pagou em duas semanas."
+                </p>
+                <div class="border-t border-zinc-800 pt-3">
+                  <div class="font-bold text-white text-sm">Fernanda Rossi</div>
+                  <div class="text-xs font-mono text-[#00D2FF]">Proprietária de Restaurante — ABC Paulista</div>
                 </div>
               </div>
-
-              <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vi%20o%20caso%20do%20Portal%20B2B/Ind%C3%BAstria%20e%20gostaria%20de%20um%20projeto%20similar." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-5 py-2.5 text-xs font-black uppercase inline-flex items-center gap-2">
-                SOLICITAR PROJETO SIMILAR ➔
-              </a>
-            </div>
-
-            <!-- Preview Card Lateral -->
-            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
-              <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">● RESULTADO CHAVE:</div>
-              <p class="text-xs text-zinc-300 leading-relaxed mb-3">
-                "Recebemos orçamentos de grandes empresas de Guarulhos e Campinas todas as semanas sem gastar um centavo a mais em anúncios, apenas com a busca orgânica do site novo."
-              </p>
-              <div class="pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
-                Segmento: Usinagem & Manutenção Industrial
-              </div>
-            </div>
-          </div>
-
-          <!-- PROJETO 4: INFOPRODUTOS & LANÇAMENTOS DIGITAIS -->
-          <div class="bg-[#07172e] border-4 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_#0a2a5e] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-            <div class="lg:col-span-8">
-              <div class="flex flex-wrap items-center gap-2 mb-3">
-                <span class="bg-[#00D2FF] text-black font-mono font-black text-xs px-2 py-0.5 uppercase">INFOPRODUTOS & CURSOS</span>
-                <span class="bg-zinc-800 text-white font-mono font-bold text-xs px-2 py-0.5 uppercase border border-zinc-700">PÁGINA DE VENDAS + CHECKOUT</span>
-                <span class="text-zinc-400 text-xs font-mono">Lançamentos Digitais</span>
-              </div>
-              <h3 class="font-anton text-2xl sm:text-4xl uppercase text-white mb-3">
-                ESTRUTURA DE ALTA CONVERSÃO PARA INFOPRODUTOS & CURSOS
-              </h3>
-              <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-4">
-                Página de vendas ultra-otimizada desenvolvida para infoprodutor com tráfego pago intenso. Carregamento em menos de 0.6s no celular, player de vídeo VSL sem engasgo e integração direta com Hotmart, Kiwify e automação no WhatsApp para recuperação de carrinho.
-              </p>
-
-              <!-- Métricas Reais do Projeto -->
-              <div class="grid grid-cols-3 gap-3 mb-6 bg-[#040d1a] border-2 border-zinc-700 p-3 text-center">
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">0.6s</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Tempo de Abertura</div>
-                </div>
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-white">+84%</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Retenção no Pitch</div>
-                </div>
-                <div>
-                  <div class="font-anton text-xl sm:text-2xl text-[#00D2FF]">100%</div>
-                  <div class="text-[10px] sm:text-xs font-mono text-zinc-400 uppercase">Rastreamento de Pixels</div>
-                </div>
-              </div>
-
-              <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20uma%20p%C3%A1gina%20de%20alta%20convers%C3%A3o%20para%20meu%20Infoproduto." target="_blank" rel="noopener noreferrer" class="brutal-btn-green px-5 py-2.5 text-xs font-black uppercase inline-flex items-center gap-2">
-                SOLICITAR PÁGINA DE INFOPRODUTO ➔
-              </a>
-            </div>
-
-            <!-- Preview Card Lateral -->
-            <div class="lg:col-span-4 bg-[#040d1a] border-4 border-black p-5 shadow-[5px_5px_0px_0px_#0a2a5e]">
-              <div class="text-xs font-mono text-[#00D2FF] font-bold uppercase mb-2">● DIFERENCIAL TÉCNICO:</div>
-              <p class="text-xs text-zinc-300 leading-relaxed mb-3">
-                Zero plugins pesados e sem a lentidão do WordPress. A página aguenta picos de milhares de cliques simultâneos de campanhas no Meta Ads e Google Ads sem cair na abertura de carrinho.
-              </p>
-              <div class="pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
-                Segmento: Cursos Online, Mentorias & E-books
+              <div class="mt-4 pt-3 border-t border-zinc-800 text-[11px] font-mono text-zinc-400">
+                Segmento: Gastronomia & Delivery
               </div>
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
 
@@ -1263,37 +1254,55 @@
             DEPOIMENTOS REAIS
           </div>
           <h2 class="font-anton text-3xl sm:text-5xl uppercase text-white">
-            QUEM CONFIA NA <span class="text-[#00D2FF]">GABDIN TECH</span>
+            QUEM CONFIA NA <span class="text-[#00D2FF]">GABDINTECH</span>
           </h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-          <div class="bg-[#07172e] border-3 border-black p-6 shadow-[5px_5px_0px_0px_#0a2a5e]">
-            <div class="text-[#00D2FF] text-lg mb-2">★★★★★</div>
-            <p class="text-zinc-300 text-sm italic mb-4">
-              "Nosso site antigo demorava uma eternidade para abrir. A equipe da Gabdin refez tudo em tempo recorde e o número de mensagens no WhatsApp triplicou nas primeiras duas semanas."
-            </p>
-            <div class="font-bold text-white text-sm">Marcelo Alencar</div>
-            <div class="text-xs font-mono text-[#00D2FF]">Diretor Comercial • Guarulhos / SP</div>
+          <!-- DEPOIMENTO 1: JOÃO, DONO DA LOJA XPTO (DESTAQUE MÁXIMO) -->
+          <div class="bg-[#07172e] border-4 border-[#00FF66] p-6 shadow-[8px_8px_0px_0px_#00FF66] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="text-[#00FF66] text-xl font-bold">★★★★★</div>
+                <span class="bg-[#00FF66] text-black font-mono font-black text-[10px] px-2 py-0.5 uppercase">DESTAQUE</span>
+              </div>
+              <p class="text-white text-base font-semibold italic mb-5 leading-relaxed">
+                "Com o site da GabdinTech, meus clientes aumentaram 30% em 2 meses!"
+              </p>
+            </div>
+            <div class="border-t border-zinc-700 pt-3">
+              <div class="font-anton text-lg text-white">João</div>
+              <div class="text-xs font-mono text-[#00FF66] font-bold">Dono da Loja XPTO — Guarulhos / SP</div>
+            </div>
           </div>
 
-          <div class="bg-[#07172e] border-3 border-[#00D2FF] p-6 shadow-[5px_5px_0px_0px_#00D2FF]">
-            <div class="text-[#00D2FF] text-lg mb-2">★★★★★</div>
-            <p class="text-zinc-300 text-sm italic mb-4">
-              "Eles não são apenas designers que deixam a tela bonita. Eles entendem de vendas e código. O sistema que criaram para nossa clínica roda sem travar e atende pacientes no automático."
-            </p>
-            <div class="font-bold text-white text-sm">Dra. Camila Toledo</div>
-            <div class="text-xs font-mono text-[#00D2FF]">Proprietária de Clínica Médica • São Paulo</div>
+          <!-- DEPOIMENTO 2: RODRIGO SILVA (ACADEMIA) -->
+          <div class="bg-[#07172e] border-3 border-[#00D2FF] p-6 shadow-[5px_5px_0px_0px_#00D2FF] flex flex-col justify-between">
+            <div>
+              <div class="text-[#00D2FF] text-lg mb-3">★★★★★</div>
+              <p class="text-zinc-300 text-sm italic mb-5 leading-relaxed">
+                "O sistema de gestão da academia eliminou o trabalho manual da recepção. Os lembretes no WhatsApp zeraram os esquecimentos de mensalidade e trouxeram tranquilidade operacional."
+              </p>
+            </div>
+            <div class="border-t border-zinc-800 pt-3">
+              <div class="font-bold text-white text-sm">Rodrigo Silva</div>
+              <div class="text-xs font-mono text-[#00D2FF]">Gestor de Academia — São Paulo / SP</div>
+            </div>
           </div>
 
-          <div class="bg-[#07172e] border-3 border-black p-6 shadow-[5px_5px_0px_0px_#0a2a5e]">
-            <div class="text-[#00D2FF] text-lg mb-2">★★★★★</div>
-            <p class="text-zinc-300 text-sm italic mb-4">
-              "Atendimento transparente e direto ao ponto. Entregaram a landing page exatamente como prometido, com velocidade de carregamento absurda e integração perfeita com o WhatsApp."
-            </p>
-            <div class="font-bold text-white text-sm">Eduardo Santos</div>
-            <div class="text-xs font-mono text-[#00D2FF]">Gestor de Serviços B2B • Campinas / SP</div>
+          <!-- DEPOIMENTO 3: FERNANDA ROSSI (RESTAURANTE DELIVERY) -->
+          <div class="bg-[#07172e] border-3 border-black p-6 shadow-[5px_5px_0px_0px_#0a2a5e] flex flex-col justify-between">
+            <div>
+              <div class="text-[#00D2FF] text-lg mb-3">★★★★★</div>
+              <p class="text-zinc-300 text-sm italic mb-5 leading-relaxed">
+                "O app de delivery próprio nos libertou das taxas abusivas dos marketplaces. O cardápio abre em um piscar de olhos e os pedidos caem direto no WhatsApp da nossa cozinha."
+              </p>
+            </div>
+            <div class="border-t border-zinc-800 pt-3">
+              <div class="font-bold text-white text-sm">Fernanda Rossi</div>
+              <div class="text-xs font-mono text-[#00D2FF]">Proprietária de Restaurante — ABC Paulista</div>
+            </div>
           </div>
 
         </div>
@@ -1411,7 +1420,7 @@
           <div class="font-anton text-lg text-white uppercase mb-3">NAVEGAÇÃO</div>
           <ul class="space-y-2 text-sm font-bold">
             <li><a href="#servicos" class="hover:text-[#00D2FF] transition-colors">➔ Nossos Serviços</a></li>
-            <li><a href="#portfolio" class="hover:text-[#00D2FF] transition-colors">➔ Portfólio & Casos</a></li>
+            <li><a href="#cases" class="hover:text-[#00D2FF] transition-colors">➔ Portfólio & Casos</a></li>
             <li><a href="#metodo" class="hover:text-[#00D2FF] transition-colors">➔ Como Funciona</a></li>
             <li><a href="#preco" class="hover:text-[#00D2FF] transition-colors">➔ Planos & Valores</a></li>
             <li><a href="#faq" class="hover:text-[#00D2FF] transition-colors">➔ Perguntas Frequentes</a></li>
@@ -1459,34 +1468,37 @@
   <!-- BOTÃO FLUTUANTE DE WHATSAPP PREMIUM                      -->
   <!-- ======================================================== -->
   <aside aria-label="Botão Flutuante de Contato WhatsApp" class="fixed bottom-5 right-5 z-50">
-    <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Vim%20pelo%20site%20gabdintech.com.br%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20minha%20empresa." 
+    <a href="https://wa.me/5511956927584?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20um%20especialista%20em%20solu%C3%A7%C3%B5es%20digitais%20da%20GabdinTech." 
        id="floating-whatsapp-btn"
        target="_blank" 
        rel="noopener noreferrer" 
-       class="group relative inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20ba5a] text-black px-4 sm:px-5 py-2.5 sm:py-3 rounded-full border-2 border-black shadow-[4px_4px_0px_0px_#0a2a5e] hover:shadow-[6px_6px_0px_0px_#FFFFFF] hover:-translate-y-1 transition-all duration-200 floating-whatsapp-pulse"
-       aria-label="Falar conosco no WhatsApp">
+       class="group relative inline-flex items-center gap-3.5 bg-[#25D366] hover:bg-[#1eb857] text-black px-4 sm:px-6 py-3 sm:py-3.5 rounded-full border-4 border-black shadow-[6px_6px_0px_0px_#0a2a5e] hover:shadow-[8px_8px_0px_0px_#00D2FF] hover:-translate-y-1 hover:scale-105 transition-all duration-200 ring-4 ring-[#25D366]/40"
+       aria-label="Fala com um especialista em soluções digitais">
       
-      <!-- Círculo Branco com Ícone Oficial WhatsApp 100% Nítido -->
-      <div class="relative w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-200">
-        <svg class="w-5 h-5 sm:w-6 sm:h-6" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Círculo Branco com Ícone Oficial WhatsApp 100% Nítido e Borda Forte -->
+      <div class="relative w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white border-2 border-black flex items-center justify-center flex-shrink-0 shadow-md group-hover:scale-110 transition-transform duration-200">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="16" cy="16" r="16" fill="#25D366"/>
           <path d="M23.5 8.5C21.5 6.5 18.8 5.4 16 5.4C10.2 5.4 5.4 10.2 5.4 16C5.4 17.9 5.9 19.7 6.8 21.3L5.3 26.7L10.9 25.2C12.4 26 14.2 26.5 16 26.5C21.8 26.5 26.6 21.7 26.6 15.9C26.6 13.1 25.5 10.5 23.5 8.5ZM16 24.7C14.4 24.7 12.8 24.3 11.4 23.5L11.1 23.3L7.7 24.2L8.6 20.9L8.4 20.6C7.5 19.2 7 17.6 7 16C7 11 11 7 16 7C18.4 7 20.7 7.9 22.4 9.6C24.1 11.3 25 13.6 25 16C25 21 21 24.7 16 24.7ZM20.9 18.4C20.6 18.3 19.3 17.6 19 17.5C18.8 17.4 18.6 17.4 18.5 17.6C18.3 17.9 17.9 18.4 17.7 18.6C17.6 18.7 17.4 18.8 17.2 18.7C16.9 18.5 16.1 18.2 15.1 17.3C14.3 16.6 13.8 15.8 13.7 15.5C13.5 15.3 13.7 15.1 13.8 15C13.9 14.9 14 14.7 14.2 14.5C14.3 14.4 14.4 14.3 14.4 14.1C14.5 14 14.4 13.8 14.4 13.7C14.3 13.6 13.8 12.4 13.6 11.9C13.4 11.4 13.2 11.5 13 11.5C12.9 11.5 12.7 11.5 12.5 11.5C12.3 11.5 12 11.6 11.8 11.8C11.5 12.1 10.9 12.7 10.9 13.8C10.9 15 11.8 16.1 11.9 16.3C12.1 16.4 13.6 18.8 15.9 19.8C18.2 20.7 18.2 20.4 18.7 20.4C19.1 20.4 20.1 19.8 20.3 19.2C20.5 18.6 20.5 18.5 20.4 18.4C20.3 18.5 20.1 18.5 19.9 18.4H20.9Z" fill="white"/>
         </svg>
       </div>
       
-      <!-- Textos e Status com hierarquia limpa -->
-      <div class="text-left pr-1 sm:pr-2 leading-tight">
-        <div class="flex items-center gap-1.5 mb-0.5">
-          <span class="relative flex h-2 w-2">
+      <!-- Textos com Alto Contraste e CTA Destacado -->
+      <div class="text-left pr-1 sm:pr-2 leading-none">
+        <div class="flex items-center gap-1.5 mb-1">
+          <span class="relative flex h-2.5 w-2.5">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-black opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-black"></span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-black"></span>
           </span>
           <span class="text-[10px] sm:text-[11px] font-mono font-black uppercase tracking-wider text-black">
-            ONLINE AGORA
+            (11) 95692-7584 • ONLINE AGORA
           </span>
         </div>
-        <div class="text-sm sm:text-base font-anton uppercase text-black tracking-wide">
-          Falar no WhatsApp
+        <div class="text-sm sm:text-base md:text-lg font-anton uppercase text-black tracking-wide drop-shadow-sm">
+          FALA COM UM ESPECIALISTA
+        </div>
+        <div class="text-[10px] sm:text-xs font-mono font-bold uppercase tracking-wider text-black/85 mt-0.5">
+          EM SOLUÇÕES DIGITAIS
         </div>
       </div>
     </a>
